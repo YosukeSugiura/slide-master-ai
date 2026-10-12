@@ -9,12 +9,12 @@
 | mode | interactive_step |
 | status | READY |
 | phase | E |
-| current_step | E00 |
-| last_completed | none |
+| current_step | E01 |
+| last_completed | E00 |
 | attempt | 0 |
-| last_log | none |
+| last_log | docs/runs/lecture03_three_slides/logs/E00_attempt01.md |
 | blocking_reason | none |
-| output_manifest | none |
+| output_manifest | docs/runs/lecture03_three_slides/logs/E00_attempt01.md (text; E00 no image/PPTX) |
 | final_delivery | not_started |
 
 ## 固定された対象と依存資料
@@ -30,11 +30,11 @@
 
 ## 最初の「次」で実行する内容
 
-**E00：正本資料の再検証と実験条件の確定。** 画像生成・PPTX作成はE00では行わない。スライド11・スクラムマスターの具体的行動と、画像作成順序A/B/Cの共通評価基準を独立記録し、合格なら current_step を E01 に更新する。
+**E01：方式A・画像先行。** スクラムマスターの独立イラスト画像1点をこの通常チャット内で新規生成し、意味・範囲・疑似文字・背景透過を検証する。合格ならE02、不合格ならBLOCKEDとして理由を記録する。
 
 ## 実行ログ
 
-- （初期登録）指示書・工程表・初期進捗をGitHubへ登録。E00はまだ未実施。
+- E00：PASS。規格・原文・比較条件を確認し、E00_attempt01.mdをGitHubに保存。画像・PPTXは未生成。次はE01。
 
 ## 保存方針
 
