@@ -29,5 +29,5 @@
 
 - 各工程の素材/ページ進捗（TODO/PASS/FAIL/IN_PROGRESS/BLOCKED）、完成物・保存先・SHA256、実行ログは本runディレクトリへ記録。
 - 現在の成果物は**未作成**。旧3枚のPPTX/画像を本番48枚の成果物へ自動転用したと主張しない。過去に承認された視覚構成はデザイン方針として引き継ぐ。
-- `design_system_general_final.md` v2.2、`content_visual_policy_final.md` v2.7。源真ゴシックP現物フォントのインストールと実描画は未確認。補足まとめ文は独自情報がある場合だけ18pt、背景#F3F4F6、Takeaway重複排除。
+- `design_system_general_final.md` v2.2、`content_visual_policy_final.md` v2.8。源真ゴシックP現物フォントのインストールと実描画は未確認。補足まとめ文は独自情報がある場合だけ18pt、背景#F3F4F6、Takeaway重複排除。
 - 品質ゲートを満たさず完成扱いにしない。P2→P3→P4の切替は原則「次」3回。ただし実行上限/保存不能による追加再開があり得る。
