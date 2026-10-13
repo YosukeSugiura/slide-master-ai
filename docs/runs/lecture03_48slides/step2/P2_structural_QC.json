@@ -1,0 +1,633 @@
+{
+  "summary": {
+    "slide_count": 48,
+    "editable_and_text_coverage_issues": [],
+    "issues_count": 0,
+    "sources_scanned": 568,
+    "image_slots": 15,
+    "strict_tables_verified": [
+      9,
+      35,
+      37
+    ],
+    "font_below_12": [
+      {
+        "slide": 5,
+        "min_font_pt": 10.5,
+        "text": "S05-A-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 5,
+        "min_font_pt": 11.8,
+        "text": "試作・評価・改善の循環　/　試作　/　評価　/　"
+      },
+      {
+        "slide": 6,
+        "min_font_pt": 10.5,
+        "text": "S06-B-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 6,
+        "min_font_pt": 10.5,
+        "text": "S06-B-02\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 10,
+        "min_font_pt": 10.5,
+        "text": "S10-A-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 10,
+        "min_font_pt": 11.8,
+        "text": "スクラムの流れ　/　バックログ　/　スプリント　"
+      },
+      {
+        "slide": 11,
+        "min_font_pt": 10.5,
+        "text": "S11-B-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 11,
+        "min_font_pt": 10.5,
+        "text": "S11-B-02\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 11,
+        "min_font_pt": 10.5,
+        "text": "S11-B-03\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 15,
+        "min_font_pt": 10.5,
+        "text": "S15-A-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 15,
+        "min_font_pt": 11.8,
+        "text": "継続的な循環　/　開発　/　テスト　/　リリース"
+      },
+      {
+        "slide": 17,
+        "min_font_pt": 10.5,
+        "text": "S17-A-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 17,
+        "min_font_pt": 11.8,
+        "text": "主な活動の流れ　/　データ収集　/　前処理　/　"
+      },
+      {
+        "slide": 18,
+        "min_font_pt": 10.5,
+        "text": "S18-B-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 18,
+        "min_font_pt": 10.5,
+        "text": "S18-B-02\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 18,
+        "min_font_pt": 10.5,
+        "text": "S18-B-03\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 18,
+        "min_font_pt": 11.9,
+        "text": "・ローコード開発\n・ノーコード開発\n・生成AIに"
+      },
+      {
+        "slide": 26,
+        "min_font_pt": 10.5,
+        "text": "S26-B-01\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 26,
+        "min_font_pt": 10.5,
+        "text": "S26-B-02\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 26,
+        "min_font_pt": 10.5,
+        "text": "S26-B-03\n図素材をSTEP3で制作"
+      },
+      {
+        "slide": 26,
+        "min_font_pt": 11.8,
+        "text": "グレースケール中心．作成コストが小さい．"
+      },
+      {
+        "slide": 26,
+        "min_font_pt": 11.8,
+        "text": "配色を伴った完成イメージ．合意形成に向く．"
+      },
+      {
+        "slide": 26,
+        "min_font_pt": 11.8,
+        "text": "実際に動かして試せる試作品．"
+      },
+      {
+        "slide": 26,
+        "min_font_pt": 11.5,
+        "text": "画面の遷移"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "元の数字列"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "12345"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "→"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "123455"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "末尾に検査数字を1桁付加して6桁とする．\n入力時"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "検査数字を求める主な手順"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "1"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "検査数字を付ける位置を決める（ここでは末尾）．"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "2"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "右から交互に各桁を2倍する．"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "3"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "2倍した値が2桁なら，各桁の和をとる（10なら1"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "4"
+      },
+      {
+        "slide": 34,
+        "min_font_pt": 11.0,
+        "text": "加算結果が10の倍数になるよう検査数字を決める．"
+      },
+      {
+        "slide": 47,
+        "min_font_pt": 11.9,
+        "text": "先ほど作成した教室予約Webアプリを修正してくだ"
+      }
+    ],
+    "actual_gen_shin_font_rendered": false,
+    "slide34_source_inconsistency_unresolved": true,
+    "batch_completed_count": 8,
+    "timestamp": "2026-10-14"
+  },
+  "slides": [
+    {
+      "slide": 1,
+      "source_elements": 5,
+      "editable_text_shapes": 6,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 2,
+      "source_elements": 10,
+      "editable_text_shapes": 14,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "slide": 3,
+      "source_elements": 12,
+      "editable_text_shapes": 15,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 4,
+      "source_elements": 8,
+      "editable_text_shapes": 11,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 5,
+      "source_elements": 9,
+      "editable_text_shapes": 7,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "slide": 6,
+      "source_elements": 16,
+      "editable_text_shapes": 13,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 7,
+      "source_elements": 9,
+      "editable_text_shapes": 12,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 8,
+      "source_elements": 13,
+      "editable_text_shapes": 12,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        6,
+        11
+      ]
+    },
+    {
+      "slide": 9,
+      "source_elements": 2,
+      "editable_text_shapes": 28,
+      "native_tables": 1,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 10,
+      "source_elements": 11,
+      "editable_text_shapes": 7,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        4,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "slide": 11,
+      "source_elements": 7,
+      "editable_text_shapes": 13,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 12,
+      "source_elements": 12,
+      "editable_text_shapes": 15,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 13,
+      "source_elements": 11,
+      "editable_text_shapes": 14,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 14,
+      "source_elements": 13,
+      "editable_text_shapes": 16,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 15,
+      "source_elements": 10,
+      "editable_text_shapes": 7,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        9
+      ]
+    },
+    {
+      "slide": 16,
+      "source_elements": 8,
+      "editable_text_shapes": 11,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 17,
+      "source_elements": 14,
+      "editable_text_shapes": 7,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        4,
+        6,
+        8,
+        11,
+        13
+      ]
+    },
+    {
+      "slide": 18,
+      "source_elements": 9,
+      "editable_text_shapes": 15,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 19,
+      "source_elements": 10,
+      "editable_text_shapes": 13,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 20,
+      "source_elements": 13,
+      "editable_text_shapes": 12,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 21,
+      "source_elements": 8,
+      "editable_text_shapes": 11,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 22,
+      "source_elements": 16,
+      "editable_text_shapes": 16,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "slide": 23,
+      "source_elements": 15,
+      "editable_text_shapes": 18,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 24,
+      "source_elements": 8,
+      "editable_text_shapes": 11,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 25,
+      "source_elements": 14,
+      "editable_text_shapes": 17,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 26,
+      "source_elements": 11,
+      "editable_text_shapes": 17,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 27,
+      "source_elements": 16,
+      "editable_text_shapes": 19,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 28,
+      "source_elements": 22,
+      "editable_text_shapes": 25,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 29,
+      "source_elements": 9,
+      "editable_text_shapes": 12,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 30,
+      "source_elements": 7,
+      "editable_text_shapes": 10,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 31,
+      "source_elements": 10,
+      "editable_text_shapes": 13,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 32,
+      "source_elements": 15,
+      "editable_text_shapes": 18,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 33,
+      "source_elements": 8,
+      "editable_text_shapes": 11,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 34,
+      "source_elements": 35,
+      "editable_text_shapes": 38,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 35,
+      "source_elements": 1,
+      "editable_text_shapes": 25,
+      "native_tables": 1,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 36,
+      "source_elements": 10,
+      "editable_text_shapes": 13,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 37,
+      "source_elements": 1,
+      "editable_text_shapes": 14,
+      "native_tables": 1,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 38,
+      "source_elements": 9,
+      "editable_text_shapes": 12,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 39,
+      "source_elements": 13,
+      "editable_text_shapes": 16,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 40,
+      "source_elements": 13,
+      "editable_text_shapes": 16,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 41,
+      "source_elements": 8,
+      "editable_text_shapes": 11,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 42,
+      "source_elements": 15,
+      "editable_text_shapes": 18,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 43,
+      "source_elements": 26,
+      "editable_text_shapes": 29,
+      "native_tables": 1,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 44,
+      "source_elements": 26,
+      "editable_text_shapes": 29,
+      "native_tables": 1,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 45,
+      "source_elements": 13,
+      "editable_text_shapes": 16,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 46,
+      "source_elements": 13,
+      "editable_text_shapes": 16,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 47,
+      "source_elements": 6,
+      "editable_text_shapes": 9,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": []
+    },
+    {
+      "slide": 48,
+      "source_elements": 18,
+      "editable_text_shapes": 14,
+      "native_tables": 0,
+      "source_missing": 0,
+      "arrow_symbols_as_native_connectors": [
+        10,
+        11,
+        12
+      ]
+    }
+  ]
+}
