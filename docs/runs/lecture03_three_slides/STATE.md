@@ -8,13 +8,13 @@
 | branch | minor |
 | mode | interactive_step |
 | status | READY |
-| phase | E |
-| current_step | E03 |
-| last_completed | E02 |
+| phase | S17_PPTX_FIRST |
+| current_step | S17_IMG |
+| last_completed | S17_SKELETON |
 | attempt | 0 |
-| last_log | docs/runs/lecture03_three_slides/logs/E02_attempt01.md |
+| last_log | docs/runs/lecture03_three_slides/logs/S17_SKELETON_PPTX_FIRST_20261013.md |
 | blocking_reason | none |
-| output_manifest | E01 independent PNG and E02 PPTX/render available in ChatGPT; GitHub text logs E01/E02, binaries not uploaded |
+| output_manifest | S17 skeleton PPTX/preview in ChatGPT only; P07 visual ungenerated; older E01/E02 artifacts also ChatGPT only |
 | final_delivery | not_started |
 
 ## 固定された対象と依存資料
@@ -30,9 +30,11 @@
 
 ## 最初の「次」で実行する内容
 
-**E03：方式B・PPTX骨組み先行。** 同じスライド11元原稿から、説明本文を新規の短文化規格に従って編集した骨組みPPTXを新規制作・実レンダリングする。Takeaway直前の補足は、独自情報の消失を防いで簡潔化する。旧規格のE02との文章量差を評価で明示する。
+**S17_IMG：スライド17の横長挿入枠に入れるMLOps循環の独立AI主図1点を生成・評価する。** 手順とサイズは `docs/workflows/SLIDE17_PPTX_FIRST_v1.md` に従う。合格した画像のPPTX組込みは後続の `S17_INSERT`。
 
 ## 実行ログ
+
+- S17_SKELETON：PASS。ユーザーの『まずPPTXから』という指示に従いPPTX骨組みと実プレビューを作成。バイナリはChatGPT内のみ。E03比較実験は中断状態で保存し、今後の『次』はS17_IMGとして扱う。ログ：docs/runs/lecture03_three_slides/logs/S17_SKELETON_PPTX_FIRST_20261013.md。
 
 - スライド11の3画像統合版PPTX作成・レンダリング済み。個別制作ログ：docs/runs/lecture03_three_slides/logs/slide11_three_illustrations_complete_20261013.md。GitHubにバイナリ未保存。E03は未実施で維持。
 
@@ -44,6 +46,8 @@
 - E03着手前の指示書改訂：説明文短文化・補足省略規則を追加。E02は旧規格、E03以降は新規格であることを記録。次はE03（READYを維持）。
 
 ## 保存方針
+
+- **作業対象変更**：E03（旧比較実験）は未実施のまま保留。ユーザーの明示的な指示により、スライド17の『PPTX骨組み→AI主図→挿入』ルートを優先している。`docs/workflows/SLIDE17_PPTX_FIRST_v1.md` を参照。
 
 毎工程ごとに docs/runs/lecture03_three_slides/logs/ 配下へ E00_attempt01.md 等の検証ログをコミットし、STATEを更新する。画像・PPTXのバイナリがGitHubへ保存できない場合、GitHubへ「未保存」と記し、ChatGPT会話に実ファイルを納品する。リンクを捏造しない。
 
