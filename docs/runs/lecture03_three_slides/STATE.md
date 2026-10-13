@@ -34,6 +34,8 @@
 
 ## 実行ログ
 
+- スライド11の3画像統合版PPTX作成・レンダリング済み。個別制作ログ：docs/runs/lecture03_three_slides/logs/slide11_three_illustrations_complete_20261013.md。GitHubにバイナリ未保存。E03は未実施で維持。
+
 - E02表示改訂（個別依頼）：v2.1/v2.6に基づく短い役割箇条書き・1行補足を適用したPPTXを制作・実レンダリング。ログ: docs/runs/lecture03_three_slides/logs/E02_display_revision_v2.md。PNG/PPTXはChatGPT内に保存し、GitHubには未アップロード。現在工程はE03のまま。
 
 - E00：PASS。規格・原文・比較条件を確認し、E00_attempt01.mdをGitHubに保存。画像・PPTXは未生成。
