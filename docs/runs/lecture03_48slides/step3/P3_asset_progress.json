@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lecture03_48slides",
+  "step": "P3_IMAGE_ASSETS",
+  "status": "BLOCKED",
+  "required_assets": 15,
+  "accepted_assets": 0,
+  "blocked_assets": 1,
+  "remaining_todo": 14,
+  "tool_issue": "Generated completion report infographics instead of required independent S05-A-01 image, three times. Exact prompt forwarding cannot be verified.",
+  "generator_invocation_policy": "No further attempts until prompt-targeting is resolved. Do not use rejected sheet as a slide asset.",
+  "pptx_edited": false,
+  "next_image": "S05-A-01",
+  "assets": [
+    {
+      "asset_id": "S05-A-01",
+      "slide_id": "S05",
+      "status": "BLOCKED",
+      "attempts": 3,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": [
+        "9eb6d72f3aba0c005cff307dd55922cca65a60bdcf9f4b61714debf585ea186d",
+        "d8126d144a05703499dd6ef75306e872623a3d39305d55c92d971c5c6a86cd44",
+        "798f30192607759f5009cfddad82c1289e429549ce74da9abe4662f98aa50ca9"
+      ]
+    },
+    {
+      "asset_id": "S06-B-01",
+      "slide_id": "S06",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S06-B-02",
+      "slide_id": "S06",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S10-A-01",
+      "slide_id": "S10",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S11-B-01",
+      "slide_id": "S11",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S11-B-02",
+      "slide_id": "S11",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S11-B-03",
+      "slide_id": "S11",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S15-A-01",
+      "slide_id": "S15",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S17-A-01",
+      "slide_id": "S17",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S18-B-01",
+      "slide_id": "S18",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S18-B-02",
+      "slide_id": "S18",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S18-B-03",
+      "slide_id": "S18",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S26-B-01",
+      "slide_id": "S26",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S26-B-02",
+      "slide_id": "S26",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    },
+    {
+      "asset_id": "S26-B-03",
+      "slide_id": "S26",
+      "status": "TODO",
+      "attempts": 0,
+      "accepted_image": null,
+      "sha256": null,
+      "storage": null,
+      "rejected_attempts": []
+    }
+  ]
+}
