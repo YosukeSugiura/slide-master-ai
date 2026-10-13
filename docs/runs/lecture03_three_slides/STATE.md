@@ -34,6 +34,8 @@
 
 ## 実行ログ
 
+- 2026-10-13：**ユーザーがスライド11・17・35の再設計版を正式に採用**。以後48枚版のレイアウト基準は `docs/workflows/LECTURE03_APPROVED_VISUAL_BASELINE_20261013.md`。源真ゴシックPの実導入は保留。現在工程 `S3_EXTENSION_PLAN` は変更しない。
+
 - S3_MERGE_QC：PASS。元PPTXの画像4点・編集可能文字・表21セルを全保持して、11→17→35の順に統合。各スライドの同条件レンダリングは元スライドとピクセル完全一致。詳細：docs/runs/lecture03_three_slides/logs/S3_MERGE_QC_ATTEMPT01_PASS_20261013.md。バイナリはChatGPT納品、GitHub未アップロード。次はS3_EXTENSION_PLAN。
 
 - S35_BUILD：PASS。スライド35の編集可能な3列×7行・21セル表を制作し、全セル原文一致とレンダリングによる文字切れ修正を確認。ログ：docs/runs/lecture03_three_slides/logs/S35_BUILD_ATTEMPT01_PASS_20261013.md。成果物はChatGPTで納品、GitHub未アップロード。次はS3_MERGE_QC。
