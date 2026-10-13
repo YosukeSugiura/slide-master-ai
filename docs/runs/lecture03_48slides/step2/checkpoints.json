@@ -14,12 +14,12 @@
       "batch_id": "B01",
       "first_slide": 1,
       "last_slide": 6,
-      "status": "TODO",
-      "pages_passed": 0,
+      "status": "IN_PROGRESS",
+      "pages_passed": 2,
       "binary_storage": null,
       "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "last_checked": "2026-10-14",
+      "notes": "S01-S02 structural/text/render PASS with substitute font; S03-S06 TODO; full B01 QC pending."
     },
     {
       "batch_id": "B02",
@@ -103,16 +103,32 @@
     {
       "slide_id": "S01",
       "batch_id": "B01",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "PASS_WITH_FONT_RENDERING_CAVEAT",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_EDITABLE_checkpoint_v1.pptx",
+        "pptx_library_file_id": "libfile_fff9ab309748819188bf5e1b73469f53",
+        "pptx_sha256": "790f72795e9363be6ad22f3863f202920f2a1c741f71d9e027d1c947db781d8d",
+        "source_script": "docs/runs/lecture03_48slides/step2/scripts/B01_S01_S02_build_v1.py",
+        "qc_report": "docs/runs/lecture03_48slides/step2/qc/B01_S01_S02.json",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_overview_v1.png",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_checkpoint_v1.pdf"
+      }
     },
     {
       "slide_id": "S02",
       "batch_id": "B01",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "PASS_WITH_FONT_RENDERING_CAVEAT",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_EDITABLE_checkpoint_v1.pptx",
+        "pptx_library_file_id": "libfile_fff9ab309748819188bf5e1b73469f53",
+        "pptx_sha256": "790f72795e9363be6ad22f3863f202920f2a1c741f71d9e027d1c947db781d8d",
+        "source_script": "docs/runs/lecture03_48slides/step2/scripts/B01_S01_S02_build_v1.py",
+        "qc_report": "docs/runs/lecture03_48slides/step2/qc/B01_S01_S02.json",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_overview_v1.png",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_checkpoint_v1.pdf"
+      }
     },
     {
       "slide_id": "S03",
@@ -449,5 +465,15 @@
     "asset_slot_library_path": "/SlideProjects/lecture03_48slides/step2/asset_slots_UNVALIDATED_draft.json",
     "asset_slot_library_file_id": "libfile_d71c62b8e0308191a90ae6e1aaab125a",
     "reason": "Not rendered and all pages QC unverified; does not satisfy STEP2."
+  },
+  "next_slide": "S03",
+  "last_checkpoint": {
+    "slides": [
+      "S01",
+      "S02"
+    ],
+    "log": "docs/runs/lecture03_48slides/step2/logs/B01_S01_S02_CHECKPOINT_20261014.md",
+    "library_files_verified": true,
+    "stage_done": false
   }
 }
