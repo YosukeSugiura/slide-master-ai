@@ -2,6 +2,10 @@
 
 > 正本：`docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md`。分類A/B/Cと意味検証は`content_visual_policy_final.md` v2.8。旧`docs/IMAGE_GENERATION_STAGED_WORKFLOW_v1.md`は手動レビュー等の歴史的記録で、本標準ルートでは利用しない。
 
+## 2026-10-14改訂：P3の実行粒度の優先規則
+
+**現在のSTEP3では「次」1回でキュー先頭の画像ID1点だけを処理する。** 本書後述の「全未完了素材を連続して処理」「次1回＝工程全体」等の旧運用説明より、`docs/workflows/NEXT_COMMAND_CONTROLLER_v1.md` と `docs/workflows/PHASE_P3_IMAGE_ASSETS_RUNBOOK_v1.md` が優先する。すべての画像指示は `step3/prompts/{asset_id}_prompt_vN.txt` から1点分のみ取得し、画像生成器に進捗管理・他素材・完了報告の文言を渡さない。RGBA透過・実ファイル検査と保存証跡を必須とし、**15点すべてPASSするまでP4に移行しない**。
+
 ## 前提と責務
 
 - STEP2で**実PPTXの画像挿入枠を確定し、画像IDごとの指示書・事前10ゲートをPASS**させてあること。
