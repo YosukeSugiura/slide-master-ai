@@ -2,20 +2,20 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "BLOCKED",
+  "status": "READY",
   "required_assets": 15,
   "accepted_assets": 0,
   "blocked_assets": 1,
   "remaining_todo": 14,
-  "tool_issue": "Generated completion report infographics instead of required independent S05-A-01 image, three times. Exact prompt forwarding cannot be verified.",
-  "generator_invocation_policy": "No further attempts until prompt-targeting is resolved. Do not use rejected sheet as a slide asset.",
+  "tool_issue": "Legacy v1 image_gen produced three off-target completion sheets; Figma v1 generated checkerboard/nontransparent rejected image. New S05 v2 prompt prepared; outcome not tested.",
+  "generator_invocation_policy": "New one-asset-per-next GitHub controller; do not allow all-15 generation within one next.",
   "pptx_edited": false,
   "next_image": "S05-A-01",
   "assets": [
     {
       "asset_id": "S05-A-01",
       "slide_id": "S05",
-      "status": "BLOCKED",
+      "status": "READY",
       "attempts": 3,
       "accepted_image": null,
       "sha256": null,
@@ -24,7 +24,16 @@
         "9eb6d72f3aba0c005cff307dd55922cca65a60bdcf9f4b61714debf585ea186d",
         "d8126d144a05703499dd6ef75306e872623a3d39305d55c92d971c5c6a86cd44",
         "798f30192607759f5009cfddad82c1289e429549ce74da9abe4662f98aa50ca9"
-      ]
+      ],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v2.txt",
+      "prompt_blob_sha": "50185e920465f2264b4a81652123cc19f8221084",
+      "prompt_version": "v2",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "PRIOR_V1_REJECTED_NEW_V2_PREPARED",
+      "legacy_chatgpt_v1_attempts": 3,
+      "legacy_figma_v1_attempts": 1,
+      "legacy_figma_rejected_library": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_Figma_REJECTED_uploaded_JPEG.jpg"
     },
     {
       "asset_id": "S06-B-01",
@@ -34,7 +43,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-01_prompt_v1.txt",
+      "prompt_blob_sha": "6b0ceaaf2f35497e1c95482c2ce29da49cecbb2d",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S06-B-02",
@@ -44,7 +59,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v1.txt",
+      "prompt_blob_sha": "7d0b43d3230eb454999e4fab42a6c06240115ca0",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S10-A-01",
@@ -54,7 +75,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S10-A-01_prompt_v1.txt",
+      "prompt_blob_sha": "24f262cf3e738f08544f14ae978f23d46042e7ff",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S11-B-01",
@@ -64,7 +91,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S11-B-01_prompt_v1.txt",
+      "prompt_blob_sha": "93e8fbdeab09b8ff6608c23ccfd5dbad7ea88f9b",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S11-B-02",
@@ -74,7 +107,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S11-B-02_prompt_v1.txt",
+      "prompt_blob_sha": "3bc645e3ee5772352c782adc577c3f131b01c808",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S11-B-03",
@@ -84,7 +123,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S11-B-03_prompt_v1.txt",
+      "prompt_blob_sha": "6c677b6119d3ec747f45e53a3475df2b77ff6541",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S15-A-01",
@@ -94,7 +139,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S15-A-01_prompt_v1.txt",
+      "prompt_blob_sha": "e2f5b6878439e101a7b4ec2e6aea2d2c891d7604",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S17-A-01",
@@ -104,7 +155,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S17-A-01_prompt_v1.txt",
+      "prompt_blob_sha": "f4c967ee0a1b4e8994c1fdabe8389a58e3566eae",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S18-B-01",
@@ -114,7 +171,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S18-B-01_prompt_v1.txt",
+      "prompt_blob_sha": "7b3cfb16ad9a2345b179f9e40972fa6481212872",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S18-B-02",
@@ -124,7 +187,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S18-B-02_prompt_v1.txt",
+      "prompt_blob_sha": "089900da3dfa018a33531f12ab75f071c422938a",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S18-B-03",
@@ -134,7 +203,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S18-B-03_prompt_v1.txt",
+      "prompt_blob_sha": "7ee610a94d8e1d5842b850b65aa83af2782b910c",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S26-B-01",
@@ -144,7 +219,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S26-B-01_prompt_v1.txt",
+      "prompt_blob_sha": "9b77bbb97f3ca844e4e2249062af45e1ded3624a",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S26-B-02",
@@ -154,7 +235,13 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S26-B-02_prompt_v1.txt",
+      "prompt_blob_sha": "4a651920bab927fa4bd641bb0e05188d60249fb7",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
     },
     {
       "asset_id": "S26-B-03",
@@ -164,7 +251,48 @@
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": []
+      "rejected_attempts": [],
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S26-B-03_prompt_v1.txt",
+      "prompt_blob_sha": "a186c6485e5b8618ce1a31448a44a3f13155a85e",
+      "prompt_version": "v1",
+      "attempts_current_version": 0,
+      "max_attempts_current_version": 3,
+      "last_outcome": "NOT_STARTED"
+    }
+  ],
+  "current_unit": "S05-A-01",
+  "generator": "ChatGPT image generation",
+  "last_completed_asset": null,
+  "prompt_version_migration": "S05-A-01 v1→v2 on 2026-10-14; previous 3 ChatGPT v1 failures preserved; Figma v1 rejection preserved.",
+  "queue_file": "docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json",
+  "progress_summary": {
+    "accepted": 0,
+    "ready": 1,
+    "todo": 14,
+    "blocked": 0,
+    "generated_this_migration": 0
+  },
+  "history": [
+    {
+      "date": "2026-10-14",
+      "event": "REJECT_FIGMA_UPLOAD",
+      "asset_id": "S05-A-01",
+      "model": "Figma gpt-image-2.5-sunburst",
+      "prompt_version": "v1",
+      "result": "FAIL",
+      "reasons": [
+        "uploaded file actually JPEG RGB, no alpha",
+        "checkerboard baked into background",
+        "developer repeated; prototype improvement unclear",
+        "not suitable as independent image"
+      ],
+      "library_path": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_Figma_REJECTED_uploaded_JPEG.jpg"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "NEW_RUNNER_MIGRATION",
+      "result": "PREPARED_NOT_RUN",
+      "notes": "S05-A-01 prompt_v2.txt frozen; one asset per next; new prompt version gets new attempt budget; no new generation executed"
     }
   ]
 }
