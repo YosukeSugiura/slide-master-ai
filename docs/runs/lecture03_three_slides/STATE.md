@@ -9,12 +9,12 @@
 | mode | interactive_step |
 | status | READY |
 | phase | E |
-| current_step | E01 |
-| last_completed | E00 |
+| current_step | E02 |
+| last_completed | E01 |
 | attempt | 0 |
-| last_log | docs/runs/lecture03_three_slides/logs/E00_attempt01.md |
+| last_log | docs/runs/lecture03_three_slides/logs/E01_attempt01.md |
 | blocking_reason | none |
-| output_manifest | docs/runs/lecture03_three_slides/logs/E00_attempt01.md (text; E00 no image/PPTX) |
+| output_manifest | E01: docs/runs/lecture03_three_slides/logs/E01_attempt01.md; PNG in chat only (not on GitHub) |
 | final_delivery | not_started |
 
 ## 固定された対象と依存資料
@@ -30,11 +30,12 @@
 
 ## 最初の「次」で実行する内容
 
-**E01：方式A・画像先行。** スクラムマスターの独立イラスト画像1点をこの通常チャット内で新規生成し、意味・範囲・疑似文字・背景透過を検証する。合格ならE02、不合格ならBLOCKEDとして理由を記録する。
+**E02：方式A・画像をPPTXへ組み込む。** E01の合格した独立イラストだけを中央枠に挿入し、その他の画像枠は空欄のまま、原文保持・編集可能性・実レンダリングを検査する。
 
 ## 実行ログ
 
-- E00：PASS。規格・原文・比較条件を確認し、E00_attempt01.mdをGitHubに保存。画像・PPTXは未生成。次はE01。
+- E00：PASS。規格・原文・比較条件を確認し、E00_attempt01.mdをGitHubに保存。画像・PPTXは未生成。
+- E01：PASS。スクラムマスターの新規独立透過PNGを検査。PNGバイナリはChatGPT内のみでGitHub未保存。次はE02。
 
 ## 保存方針
 
