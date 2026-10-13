@@ -8,13 +8,13 @@
 | branch | minor |
 | mode | interactive_step |
 | status | READY |
-| phase | THREE_SLIDE_MERGE |
-| current_step | S3_MERGE_QC |
-| last_completed | S35_BUILD |
+| phase | THREE_SLIDE_EXPANSION_PLAN |
+| current_step | S3_EXTENSION_PLAN |
+| last_completed | S3_MERGE_QC |
 | attempt | 0 |
-| last_log | docs/runs/lecture03_three_slides/logs/S35_BUILD_ATTEMPT01_PASS_20261013.md |
+| last_log | docs/runs/lecture03_three_slides/logs/S3_MERGE_QC_ATTEMPT01_PASS_20261013.md |
 | blocking_reason | none |
-| output_manifest | S11/S17/S35 individual PPTX and real previews available in ChatGPT only; GitHub text logs; binaries not uploaded |
+| output_manifest | merged 3-slide editable PPTX, PDF, PNG previews, QC report and ZIP created in ChatGPT; binaries not uploaded to GitHub |
 | final_delivery | not_started |
 
 ## 固定された対象と依存資料
@@ -30,9 +30,11 @@
 
 ## 最初の「次」で実行する内容
 
-**S3_MERGE_QC：スライド11・17・35の3枚を編集可能なまま1冊のPPTXに統合・実レンダリングし、最終品質検査を行う。** 手順は `docs/workflows/SLIDES_11_17_35_MERGE_QC_v1.md` を参照。
+**S3_EXTENSION_PLAN**：元48枚版原稿の全スライドを調べ、独立画像の素材一覧・分類A/B/C・PPTX先行の製作計画を作成する。48枚のPPTX実制作はしない。手順は docs/workflows/LECTURE03_48_EXPANSION_PLAN_v1.md を参照。
 
 ## 実行ログ
+
+- S3_MERGE_QC：PASS。元PPTXの画像4点・編集可能文字・表21セルを全保持して、11→17→35の順に統合。各スライドの同条件レンダリングは元スライドとピクセル完全一致。詳細：docs/runs/lecture03_three_slides/logs/S3_MERGE_QC_ATTEMPT01_PASS_20261013.md。バイナリはChatGPT納品、GitHub未アップロード。次はS3_EXTENSION_PLAN。
 
 - S35_BUILD：PASS。スライド35の編集可能な3列×7行・21セル表を制作し、全セル原文一致とレンダリングによる文字切れ修正を確認。ログ：docs/runs/lecture03_three_slides/logs/S35_BUILD_ATTEMPT01_PASS_20261013.md。成果物はChatGPTで納品、GitHub未アップロード。次はS3_MERGE_QC。
 
