@@ -11,7 +11,7 @@
   "asset_count": 15,
   "assets": [
     {
-      "status": "PLANNED",
+      "status": "BLOCKED",
       "prompt_status": "P2_FIXED",
       "prompt_text": "【生成する完成品｜最優先】\n背景透過を基本とする**独立した2Dフラットイラスト画像1点**を生成する。対象は「プロトタイピングの反復」。制作範囲は **統合された一つの説明場面だけ**。スライド全体、講義ポスター、複数コマのコラージュを生成しない。\n\n【何を意味的に表すべきか】\n試作品を具体的に作り、ユーザーが触って評価して改善点を開発者に返し、改良版を再度試作する因果的な循環。必須の反復は試作→評価→改善→再試作へ戻る。教室予約UIの試作品は実在の製品スクリーンショットではなく抽象化した画面イメージにする。\n\n【厳密な意味関係・禁止される誤解】\n評価から改善を経て次の試作へ戻る方向を正確に示す。試作と完成品を混同しない。\n\n【構図と画角】\n最終的な挿入枠は横5.490インチ×縦3.730インチ（縦横比1.4718:1）。図を横長画面の内側に十分な余白を取って配置し、被写体を切り落とさない。推奨する評価解像度は約2048×1392px。人物や道具など、当該テーマに必要な具体物を用い、単なるアイコンの横並びにしない。矢印は因果や循環を伝えるために必要な場合のみ、必須の向き・戻り先を正確に示す。情報量は投影サイズでも理解できる密度に抑える。\n\n【デザイン言語】\n白／透明背景、インディゴ#41419Eを基調にした低彩度の教育用フラット図。濃い輪郭と明確なシルエット、均整の取れた線幅、さりげない補助色を採用する。グラデーション、3D、過剰な影、飾り枠、丸いUIカードの羅列は避ける。同一講義の他画像と統一した画風を保つ。\n\n【画像の制作範囲から完全に除外】\nスライド全体、スライドタイトル、イントロ、Takeaway、説明本文、表、ページ番号、大学ロゴ、写真、注釈ポスター、読み取らせるための大量の日本語、架空の固有名詞、関係のない他の役割・手法。正確な語句は別途PowerPointの編集可能テキストとして配置する。画像内では文字を原則描かない。原文の数値・専門用語・ロゴを捏造しない。\n\n【採用前の必須評価】\n意味契約の全条件が満たされること。禁止例が存在しないこと。矢印・循環の方向が正しいこと。主役・対比・視線誘導・情報量・画風をそれぞれ独立評価すること。全体をスライド画像にしないこと。横長枠への等比配置で切り落としや極端な余白が生じないこと。いずれかに不合格があれば素材として採用しない。",
       "prompt_version": "v1",
@@ -58,7 +58,11 @@
         "G09_unrelated_assets_excluded": true,
         "G10_independent_postgeneration_qc_specified": true
       },
-      "preflight_result": "PASS"
+      "preflight_result": "PASS",
+      "p3_attempt_count": 3,
+      "p3_qc": "FAIL: generated fake completion reports rather than independent prototyping illustration",
+      "p3_rejected_images_library": "/SlideProjects/lecture03_48slides/step3/rejected/",
+      "p3_accepted_image": null
     },
     {
       "status": "PLANNED",
@@ -773,5 +777,9 @@
     }
   ],
   "p2_status": "PLACEMENT_AND_PROMPT_COMPLETE_IMAGES_NOT_GENERATED",
-  "p2_prompt_manifest": "docs/runs/lecture03_48slides/step2/image_prompts/P2_image_prompts_manifest.json"
+  "p2_prompt_manifest": "docs/runs/lecture03_48slides/step2/image_prompts/P2_image_prompts_manifest.json",
+  "p3_status": "BLOCKED",
+  "p3_accepted_count": 0,
+  "p3_unattempted_count": 14,
+  "p3_failure_report": "docs/runs/lecture03_48slides/step3/P3_GENERATION_FAILURE_20261014.md"
 }
