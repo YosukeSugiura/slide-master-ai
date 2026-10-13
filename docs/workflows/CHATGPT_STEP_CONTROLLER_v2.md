@@ -9,6 +9,12 @@
 
 **PPTXスキルと画像生成は同じ段階内で混在させない**。P1: 内容設計、P2: PPTX制作（画像生成しない）、P3: 画像生成（PPTX編集しない）、P4: PPTX制作（画像生成しない）。画像の意味違反はP3へ差し戻す。生成プロンプト案と実効入力は区別して記録。
 
+## P3の実行制御に関する特則（2026-10-14、最優先）
+
+P3画像制作の `次` は**全素材一括ではなく、GitHubの実行キューで指定する画像IDを1件だけ**処理する。**この節が以下にある「次でステージ全体を処理」「1素材だけ処理する旧仕様は適用しない」に優先する。**
+
+現行の正本は `docs/workflows/NEXT_COMMAND_CONTROLLER_v1.md` と `docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json`、作業規則は `docs/workflows/PHASE_P3_IMAGE_ASSETS_RUNBOOK_v1.md`。同一の「次」で2素材目へ進まない。未完了／失敗／ブロック中に別IDへスキップしない。状態JSONの更新前に実画像・QC・SHA・再取得可能な保存を確認する。
+
 ## 2. 状態と操作
 
 新規runのSTATEはデッキ固有の `docs/runs/<run_id>/STATE.md`。このプロジェクトの例: `docs/runs/lecture03_48slides/STATE.md`。**旧3枚のSTATEは参照のみ**。毎コマンド直前にGitHub minorから再取得する。
