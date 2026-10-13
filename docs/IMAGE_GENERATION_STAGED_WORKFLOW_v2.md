@@ -1,6 +1,6 @@
 # 独立図の一括制作手順 v2.0 — 4段階方式STEP3専用
 
-> 正本：`docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md`。分類A/B/Cと意味検証は`content_visual_policy_final.md` v2.7。旧`docs/IMAGE_GENERATION_STAGED_WORKFLOW_v1.md`は手動レビュー等の歴史的記録で、本標準ルートでは利用しない。
+> 正本：`docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md`。分類A/B/Cと意味検証は`content_visual_policy_final.md` v2.8。旧`docs/IMAGE_GENERATION_STAGED_WORKFLOW_v1.md`は手動レビュー等の歴史的記録で、本標準ルートでは利用しない。
 
 ## 前提と責務
 
