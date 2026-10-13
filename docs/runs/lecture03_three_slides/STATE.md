@@ -1,19 +1,19 @@
 # ステップ実行状態 — 情報システム論 第3回 試作用3枚
 
-> 唯一の進捗正本。変更する場合は、直近のGitHub内容とblob SHAを確認し、他の編集との競合を防ぐ。未実施工程を成功とみなさない。
+> **試作3枚の履歴用STATE（PAUSED）**。新規48枚版の正本は `docs/runs/lecture03_48slides/STATE.md`。この旧STATEのS3_EXTENSION_PLAN・旧E03は履歴として残し、新規制作の『次』は本STATEで解釈しない。未実施工程を成功とみなさない。
 
 | キー | 現在値 |
 |---|---|
 | repository | YosukeSugiura/slide-master-ai |
 | branch | minor |
-| mode | interactive_step |
-| status | READY |
+| mode | legacy_archived |
+| status | PAUSED |
 | phase | THREE_SLIDE_EXPANSION_PLAN |
 | current_step | S3_EXTENSION_PLAN |
 | last_completed | S3_MERGE_QC |
 | attempt | 0 |
 | last_log | docs/runs/lecture03_three_slides/logs/S3_MERGE_QC_ATTEMPT01_PASS_20261013.md |
-| blocking_reason | none |
+| blocking_reason | superseded_by_four_phase_standard |
 | output_manifest | merged 3-slide editable PPTX, PDF, PNG previews, QC report and ZIP created in ChatGPT; binaries not uploaded to GitHub |
 | final_delivery | not_started |
 
@@ -33,6 +33,8 @@
 **S3_EXTENSION_PLAN**：元48枚版原稿の全スライドを調べ、独立画像の素材一覧・分類A/B/C・PPTX先行の製作計画を作成する。48枚のPPTX実制作はしない。手順は docs/workflows/LECTURE03_48_EXPANSION_PLAN_v1.md を参照。
 
 ## 実行ログ
+
+- 2026-10-13：ユーザー承認により制作指示書を標準4段階へ切替。**旧試作用3枚runをPAUSED/履歴化**。現時点の `last_completed=S3_MERGE_QC` は変えず、旧E03および旧S3_EXTENSION_PLANを実施済みとは扱わない。新しい正本は `docs/runs/lecture03_48slides/STATE.md`、入口は `CHATGPT_NEXT.md`、工程表は `docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md`。
 
 - 2026-10-13：ユーザーの明示的な追加指示に従い、**補足まとめ文が必要な場合は18pt基準・ごく薄いグレー背景（#F3F4F6）、Takeaway等と重複する場合は原則省略**を正式規格へ反映。デザイン定義v2.2／視覚方針v2.7／承認済みベースラインを更新。**既存PPTXの再制作は今回していない**。S3_EXTENSION_PLANの進捗は維持。
 
