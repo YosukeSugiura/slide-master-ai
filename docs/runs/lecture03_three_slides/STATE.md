@@ -34,6 +34,8 @@
 
 ## 実行ログ
 
+- E02表示改訂（個別依頼）：v2.1/v2.6に基づく短い役割箇条書き・1行補足を適用したPPTXを制作・実レンダリング。ログ: docs/runs/lecture03_three_slides/logs/E02_display_revision_v2.md。PNG/PPTXはChatGPT内に保存し、GitHubには未アップロード。現在工程はE03のまま。
+
 - E00：PASS。規格・原文・比較条件を確認し、E00_attempt01.mdをGitHubに保存。画像・PPTXは未生成。
 - E01：PASS。スクラムマスターの新規独立透過PNGを検査。PNGバイナリはChatGPT内のみでGitHub未保存。
 - E02：PASS。独立イラストを挿入した部分スライドPPTXの原文一致・編集可能性・実レンダリングを確認。PPTXとプレビューはChatGPTで納品、GitHubへバイナリ未保存。
