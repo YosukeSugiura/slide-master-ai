@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "slide": 1,
+      "title": "ソフトウェア開発",
+      "required_literals": 6,
+      "missing_literals": [],
+      "editable_text": 6,
+      "images": 0,
+      "font_names": [
+        "源真ゴシックP"
+      ],
+      "qc": "PASS_WITH_FONT_RENDERING_CAVEAT"
+    },
+    {
+      "slide": 2,
+      "title": "本日の達成目標",
+      "required_literals": 16,
+      "missing_literals": [],
+      "editable_text": 14,
+      "images": 0,
+      "font_names": [
+        "源真ゴシックP"
+      ],
+      "qc": "PASS_WITH_FONT_RENDERING_CAVEAT"
+    }
+  ],
+  "PPTX_SHA256": "790f72795e9363be6ad22f3863f202920f2a1c741f71d9e027d1c947db781d8d",
+  "PPTX_BYTES": 31611,
+  "rendered_from_actual_pptx": true,
+  "pdf_pages": 2,
+  "font_display": "substitute_Noto_Sans_CJK_JP",
+  "pass_gate": "STRUCTURE_AND_VISIBLE_LAYOUT_ONLY",
+  "batch_complete": false
+}
