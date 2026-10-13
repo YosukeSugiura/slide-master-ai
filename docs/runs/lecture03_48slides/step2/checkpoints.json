@@ -4,8 +4,8 @@
   "current_step": "P2_PPTX_SKELETON",
   "batch_size": 6,
   "batch_count": 8,
-  "last_completed_batch": null,
-  "next_batch": "B01",
+  "last_completed_batch": "B08",
+  "next_batch": null,
   "quality_gates": "docs/workflows/STEP2_BATCH_CHECKPOINT_v1.md",
   "source_ref": "docs/lecture03_48_slide_contents.md",
   "source_git_blob_sha": "1159133fcf547c8ca976fbc94b04722a6ff81adf",
@@ -14,89 +14,145 @@
       "batch_id": "B01",
       "first_slide": 1,
       "last_slide": 6,
-      "status": "IN_PROGRESS",
-      "pages_passed": 2,
-      "binary_storage": null,
-      "sha256": null,
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pptx",
+        "library_file_id": "libfile_7d41f8aa6408819190954323173c61ec"
+      },
+      "sha256": "d585dc6b3c5e4aa628891bb43133c13343ffd32d4536f29bb3ff5b51902b6870",
       "last_checked": "2026-10-14",
-      "notes": "S01-S02 structural/text/render PASS with substitute font; S03-S06 TODO; full B01 QC pending."
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B01_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B01_COMPLETE_20261014.md"
     },
     {
       "batch_id": "B02",
       "first_slide": 7,
       "last_slide": 12,
-      "status": "TODO",
-      "pages_passed": 0,
-      "binary_storage": null,
-      "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pptx",
+        "library_file_id": "libfile_eb81210dacd08191a52ab59d867bcdb8"
+      },
+      "sha256": "bdea40b5c7f173dea2e0f0a117b27d825c02fa633753b45540a9e5310e382ebe",
+      "last_checked": "2026-10-14",
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B02_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B02_COMPLETE_20261014.md"
     },
     {
       "batch_id": "B03",
       "first_slide": 13,
       "last_slide": 18,
-      "status": "TODO",
-      "pages_passed": 0,
-      "binary_storage": null,
-      "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pptx",
+        "library_file_id": "libfile_5bcfd55035e081918ac2cdbddd952d5f"
+      },
+      "sha256": "bf3a3031b8004a5bf060ce3c76c46791f97de395b2d1ab16b1f140543820a5cc",
+      "last_checked": "2026-10-14",
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B03_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B03_COMPLETE_20261014.md"
     },
     {
       "batch_id": "B04",
       "first_slide": 19,
       "last_slide": 24,
-      "status": "TODO",
-      "pages_passed": 0,
-      "binary_storage": null,
-      "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pptx",
+        "library_file_id": "libfile_6c5a32e3a49c8191931e527d2fd80d11"
+      },
+      "sha256": "4ecc66479581f855b98f6f6c4d33ccb0f719391d959111bc18a93df557b0ae86",
+      "last_checked": "2026-10-14",
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B04_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B04_COMPLETE_20261014.md"
     },
     {
       "batch_id": "B05",
       "first_slide": 25,
       "last_slide": 30,
-      "status": "TODO",
-      "pages_passed": 0,
-      "binary_storage": null,
-      "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pptx",
+        "library_file_id": "libfile_af26d52885ec8191bca6b2606186b742"
+      },
+      "sha256": "b869de20c47d4d3bee574061e2459917b10f05e43416520c549a667d4f139e5e",
+      "last_checked": "2026-10-14",
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B05_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B05_COMPLETE_20261014.md"
     },
     {
       "batch_id": "B06",
       "first_slide": 31,
       "last_slide": 36,
-      "status": "TODO",
-      "pages_passed": 0,
-      "binary_storage": null,
-      "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pptx",
+        "library_file_id": "libfile_5251ea70916c819188378d24dcbeeab7"
+      },
+      "sha256": "7e5171d1fb31a3187129d9cd8c25d432c04163d352097f40977410617f0a4f44",
+      "last_checked": "2026-10-14",
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B06_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B06_COMPLETE_20261014.md"
     },
     {
       "batch_id": "B07",
       "first_slide": 37,
       "last_slide": 42,
-      "status": "TODO",
-      "pages_passed": 0,
-      "binary_storage": null,
-      "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pptx",
+        "library_file_id": "libfile_3c6152a6e124819194247fb4da8c18ea"
+      },
+      "sha256": "7e8539c4a90fcfd777a9572293072e9aa1515fc40f7994b0fbd2ecf3204d45c5",
+      "last_checked": "2026-10-14",
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B07_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B07_COMPLETE_20261014.md"
     },
     {
       "batch_id": "B08",
       "first_slide": 43,
       "last_slide": 48,
-      "status": "TODO",
-      "pages_passed": 0,
-      "binary_storage": null,
-      "sha256": null,
-      "last_checked": null,
-      "notes": null
+      "status": "PASS",
+      "pages_passed": 6,
+      "binary_storage": {
+        "provider": "ChatGPT Library",
+        "path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pptx",
+        "library_file_id": "libfile_1b478e85c5808191aed2f0f86cf38d32"
+      },
+      "sha256": "563e1c00877fb127c4698e57ed45242c86f85bf40416574f57e582558a8b6ba8",
+      "last_checked": "2026-10-14",
+      "notes": "Exact original content and 6-page PDF render checked. Non-blocking pending: actual GenShin font render and dense text typography, must resolve at P4.",
+      "pdf_storage": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pdf",
+      "preview_storage": "/SlideProjects/lecture03_48slides/step2/B08_contact_sheet.png",
+      "qc_log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md"
     }
   ],
   "pages": [
@@ -104,353 +160,673 @@
       "slide_id": "S01",
       "batch_id": "B01",
       "status": "PASS",
-      "qc": "PASS_WITH_FONT_RENDERING_CAVEAT",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
       "files": {
-        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_EDITABLE_checkpoint_v1.pptx",
-        "pptx_library_file_id": "libfile_fff9ab309748819188bf5e1b73469f53",
-        "pptx_sha256": "790f72795e9363be6ad22f3863f202920f2a1c741f71d9e027d1c947db781d8d",
-        "source_script": "docs/runs/lecture03_48slides/step2/scripts/B01_S01_S02_build_v1.py",
-        "qc_report": "docs/runs/lecture03_48slides/step2/qc/B01_S01_S02.json",
-        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_overview_v1.png",
-        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_checkpoint_v1.pdf"
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pptx",
+        "pptx_library_file_id": "libfile_7d41f8aa6408819190954323173c61ec",
+        "pptx_sha256": "d585dc6b3c5e4aa628891bb43133c13343ffd32d4536f29bb3ff5b51902b6870",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B01_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B01_COMPLETE_20261014.md"
       }
     },
     {
       "slide_id": "S02",
       "batch_id": "B01",
       "status": "PASS",
-      "qc": "PASS_WITH_FONT_RENDERING_CAVEAT",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
       "files": {
-        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_EDITABLE_checkpoint_v1.pptx",
-        "pptx_library_file_id": "libfile_fff9ab309748819188bf5e1b73469f53",
-        "pptx_sha256": "790f72795e9363be6ad22f3863f202920f2a1c741f71d9e027d1c947db781d8d",
-        "source_script": "docs/runs/lecture03_48slides/step2/scripts/B01_S01_S02_build_v1.py",
-        "qc_report": "docs/runs/lecture03_48slides/step2/qc/B01_S01_S02.json",
-        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_overview_v1.png",
-        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/S01-S02_checkpoint_v1.pdf"
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pptx",
+        "pptx_library_file_id": "libfile_7d41f8aa6408819190954323173c61ec",
+        "pptx_sha256": "d585dc6b3c5e4aa628891bb43133c13343ffd32d4536f29bb3ff5b51902b6870",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B01_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B01_COMPLETE_20261014.md"
       }
     },
     {
       "slide_id": "S03",
       "batch_id": "B01",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pptx",
+        "pptx_library_file_id": "libfile_7d41f8aa6408819190954323173c61ec",
+        "pptx_sha256": "d585dc6b3c5e4aa628891bb43133c13343ffd32d4536f29bb3ff5b51902b6870",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B01_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B01_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S04",
       "batch_id": "B01",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pptx",
+        "pptx_library_file_id": "libfile_7d41f8aa6408819190954323173c61ec",
+        "pptx_sha256": "d585dc6b3c5e4aa628891bb43133c13343ffd32d4536f29bb3ff5b51902b6870",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B01_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B01_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S05",
       "batch_id": "B01",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pptx",
+        "pptx_library_file_id": "libfile_7d41f8aa6408819190954323173c61ec",
+        "pptx_sha256": "d585dc6b3c5e4aa628891bb43133c13343ffd32d4536f29bb3ff5b51902b6870",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B01_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B01_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S06",
       "batch_id": "B01",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pptx",
+        "pptx_library_file_id": "libfile_7d41f8aa6408819190954323173c61ec",
+        "pptx_sha256": "d585dc6b3c5e4aa628891bb43133c13343ffd32d4536f29bb3ff5b51902b6870",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B01_S01-S06_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B01_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B01_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S07",
       "batch_id": "B02",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pptx",
+        "pptx_library_file_id": "libfile_eb81210dacd08191a52ab59d867bcdb8",
+        "pptx_sha256": "bdea40b5c7f173dea2e0f0a117b27d825c02fa633753b45540a9e5310e382ebe",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B02_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B02_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S08",
       "batch_id": "B02",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pptx",
+        "pptx_library_file_id": "libfile_eb81210dacd08191a52ab59d867bcdb8",
+        "pptx_sha256": "bdea40b5c7f173dea2e0f0a117b27d825c02fa633753b45540a9e5310e382ebe",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B02_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B02_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S09",
       "batch_id": "B02",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pptx",
+        "pptx_library_file_id": "libfile_eb81210dacd08191a52ab59d867bcdb8",
+        "pptx_sha256": "bdea40b5c7f173dea2e0f0a117b27d825c02fa633753b45540a9e5310e382ebe",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B02_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B02_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S10",
       "batch_id": "B02",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pptx",
+        "pptx_library_file_id": "libfile_eb81210dacd08191a52ab59d867bcdb8",
+        "pptx_sha256": "bdea40b5c7f173dea2e0f0a117b27d825c02fa633753b45540a9e5310e382ebe",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B02_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B02_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S11",
       "batch_id": "B02",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pptx",
+        "pptx_library_file_id": "libfile_eb81210dacd08191a52ab59d867bcdb8",
+        "pptx_sha256": "bdea40b5c7f173dea2e0f0a117b27d825c02fa633753b45540a9e5310e382ebe",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B02_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B02_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S12",
       "batch_id": "B02",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pptx",
+        "pptx_library_file_id": "libfile_eb81210dacd08191a52ab59d867bcdb8",
+        "pptx_sha256": "bdea40b5c7f173dea2e0f0a117b27d825c02fa633753b45540a9e5310e382ebe",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B02_S07-S12_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B02_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B02_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S13",
       "batch_id": "B03",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pptx",
+        "pptx_library_file_id": "libfile_5bcfd55035e081918ac2cdbddd952d5f",
+        "pptx_sha256": "bf3a3031b8004a5bf060ce3c76c46791f97de395b2d1ab16b1f140543820a5cc",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B03_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B03_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S14",
       "batch_id": "B03",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pptx",
+        "pptx_library_file_id": "libfile_5bcfd55035e081918ac2cdbddd952d5f",
+        "pptx_sha256": "bf3a3031b8004a5bf060ce3c76c46791f97de395b2d1ab16b1f140543820a5cc",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B03_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B03_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S15",
       "batch_id": "B03",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pptx",
+        "pptx_library_file_id": "libfile_5bcfd55035e081918ac2cdbddd952d5f",
+        "pptx_sha256": "bf3a3031b8004a5bf060ce3c76c46791f97de395b2d1ab16b1f140543820a5cc",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B03_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B03_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S16",
       "batch_id": "B03",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pptx",
+        "pptx_library_file_id": "libfile_5bcfd55035e081918ac2cdbddd952d5f",
+        "pptx_sha256": "bf3a3031b8004a5bf060ce3c76c46791f97de395b2d1ab16b1f140543820a5cc",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B03_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B03_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S17",
       "batch_id": "B03",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pptx",
+        "pptx_library_file_id": "libfile_5bcfd55035e081918ac2cdbddd952d5f",
+        "pptx_sha256": "bf3a3031b8004a5bf060ce3c76c46791f97de395b2d1ab16b1f140543820a5cc",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B03_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B03_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S18",
       "batch_id": "B03",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pptx",
+        "pptx_library_file_id": "libfile_5bcfd55035e081918ac2cdbddd952d5f",
+        "pptx_sha256": "bf3a3031b8004a5bf060ce3c76c46791f97de395b2d1ab16b1f140543820a5cc",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B03_S13-S18_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B03_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B03_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S19",
       "batch_id": "B04",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pptx",
+        "pptx_library_file_id": "libfile_6c5a32e3a49c8191931e527d2fd80d11",
+        "pptx_sha256": "4ecc66479581f855b98f6f6c4d33ccb0f719391d959111bc18a93df557b0ae86",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B04_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B04_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S20",
       "batch_id": "B04",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pptx",
+        "pptx_library_file_id": "libfile_6c5a32e3a49c8191931e527d2fd80d11",
+        "pptx_sha256": "4ecc66479581f855b98f6f6c4d33ccb0f719391d959111bc18a93df557b0ae86",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B04_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B04_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S21",
       "batch_id": "B04",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pptx",
+        "pptx_library_file_id": "libfile_6c5a32e3a49c8191931e527d2fd80d11",
+        "pptx_sha256": "4ecc66479581f855b98f6f6c4d33ccb0f719391d959111bc18a93df557b0ae86",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B04_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B04_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S22",
       "batch_id": "B04",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pptx",
+        "pptx_library_file_id": "libfile_6c5a32e3a49c8191931e527d2fd80d11",
+        "pptx_sha256": "4ecc66479581f855b98f6f6c4d33ccb0f719391d959111bc18a93df557b0ae86",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B04_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B04_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S23",
       "batch_id": "B04",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pptx",
+        "pptx_library_file_id": "libfile_6c5a32e3a49c8191931e527d2fd80d11",
+        "pptx_sha256": "4ecc66479581f855b98f6f6c4d33ccb0f719391d959111bc18a93df557b0ae86",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B04_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B04_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S24",
       "batch_id": "B04",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pptx",
+        "pptx_library_file_id": "libfile_6c5a32e3a49c8191931e527d2fd80d11",
+        "pptx_sha256": "4ecc66479581f855b98f6f6c4d33ccb0f719391d959111bc18a93df557b0ae86",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B04_S19-S24_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B04_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B04_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S25",
       "batch_id": "B05",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pptx",
+        "pptx_library_file_id": "libfile_af26d52885ec8191bca6b2606186b742",
+        "pptx_sha256": "b869de20c47d4d3bee574061e2459917b10f05e43416520c549a667d4f139e5e",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B05_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B05_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S26",
       "batch_id": "B05",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pptx",
+        "pptx_library_file_id": "libfile_af26d52885ec8191bca6b2606186b742",
+        "pptx_sha256": "b869de20c47d4d3bee574061e2459917b10f05e43416520c549a667d4f139e5e",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B05_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B05_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S27",
       "batch_id": "B05",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pptx",
+        "pptx_library_file_id": "libfile_af26d52885ec8191bca6b2606186b742",
+        "pptx_sha256": "b869de20c47d4d3bee574061e2459917b10f05e43416520c549a667d4f139e5e",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B05_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B05_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S28",
       "batch_id": "B05",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pptx",
+        "pptx_library_file_id": "libfile_af26d52885ec8191bca6b2606186b742",
+        "pptx_sha256": "b869de20c47d4d3bee574061e2459917b10f05e43416520c549a667d4f139e5e",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B05_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B05_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S29",
       "batch_id": "B05",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pptx",
+        "pptx_library_file_id": "libfile_af26d52885ec8191bca6b2606186b742",
+        "pptx_sha256": "b869de20c47d4d3bee574061e2459917b10f05e43416520c549a667d4f139e5e",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B05_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B05_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S30",
       "batch_id": "B05",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pptx",
+        "pptx_library_file_id": "libfile_af26d52885ec8191bca6b2606186b742",
+        "pptx_sha256": "b869de20c47d4d3bee574061e2459917b10f05e43416520c549a667d4f139e5e",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B05_S25-S30_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B05_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B05_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S31",
       "batch_id": "B06",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pptx",
+        "pptx_library_file_id": "libfile_5251ea70916c819188378d24dcbeeab7",
+        "pptx_sha256": "7e5171d1fb31a3187129d9cd8c25d432c04163d352097f40977410617f0a4f44",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B06_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B06_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S32",
       "batch_id": "B06",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pptx",
+        "pptx_library_file_id": "libfile_5251ea70916c819188378d24dcbeeab7",
+        "pptx_sha256": "7e5171d1fb31a3187129d9cd8c25d432c04163d352097f40977410617f0a4f44",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B06_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B06_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S33",
       "batch_id": "B06",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pptx",
+        "pptx_library_file_id": "libfile_5251ea70916c819188378d24dcbeeab7",
+        "pptx_sha256": "7e5171d1fb31a3187129d9cd8c25d432c04163d352097f40977410617f0a4f44",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B06_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B06_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S34",
       "batch_id": "B06",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pptx",
+        "pptx_library_file_id": "libfile_5251ea70916c819188378d24dcbeeab7",
+        "pptx_sha256": "7e5171d1fb31a3187129d9cd8c25d432c04163d352097f40977410617f0a4f44",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B06_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B06_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S35",
       "batch_id": "B06",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pptx",
+        "pptx_library_file_id": "libfile_5251ea70916c819188378d24dcbeeab7",
+        "pptx_sha256": "7e5171d1fb31a3187129d9cd8c25d432c04163d352097f40977410617f0a4f44",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B06_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B06_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S36",
       "batch_id": "B06",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pptx",
+        "pptx_library_file_id": "libfile_5251ea70916c819188378d24dcbeeab7",
+        "pptx_sha256": "7e5171d1fb31a3187129d9cd8c25d432c04163d352097f40977410617f0a4f44",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B06_S31-S36_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B06_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B06_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S37",
       "batch_id": "B07",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pptx",
+        "pptx_library_file_id": "libfile_3c6152a6e124819194247fb4da8c18ea",
+        "pptx_sha256": "7e8539c4a90fcfd777a9572293072e9aa1515fc40f7994b0fbd2ecf3204d45c5",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B07_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B07_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S38",
       "batch_id": "B07",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pptx",
+        "pptx_library_file_id": "libfile_3c6152a6e124819194247fb4da8c18ea",
+        "pptx_sha256": "7e8539c4a90fcfd777a9572293072e9aa1515fc40f7994b0fbd2ecf3204d45c5",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B07_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B07_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S39",
       "batch_id": "B07",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pptx",
+        "pptx_library_file_id": "libfile_3c6152a6e124819194247fb4da8c18ea",
+        "pptx_sha256": "7e8539c4a90fcfd777a9572293072e9aa1515fc40f7994b0fbd2ecf3204d45c5",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B07_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B07_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S40",
       "batch_id": "B07",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pptx",
+        "pptx_library_file_id": "libfile_3c6152a6e124819194247fb4da8c18ea",
+        "pptx_sha256": "7e8539c4a90fcfd777a9572293072e9aa1515fc40f7994b0fbd2ecf3204d45c5",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B07_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B07_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S41",
       "batch_id": "B07",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pptx",
+        "pptx_library_file_id": "libfile_3c6152a6e124819194247fb4da8c18ea",
+        "pptx_sha256": "7e8539c4a90fcfd777a9572293072e9aa1515fc40f7994b0fbd2ecf3204d45c5",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B07_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B07_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S42",
       "batch_id": "B07",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pptx",
+        "pptx_library_file_id": "libfile_3c6152a6e124819194247fb4da8c18ea",
+        "pptx_sha256": "7e8539c4a90fcfd777a9572293072e9aa1515fc40f7994b0fbd2ecf3204d45c5",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B07_S37-S42_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B07_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B07_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S43",
       "batch_id": "B08",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pptx",
+        "pptx_library_file_id": "libfile_1b478e85c5808191aed2f0f86cf38d32",
+        "pptx_sha256": "563e1c00877fb127c4698e57ed45242c86f85bf40416574f57e582558a8b6ba8",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B08_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S44",
       "batch_id": "B08",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pptx",
+        "pptx_library_file_id": "libfile_1b478e85c5808191aed2f0f86cf38d32",
+        "pptx_sha256": "563e1c00877fb127c4698e57ed45242c86f85bf40416574f57e582558a8b6ba8",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B08_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S45",
       "batch_id": "B08",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pptx",
+        "pptx_library_file_id": "libfile_1b478e85c5808191aed2f0f86cf38d32",
+        "pptx_sha256": "563e1c00877fb127c4698e57ed45242c86f85bf40416574f57e582558a8b6ba8",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B08_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S46",
       "batch_id": "B08",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pptx",
+        "pptx_library_file_id": "libfile_1b478e85c5808191aed2f0f86cf38d32",
+        "pptx_sha256": "563e1c00877fb127c4698e57ed45242c86f85bf40416574f57e582558a8b6ba8",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B08_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S47",
       "batch_id": "B08",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pptx",
+        "pptx_library_file_id": "libfile_1b478e85c5808191aed2f0f86cf38d32",
+        "pptx_sha256": "563e1c00877fb127c4698e57ed45242c86f85bf40416574f57e582558a8b6ba8",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B08_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md"
+      }
     },
     {
       "slide_id": "S48",
       "batch_id": "B08",
-      "status": "TODO",
-      "qc": null,
-      "files": null
+      "status": "PASS",
+      "qc": "SOURCE_CONTENT_AND_RENDER_PASS; FONT_SUBSTITUTION_AND_DENSE_TEXT_REVIEW_PENDING",
+      "files": {
+        "pptx_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pptx",
+        "pptx_library_file_id": "libfile_1b478e85c5808191aed2f0f86cf38d32",
+        "pptx_sha256": "563e1c00877fb127c4698e57ed45242c86f85bf40416574f57e582558a8b6ba8",
+        "pdf_library_path": "/SlideProjects/lecture03_48slides/step2/B08_S43-S48_step2.pdf",
+        "preview_library_path": "/SlideProjects/lecture03_48slides/step2/B08_contact_sheet.png",
+        "qc_log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md"
+      }
     }
   ],
   "recovery_draft": {
@@ -466,14 +842,33 @@
     "asset_slot_library_file_id": "libfile_d71c62b8e0308191a90ae6e1aaab125a",
     "reason": "Not rendered and all pages QC unverified; does not satisfy STEP2."
   },
-  "next_slide": "S03",
+  "next_slide": null,
   "last_checkpoint": {
     "slides": [
-      "S01",
-      "S02"
+      "S43",
+      "S44",
+      "S45",
+      "S46",
+      "S47",
+      "S48"
     ],
-    "log": "docs/runs/lecture03_48slides/step2/logs/B01_S01_S02_CHECKPOINT_20261014.md",
+    "log": "docs/runs/lecture03_48slides/step2/logs/B08_COMPLETE_20261014.md",
     "library_files_verified": true,
-    "stage_done": false
-  }
+    "stage_done": true
+  },
+  "completed_all_eight_batches": true,
+  "master_deck": {
+    "library_path": "/SlideProjects/lecture03_48slides/step2/lecture03_STEP2_48slides_editable_font_pending.pptx",
+    "library_file_id": "libfile_2b9368f4a9848191b0a1b2a34ce1fc00",
+    "sha256": "989a2a25a9469c8d3777289430ab415bd2d5f9636dbf0d969c10c7c1f0406506",
+    "page_count": 48,
+    "image_generated_count": 0
+  },
+  "completed_prompts": 15,
+  "step2_status": "P2_CONTENT_AND_LAYOUT_CONTRACT_COMPLETE_WITH_FONT_AND_DENSE_TEXT_CAVEATS",
+  "outstanding_before_final": [
+    "Specified GenShin Gothic P font is not installed for true render; current previews use substitute font",
+    "Some dense text uses sizes below design default; final visual review and remediation required",
+    "S34 check-digit source has internal calculation inconsistency; original preserved"
+  ]
 }
