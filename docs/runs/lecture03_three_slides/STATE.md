@@ -8,13 +8,13 @@
 | branch | minor |
 | mode | interactive_step |
 | status | READY |
-| phase | SLIDE35_PPTX_TABLE |
-| current_step | S35_BUILD |
-| last_completed | S17_INSERT |
+| phase | THREE_SLIDE_MERGE |
+| current_step | S3_MERGE_QC |
+| last_completed | S35_BUILD |
 | attempt | 0 |
-| last_log | docs/runs/lecture03_three_slides/logs/S17_INSERT_ATTEMPT01_PASS_20261013.md |
+| last_log | docs/runs/lecture03_three_slides/logs/S35_BUILD_ATTEMPT01_PASS_20261013.md |
 | blocking_reason | none |
-| output_manifest | S17 image + integrated PPTX + preview verified in ChatGPT only; GitHub logs S17_IMG/S17_INSERT; binary files not uploaded |
+| output_manifest | S11/S17/S35 individual PPTX and real previews available in ChatGPT only; GitHub text logs; binaries not uploaded |
 | final_delivery | not_started |
 
 ## 固定された対象と依存資料
@@ -30,9 +30,11 @@
 
 ## 最初の「次」で実行する内容
 
-**S35_BUILD：スライド35「入力チェック①：形式・範囲・存在」の編集可能な3列×7行の表を作り、実レンダリングまで完了する。** 手順は `docs/workflows/SLIDE35_PPTX_TABLE_v1.md` に従う。画像生成はしない。
+**S3_MERGE_QC：スライド11・17・35の3枚を編集可能なまま1冊のPPTXに統合・実レンダリングし、最終品質検査を行う。** 手順は `docs/workflows/SLIDES_11_17_35_MERGE_QC_v1.md` を参照。
 
 ## 実行ログ
+
+- S35_BUILD：PASS。スライド35の編集可能な3列×7行・21セル表を制作し、全セル原文一致とレンダリングによる文字切れ修正を確認。ログ：docs/runs/lecture03_three_slides/logs/S35_BUILD_ATTEMPT01_PASS_20261013.md。成果物はChatGPTで納品、GitHub未アップロード。次はS3_MERGE_QC。
 
 - S17_IMG：PASS。前回生成したMLOps独立循環図を単独評価し、画像サイズ・透過・工程方向を検査。ログ：docs/runs/lecture03_three_slides/logs/S17_IMG_ATTEMPT01_PASS_20261013.md。
 - S17_INSERT：PASS。先に作った編集可能なスライド17骨組みへ生成画像1点と編集可能な工程名を組込み、1600×1200実レンダリングと原稿照合済み。ログ：docs/runs/lecture03_three_slides/logs/S17_INSERT_ATTEMPT01_PASS_20261013.md。バイナリはChatGPTで納品、GitHub未アップロード。次はS35_BUILD。
@@ -49,6 +51,8 @@
 - E03着手前の指示書改訂：説明文短文化・補足省略規則を追加。E02は旧規格、E03以降は新規格であることを記録。次はE03（READYを維持）。
 
 ## 保存方針
+
+- **最新制作工程**：S3_MERGE_QC。3枚PPTXの統合・レンダリング・一括最終QC。参考 `docs/workflows/SLIDES_11_17_35_MERGE_QC_v1.md`。旧実験E03は未実施で保留。
 
 - **制作の現在工程**：S35_BUILD。参考手順：`docs/workflows/SLIDE35_PPTX_TABLE_v1.md`。A/B/C比較E03はユーザーの指示で保留したまま。
 
