@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "READY",
+  "status": "RUNNING",
   "required_assets": 15,
   "accepted_assets": 0,
   "blocked_assets": 1,
@@ -15,7 +15,7 @@
     {
       "asset_id": "S05-A-01",
       "slide_id": "S05",
-      "status": "READY",
+      "status": "RUNNING",
       "attempts": 3,
       "accepted_image": null,
       "sha256": null,
@@ -30,7 +30,7 @@
       "prompt_version": "v2",
       "attempts_current_version": 0,
       "max_attempts_current_version": 3,
-      "last_outcome": "PRIOR_V1_REJECTED_NEW_V2_PREPARED",
+      "last_outcome": "STARTED_V2_ATTEMPT_01_NO_GENERATION_YET",
       "legacy_chatgpt_v1_attempts": 3,
       "legacy_figma_v1_attempts": 1,
       "legacy_figma_rejected_library": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_Figma_REJECTED_uploaded_JPEG.jpg"
@@ -294,5 +294,15 @@
       "result": "PREPARED_NOT_RUN",
       "notes": "S05-A-01 prompt_v2.txt frozen; one asset per next; new prompt version gets new attempt budget; no new generation executed"
     }
-  ]
+  ],
+  "active_transaction": {
+    "id": "S05-A-01_v2_attempt_01_20261014",
+    "asset_id": "S05-A-01",
+    "prompt_version": "v2",
+    "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v2.txt",
+    "prompt_blob_sha": "50185e920465f2264b4a81652123cc19f8221084",
+    "attempt_number": 1,
+    "generation_complete": false,
+    "transport_verification": "CONTEXT_ONLY_UNVERIFIED"
+  }
 }
