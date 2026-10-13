@@ -6,7 +6,7 @@
 
 1. 当該講義の元原稿とユーザー指示（逐語指定、数字・専門用語・順序、重要な意味関係）。
 2. `design_system_general_final.md` v2.2（4:3既定、源真ゴシックPの各ウェイト、白・インディゴ、承認済みの大きな主図・余白、必要な補足まとめ文のみ18pt／#F3F4F6、Takeaway24pt）。
-3. `content_visual_policy_final.md` v2.7（主図の分類A/B/C、画像生成の意味契約と独立評価）。
+3. `content_visual_policy_final.md` v2.8（主図の分類A/B/C、画像生成の意味契約と独立評価）。
 4. `docs/workflows/LECTURE03_APPROVED_VISUAL_BASELINE_20261013.md`（第3回で承認された視覚構成）。汎用ルールと講義固有例を区別する。
 5. このワークフロー／`docs/workflows/CHATGPT_STEP_CONTROLLER_v2.md` ／`docs/IMAGE_GENERATION_STAGED_WORKFLOW_v2.md`（実行順と進捗）。
 
