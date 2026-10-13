@@ -9,12 +9,12 @@
 | mode | interactive_step |
 | status | READY |
 | phase | E |
-| current_step | E02 |
-| last_completed | E01 |
+| current_step | E03 |
+| last_completed | E02 |
 | attempt | 0 |
-| last_log | docs/runs/lecture03_three_slides/logs/E01_attempt01.md |
+| last_log | docs/runs/lecture03_three_slides/logs/E02_attempt01.md |
 | blocking_reason | none |
-| output_manifest | E01: docs/runs/lecture03_three_slides/logs/E01_attempt01.md; PNG in chat only (not on GitHub) |
+| output_manifest | E01 independent PNG and E02 PPTX/render available in ChatGPT; GitHub text logs E01/E02, binaries not uploaded |
 | final_delivery | not_started |
 
 ## 固定された対象と依存資料
@@ -30,12 +30,13 @@
 
 ## 最初の「次」で実行する内容
 
-**E02：方式A・画像をPPTXへ組み込む。** E01の合格した独立イラストだけを中央枠に挿入し、その他の画像枠は空欄のまま、原文保持・編集可能性・実レンダリングを検査する。
+**E03：方式B・PPTX骨組み先行。** 同一のスライド11原文で画像枠が空白の編集可能な骨組みPPTXを新しく作成・実レンダリングし、中央枠の寸法と縦横比を記録する。
 
 ## 実行ログ
 
 - E00：PASS。規格・原文・比較条件を確認し、E00_attempt01.mdをGitHubに保存。画像・PPTXは未生成。
-- E01：PASS。スクラムマスターの新規独立透過PNGを検査。PNGバイナリはChatGPT内のみでGitHub未保存。次はE02。
+- E01：PASS。スクラムマスターの新規独立透過PNGを検査。PNGバイナリはChatGPT内のみでGitHub未保存。
+- E02：PASS。独立イラストを挿入した部分スライドPPTXの原文一致・編集可能性・実レンダリングを確認。PPTXとプレビューはChatGPTで納品、GitHubへバイナリ未保存。次はE03。
 
 ## 保存方針
 
