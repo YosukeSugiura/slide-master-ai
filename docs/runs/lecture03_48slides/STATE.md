@@ -13,24 +13,32 @@
 | current_step | P3_IMAGE_ASSETS |
 | last_completed | P2_PPTX_SKELETON (content and geometry PASS; final font/dense typography gate deferred explicitly to P4) |
 | attempts | P1:1; P2:2 (initial interrupted; recovered and finished 8 batches) |
-| last_log | docs/runs/lecture03_48slides/step3/CONTROLLER_MIGRATION_20261014.md |
-| blocking_reason | none for revised S05-A-01 v2 run (new image not yet generated); all previous failures preserved; prompt transport may be unobservable and must be logged |
+| last_log | docs/runs/lecture03_48slides/step3/P3_LABEL_POLICY_CHANGE_20261014.md |
+| blocking_reason | none for revised S05-A-01 v3; two v2 generations preserved as candidate + rejected; no image PASS yet |
 | specification | docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md |
 | controller | docs/workflows/CHATGPT_STEP_CONTROLLER_v2.md |
 | image_procedure | docs/IMAGE_GENERATION_STAGED_WORKFLOW_v2.md |
 | outputs | P2 B01-B08 48-page editable PPTX skeleton and all 15 P3 prompts completed; durable binaries in Library, scripts/QA/prompts/GitHub manifests on minor |
 | approved_baseline | docs/workflows/LECTURE03_APPROVED_VISUAL_BASELINE_20261013.md |
 
+## 2026-10-14 ユーザー指定：画像内の短い文字を許可（最新の優先規則）
+
+**「文字がはいっててもいいよ！わかりやすいんだもん」**を受け、意味のわかる短い日本語ラベルを許可。4段階を説明する独立図には「試作」「評価」「改善」「再試作」などのラベルを大きく描いてよい。誤字/不自然な文字・投影時読めない小字・スライド全体を画像化することは引き続き禁止。A/Bの全15個のプロンプトを新版（**S05 v3、それ以外v2**）でGitHub固定。新しい `次` 1回＝1画像IDの制御は変更しない。
+
+S05 v2の生成画像2件の実績：**1件目は4段階ラベルが分かりやすい候補（最終投影可読性未検査）、2件目は誤字・重複・スライドタイトル混入でFAIL**。両方とも実PNGをLibraryに保存済み。元のChatGPT v1の失敗3回/Figma v1の失敗1回も保持。**採用数は0/15、最新v3画像は未生成**。詳細 `docs/runs/lecture03_48slides/step3/P3_LABEL_POLICY_CHANGE_20261014.md`。
+
+**次回の「次」：** `S05-A-01`、`docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt` のみ実行。生成時は短い正確なラベルを許可し、実PNG/透明画素/QC/永続保存に合格するまでキューを進めない。
+
 ## 現行の「次」の実行指示（2026-10-14以降）
 
 **「次」1回＝P3の画像IDを1件だけ実行**。ChatGPTが素材を自分で決めたり、15点を一括で生成しない。まず最新の `docs/workflows/NEXT_COMMAND_CONTROLLER_v1.md`、`docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json`、`docs/workflows/PHASE_P3_IMAGE_ASSETS_RUNBOOK_v1.md` を取得し、`next_prompt_file`に書かれた1件の本文のみを画像生成の指示にする。
 
 - current_step: `P3_IMAGE_ASSETS`（変更なし）
-- current P3 status: `READY`（新しいプロンプト版v2を用意して再開可能になったことを意味し、**画像の品質がPASSしたことは意味しない**）
+- current P3 status: `READY`（新しいプロンプト版v3を用意して再開可能になったことを意味し、**画像の品質がPASSしたことは意味しない**）
 - next_action: `GENERATE_ONE_ASSET`、next_asset_id: `S05-A-01`
-- next_prompt_file: `docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v2.txt`
-- status queue: 15件すべて未合格、S05のみ新v2でREADY、その他14件TODO。
-- **旧ChatGPT v1の不合格3画像／Figma v1の透過・意味不合格1画像は引き続き不採用**。旧失敗のカウントは消さず、改訂v2の試行数0から開始。2画像目は**次のユーザー「次」**まで実行しない。
+- next_prompt_file: `docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt`
+- status queue: 15件すべて未合格、S05はラベル許可版v3でREADY、その他14件は改訂v2でTODO。
+- **旧ChatGPT v1不合格3件／Figma v1不合格1件／S05 ChatGPT v2試行2件（候補1・FAIL1）を履歴保持**。v3の試行数は0。2画像目は次のユーザー「次」まで実行しない。
 - 実際の画像は**まだ生成されていない**。PNG/真のアルファ/RGBA・意味QC/実ファイル保存とSHAを通過した場合のみ該当画像をPASSにする。Figma等の課金を伴う他サービスへ無断切替しない。
 - GitHubの機械的な唯一の進行ポインタは `step3/EXECUTION_STATE.json`、個別の実施証跡は `step3/P3_asset_progress.json`。本 `STATE.md` は人間向けサマリー。
 
@@ -79,3 +87,9 @@
 - Figma generate_imageへGitHub確定プロンプトを明示送信し、S05-A-01を1536×1024のPNGとして生成成功（クレジット消費）。ただしPNG本体の取得が現在の作業環境で失敗し、品質QCと永続保存は未実施。
 - **採用0点のまま、P3はBLOCKED**。Figma画像の外部URLは7日で失効するため、手動ダウンロード・チャット添付、あるいは利用可能なアプリ経由の画像取得を確認してから再開する。
 - 詳細：`docs/runs/lecture03_48slides/step3/P3_FIGMA_PILOT_20261014.md`。過去3回の不適切な生成報告画像は不採用のまま。
+
+## 2026-10-14短ラベル許可の更新（監査）
+
+- 実際に生成されたv2画像2点は原本を保存し、候補1／不合格1と判定。新たに画像を生成せず、生成指示とQC基準だけを修正した。
+- `S05-A-01_prompt_v3.txt` および残り14点の `prompt_v2.txt` を現在の正本とした。
+- `EXECUTION_STATE.json` による次のIDはS05-A-01を維持。画像採用数0/15。
