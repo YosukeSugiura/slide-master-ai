@@ -1,0 +1,453 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lecture03_48slides",
+  "current_step": "P2_PPTX_SKELETON",
+  "batch_size": 6,
+  "batch_count": 8,
+  "last_completed_batch": null,
+  "next_batch": "B01",
+  "quality_gates": "docs/workflows/STEP2_BATCH_CHECKPOINT_v1.md",
+  "source_ref": "docs/lecture03_48_slide_contents.md",
+  "source_git_blob_sha": "1159133fcf547c8ca976fbc94b04722a6ff81adf",
+  "batches": [
+    {
+      "batch_id": "B01",
+      "first_slide": 1,
+      "last_slide": 6,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    },
+    {
+      "batch_id": "B02",
+      "first_slide": 7,
+      "last_slide": 12,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    },
+    {
+      "batch_id": "B03",
+      "first_slide": 13,
+      "last_slide": 18,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    },
+    {
+      "batch_id": "B04",
+      "first_slide": 19,
+      "last_slide": 24,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    },
+    {
+      "batch_id": "B05",
+      "first_slide": 25,
+      "last_slide": 30,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    },
+    {
+      "batch_id": "B06",
+      "first_slide": 31,
+      "last_slide": 36,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    },
+    {
+      "batch_id": "B07",
+      "first_slide": 37,
+      "last_slide": 42,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    },
+    {
+      "batch_id": "B08",
+      "first_slide": 43,
+      "last_slide": 48,
+      "status": "TODO",
+      "pages_passed": 0,
+      "binary_storage": null,
+      "sha256": null,
+      "last_checked": null,
+      "notes": null
+    }
+  ],
+  "pages": [
+    {
+      "slide_id": "S01",
+      "batch_id": "B01",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S02",
+      "batch_id": "B01",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S03",
+      "batch_id": "B01",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S04",
+      "batch_id": "B01",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S05",
+      "batch_id": "B01",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S06",
+      "batch_id": "B01",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S07",
+      "batch_id": "B02",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S08",
+      "batch_id": "B02",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S09",
+      "batch_id": "B02",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S10",
+      "batch_id": "B02",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S11",
+      "batch_id": "B02",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S12",
+      "batch_id": "B02",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S13",
+      "batch_id": "B03",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S14",
+      "batch_id": "B03",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S15",
+      "batch_id": "B03",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S16",
+      "batch_id": "B03",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S17",
+      "batch_id": "B03",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S18",
+      "batch_id": "B03",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S19",
+      "batch_id": "B04",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S20",
+      "batch_id": "B04",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S21",
+      "batch_id": "B04",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S22",
+      "batch_id": "B04",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S23",
+      "batch_id": "B04",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S24",
+      "batch_id": "B04",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S25",
+      "batch_id": "B05",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S26",
+      "batch_id": "B05",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S27",
+      "batch_id": "B05",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S28",
+      "batch_id": "B05",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S29",
+      "batch_id": "B05",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S30",
+      "batch_id": "B05",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S31",
+      "batch_id": "B06",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S32",
+      "batch_id": "B06",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S33",
+      "batch_id": "B06",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S34",
+      "batch_id": "B06",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S35",
+      "batch_id": "B06",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S36",
+      "batch_id": "B06",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S37",
+      "batch_id": "B07",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S38",
+      "batch_id": "B07",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S39",
+      "batch_id": "B07",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S40",
+      "batch_id": "B07",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S41",
+      "batch_id": "B07",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S42",
+      "batch_id": "B07",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S43",
+      "batch_id": "B08",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S44",
+      "batch_id": "B08",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S45",
+      "batch_id": "B08",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S46",
+      "batch_id": "B08",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S47",
+      "batch_id": "B08",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    },
+    {
+      "slide_id": "S48",
+      "batch_id": "B08",
+      "status": "TODO",
+      "qc": null,
+      "files": null
+    }
+  ],
+  "recovery_draft": {
+    "status": "DRAFT_UNVALIDATED",
+    "source": "previous interrupted STEP2",
+    "slides": 48,
+    "placeholder_count": 15,
+    "sha256": "722061a23a485ade68ce370d4be38bec603ec3dd4a8d2b9f1d4b3badf138c08a",
+    "bytes": 125283,
+    "library_path": "/SlideProjects/lecture03_48slides/step2/48pages_UNVALIDATED_recovery_draft.pptx",
+    "library_file_id": "libfile_3885bc0e9da08191b9f83c7d25f8160e",
+    "asset_slot_library_path": "/SlideProjects/lecture03_48slides/step2/asset_slots_UNVALIDATED_draft.json",
+    "asset_slot_library_file_id": "libfile_d71c62b8e0308191a90ae6e1aaab125a",
+    "reason": "Not rendered and all pages QC unverified; does not satisfy STEP2."
+  }
+}
