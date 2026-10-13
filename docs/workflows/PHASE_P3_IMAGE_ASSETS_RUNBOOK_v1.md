@@ -14,8 +14,9 @@
 
 1. 実行前に`EXECUTION_STATE.json`の `next_asset_id`、`next_prompt_file`、`next_prompt_blob_sha`、`prompt_version`、`max_attempts_for_current_version`を読み、対象ID1点のみについて生成。
 2. 生成器に渡す意図は**P3プロンプト本文だけ**。GitHub進捗・チャット履歴・ログ・別素材・完了報告の語句を付加しない。**現在のChatGPT画像生成ツールでは明示promptフィールドがない場合、その送信内容の完全なバイト一致は立証できない**ため、`prompt_transport=CONTEXT_ONLY_UNVERIFIED`と記録。
-3. 生成結果が予想外のテーマや「STEP完了画像」だったら、内容を読み解かず**即FAIL**。再試行する場合は同じ素材IDのvN指示だけで行い、制限回数の範囲内。
-4. モデル呼び出しや保存手段が利用不能なときは`BLOCKED`で停止し、何枚生成したかを偽らない。
+3. ChatGPT画像生成ツールが`transparent_background`指定を提供する場合は**trueにする**。ツールが透過を宣言していても画像本体のalpha検査は省略しない。
+4. 生成結果が予想外のテーマや「STEP完了画像」だったら、内容を読み解かず**即FAIL**。再試行する場合は同じ素材IDのvN指示だけで行い、制限回数の範囲内。
+5. モデル呼び出しや保存手段が利用不能なときは`BLOCKED`で停止し、何枚生成したかを偽らない。
 
 ## 3. 画像単体の検査ゲート（1つでも必須条件にFAILなら不採用）
 
