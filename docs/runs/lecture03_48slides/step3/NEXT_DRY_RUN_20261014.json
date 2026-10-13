@@ -1,0 +1,17 @@
+{
+  "tested_at": "2026-10-14",
+  "requested_command": "次",
+  "dry_run_only": true,
+  "expected_action": "GENERATE_ONE_ASSET",
+  "expected_asset": "S05-A-01",
+  "expected_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v2.txt",
+  "expected_prompt_blob_sha": "50185e920465f2264b4a81652123cc19f8221084",
+  "expected_new_attempts": 0,
+  "current_accepted": 0,
+  "queue_count": 15,
+  "files_verified": 15,
+  "all_invariants_pass": true,
+  "actual_image_generation_executed": false,
+  "actual_image_generation_verified": false,
+  "noted_limit": "ChatGPT image tool prompt transport is context based; cannot certify exact bytes reached generator; actual image QC required"
+}
