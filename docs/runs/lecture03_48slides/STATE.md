@@ -9,29 +9,27 @@
 | run_id | lecture03_48slides |
 | target | 情報システム論 第3回「ソフトウェア開発」元48枚版（53枚版は対象外） |
 | mode | four_phase_standard |
-| status | READY |
+| status | BLOCKED |
 | current_step | P3_IMAGE_ASSETS |
 | last_completed | P2_PPTX_SKELETON (content and geometry PASS; final font/dense typography gate deferred explicitly to P4) |
 | attempts | P1:1; P2:2 (initial interrupted; recovered and finished 8 batches) |
-| last_log | docs/runs/lecture03_48slides/step2/P2_COMPLETION_REPORT_20261014.md |
-| blocking_reason | none for P3; outstanding before P4: exact font rendering + dense text readability + source S34 calculation inconsistency |
+| last_log | docs/runs/lecture03_48slides/step3/P3_GENERATION_FAILURE_20261014.md |
+| blocking_reason | image generator produced off-target fabricated STEP3 completion slides on all 3 S05-A-01 attempts; no accepted image; exact per-asset prompt forwarding unavailable |
 | specification | docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md |
 | controller | docs/workflows/CHATGPT_STEP_CONTROLLER_v2.md |
 | image_procedure | docs/IMAGE_GENERATION_STAGED_WORKFLOW_v2.md |
 | outputs | P2 B01-B08 48-page editable PPTX skeleton and all 15 P3 prompts completed; durable binaries in Library, scripts/QA/prompts/GitHub manifests on minor |
 | approved_baseline | docs/workflows/LECTURE03_APPROVED_VISUAL_BASELINE_20261013.md |
 
-## 次の「次」で実行する内容
+## P3実行結果と再開条件（2026-10-14）
 
-**P3_IMAGE_ASSETS**。GitHub `docs/runs/lecture03_48slides/step2/image_prompts/P2_image_prompts_manifest.json` および同ディレクトリの個別プロンプト15件に基づき、**独立した画像素材だけ**を順次生成・意味契約と図単体の画風・矢印を評価する。生成1点ごとに実素材・SHA・結果を永続保存して進捗へ記録。**この段階ではPPTXを作成・編集しない。**
+**STEP3は BLOCKED のまま**（要求15画像のうち採用0、S05-A-01で不適合画像3回、残り14点は未着手）。画像生成器が対象単独のプロンプトを受け付けず、「STEP3 15/15 PASS」と虚偽表示する完成報告画像を繰り返し返した。これらを採用しない。**P4へ移行しない。**
 
-### P2の継続記録と未解決事項
-
-- **B01–B08全完了**、48枚編集可能PPTXのPDFレンダリング、元568要素照合で欠落0、15画像枠・15プロンプト確定。各バッチPPTX/PDF/PNG、統合48枚PPTX/PDFはLibrary `/SlideProjects/lecture03_48slides/step2/` に保存。
-- 完了報告：`docs/runs/lecture03_48slides/step2/P2_COMPLETION_REPORT_20261014.md`。バイナリSHA：`989a2a25a9469c8d3777289430ab415bd2d5f9636dbf0d969c10c7c1f0406506`。
-- **P2の構造・意味・全ページレンダリングはPASS**。ただし実フォントが未インストールのため源真ゴシックPで描画したという判定は未実施。設計基準より小さい文字も39オブジェクト検出。最終P4で再設計・指定書体検査を要求し、解決不能なら**P4 DONEを禁止**する。
-- 元原稿S34のチェックディジットの内部不整合は未修正・別途確認事項。原文を勝手に変えない。
-- 初回の48ページ草稿は未検証として保存したまま。P2の正本は上記SHAの `lecture03_STEP2_48slides_editable_font_pending.pptx` に差替え済み。
+- QCと再開記録：`docs/runs/lecture03_48slides/step3/P3_GENERATION_FAILURE_20261014.md`、`docs/runs/lecture03_48slides/step3/P3_asset_progress.json`。
+- 不合格画像の実体（3点）と詳細な試行JSONはLibrary `/SlideProjects/lecture03_48slides/step3/` に保存済み。
+- 再開には**素材IDごとの確定プロンプトを画像生成エンジンへ確実に渡せる経路**の確立が必要。現状の「次」だけで反復生成すると同種の画像を再生産してしまう可能性があり禁止。ユーザーの方針確認も必要。
+- **STEP2の48枚PPTXや15個の画像プロンプトは保全済み。** P3中にPPTXを作成・編集していない。
+- フォント、本文サイズ、S34の計算説明の留保は引き続きP4未解決事項。
 
 ## 内部進捗・監査
 
@@ -58,3 +56,7 @@
 - 制作完了：B01～B08／48枚、画像枠15、独立画像プロンプト15、全ページPDFレンダリング。QC原文要素568／欠落0。保存先とSHAは `docs/runs/lecture03_48slides/step2/P2_delivery_manifest.json`。
 - 未解決のタイポグラフィ・源真ゴシックP実レンダリング・S34原文問題はP4での最終品質ゲートまで追跡する。P3で画像のみ先行することは可能だが、それらの課題をPASSしたと扱わない。
 - 次のユーザー「次」：P3で15画像を1点ずつ生成する。PPTX編集は行わない。
+
+## 2026-10-14 STEP3不合格の実行ログ
+
+- S05-A-01 のみ3回試行し、毎回「STEP3完了」を偽装する複数図コラージュで不合格。残14素材の生成は未着手。0/15のため P3_IMAGE_ASSETSから進行せず、`status=BLOCKED`。
