@@ -1,0 +1,41 @@
+{
+  "asset_id": "S05-A-01",
+  "source_prompt_version": "v2",
+  "generation_tool": "ChatGPT imagegen",
+  "transport_verified": false,
+  "attempts": [
+    {
+      "number": 1,
+      "status": "CANDIDATE_QC_PENDING",
+      "reason": "Four correct, clockwise stages with clear Japanese labels and meaningful arrows; genuine transparency; too much small supporting text in 5.49 inch slide frame; re-evaluate under updated short-label policy.",
+      "png_size": [
+        1536,
+        1024
+      ],
+      "color_mode": "RGBA",
+      "transparent_zero_fraction": 0.44305,
+      "sha256": "6b19b07beb473598131881556ae548a46011f79eb60c6770ace2eb95eb1ecc7e",
+      "bytes": 1657299,
+      "library_path": "/SlideProjects/lecture03_48slides/step3/candidates/S05-A-01_v2_attempt1_REVIEW.png",
+      "library_file_id": "libfile_9d85b2f3b2348191bb1685439b5493c1"
+    },
+    {
+      "number": 2,
+      "status": "FAIL",
+      "reason": "Repeated stages/people, malformed Japanese in lower captions and on-image slide title/asset ID, extra decorations; text allowance does not validate these mistakes.",
+      "png_size": [
+        1536,
+        1024
+      ],
+      "color_mode": "RGBA",
+      "transparent_zero_fraction": 0.66933,
+      "sha256": "74ab30871d77b54925c107a86414e13d93178a25371c88824b440e69f94ebea2",
+      "bytes": 2551311,
+      "library_path": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_v2_attempt2_REJECTED.png",
+      "library_file_id": "libfile_2d29716023a081918d0f3cd6fed3bec6"
+    }
+  ],
+  "accepted_count": 0,
+  "user_text_policy": "Allow clear, exact, readable short Japanese stage labels; reject illegibility/typos/fake text, not text per se.",
+  "revision": "S05 v3 prompts and remaining 14 v2 prompts authored on GitHub; no image generated under revised prompts yet."
+}
