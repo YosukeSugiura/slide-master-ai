@@ -1,5 +1,7 @@
 # S3_EXTENSION_PLAN — 元48枚版への制作計画
 
+> **アーカイブ：新規制作には適用しない。** 旧S3_EXTENSION_PLANの記録。正式な第3回48枚版は `docs/runs/lecture03_48slides/STATE.md` のP1_SPECから開始。
+
 開始条件: GitHub minor のSTATE.mdが S3_EXTENSION_PLAN / READY であり、ユーザーが次と入力する。
 
 1. GitHubにある元48枚版 lecture03_48_slide_contents.md を取得する。未取得の資料を推測して補完しない。
