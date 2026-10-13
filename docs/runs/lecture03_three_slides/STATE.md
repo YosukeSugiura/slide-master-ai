@@ -8,13 +8,13 @@
 | branch | minor |
 | mode | interactive_step |
 | status | READY |
-| phase | S17_PPTX_FIRST |
-| current_step | S17_IMG |
-| last_completed | S17_SKELETON |
+| phase | SLIDE35_PPTX_TABLE |
+| current_step | S35_BUILD |
+| last_completed | S17_INSERT |
 | attempt | 0 |
-| last_log | docs/runs/lecture03_three_slides/logs/S17_SKELETON_PPTX_FIRST_20261013.md |
+| last_log | docs/runs/lecture03_three_slides/logs/S17_INSERT_ATTEMPT01_PASS_20261013.md |
 | blocking_reason | none |
-| output_manifest | S17 skeleton PPTX/preview in ChatGPT only; P07 visual ungenerated; older E01/E02 artifacts also ChatGPT only |
+| output_manifest | S17 image + integrated PPTX + preview verified in ChatGPT only; GitHub logs S17_IMG/S17_INSERT; binary files not uploaded |
 | final_delivery | not_started |
 
 ## 固定された対象と依存資料
@@ -30,9 +30,12 @@
 
 ## 最初の「次」で実行する内容
 
-**S17_IMG：スライド17の横長挿入枠に入れるMLOps循環の独立AI主図1点を生成・評価する。** 手順とサイズは `docs/workflows/SLIDE17_PPTX_FIRST_v1.md` に従う。合格した画像のPPTX組込みは後続の `S17_INSERT`。
+**S35_BUILD：スライド35「入力チェック①：形式・範囲・存在」の編集可能な3列×7行の表を作り、実レンダリングまで完了する。** 手順は `docs/workflows/SLIDE35_PPTX_TABLE_v1.md` に従う。画像生成はしない。
 
 ## 実行ログ
+
+- S17_IMG：PASS。前回生成したMLOps独立循環図を単独評価し、画像サイズ・透過・工程方向を検査。ログ：docs/runs/lecture03_three_slides/logs/S17_IMG_ATTEMPT01_PASS_20261013.md。
+- S17_INSERT：PASS。先に作った編集可能なスライド17骨組みへ生成画像1点と編集可能な工程名を組込み、1600×1200実レンダリングと原稿照合済み。ログ：docs/runs/lecture03_three_slides/logs/S17_INSERT_ATTEMPT01_PASS_20261013.md。バイナリはChatGPTで納品、GitHub未アップロード。次はS35_BUILD。
 
 - S17_SKELETON：PASS。ユーザーの『まずPPTXから』という指示に従いPPTX骨組みと実プレビューを作成。バイナリはChatGPT内のみ。E03比較実験は中断状態で保存し、今後の『次』はS17_IMGとして扱う。ログ：docs/runs/lecture03_three_slides/logs/S17_SKELETON_PPTX_FIRST_20261013.md。
 
@@ -46,6 +49,8 @@
 - E03着手前の指示書改訂：説明文短文化・補足省略規則を追加。E02は旧規格、E03以降は新規格であることを記録。次はE03（READYを維持）。
 
 ## 保存方針
+
+- **制作の現在工程**：S35_BUILD。参考手順：`docs/workflows/SLIDE35_PPTX_TABLE_v1.md`。A/B/C比較E03はユーザーの指示で保留したまま。
 
 - **作業対象変更**：E03（旧比較実験）は未実施のまま保留。ユーザーの明示的な指示により、スライド17の『PPTX骨組み→AI主図→挿入』ルートを優先している。`docs/workflows/SLIDE17_PPTX_FIRST_v1.md` を参照。
 
