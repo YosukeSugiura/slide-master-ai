@@ -23,8 +23,8 @@
 - 操作ルール：docs/workflows/CHATGPT_STEP_CONTROLLER_v1.md
 - 実行計画：docs/workflows/LECTURE03_ABC_AND_3SLIDES_v1.md
 - 元原稿：docs/lecture03_48_selected_3_contents.md — スライド11、17、35。原文変更禁止。
-- 視覚規格：content_visual_policy_final.md — 対話型ステップ実行モード対応版。
-- 共通デザイン：design_system_general_final.md v2.1（説明文短文化、補足省略の新規則）。
+- 視覚規格：content_visual_policy_final.md v2.7 — 対話型ステップ実行モード・補足文重複判定対応版。
+- 共通デザイン：design_system_general_final.md v2.2（補足まとめ文の18pt・薄灰色・重複回避を含む）。
 - 手動・自動モード規定：docs/IMAGE_GENERATION_STAGED_WORKFLOW_v1.md。
 - 画像素材の新規生成：まだ実施していない。過去の会話にある既存画像をこの実験の新規生成成果と混同しない。
 
@@ -33,6 +33,8 @@
 **S3_EXTENSION_PLAN**：元48枚版原稿の全スライドを調べ、独立画像の素材一覧・分類A/B/C・PPTX先行の製作計画を作成する。48枚のPPTX実制作はしない。手順は docs/workflows/LECTURE03_48_EXPANSION_PLAN_v1.md を参照。
 
 ## 実行ログ
+
+- 2026-10-13：ユーザーの明示的な追加指示に従い、**補足まとめ文が必要な場合は18pt基準・ごく薄いグレー背景（#F3F4F6）、Takeaway等と重複する場合は原則省略**を正式規格へ反映。デザイン定義v2.2／視覚方針v2.7／承認済みベースラインを更新。**既存PPTXの再制作は今回していない**。S3_EXTENSION_PLANの進捗は維持。
 
 - 2026-10-13：**ユーザーがスライド11・17・35の再設計版を正式に採用**。以後48枚版のレイアウト基準は `docs/workflows/LECTURE03_APPROVED_VISUAL_BASELINE_20261013.md`。源真ゴシックPの実導入は保留。現在工程 `S3_EXTENSION_PLAN` は変更しない。
 
