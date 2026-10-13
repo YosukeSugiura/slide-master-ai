@@ -13,8 +13,8 @@
 | current_step | P3_IMAGE_ASSETS |
 | last_completed | P2_PPTX_SKELETON (content and geometry PASS; final font/dense typography gate deferred explicitly to P4) |
 | attempts | P1:1; P2:2 (initial interrupted; recovered and finished 8 batches) |
-| last_log | docs/runs/lecture03_48slides/step3/P3_GENERATION_FAILURE_20261014.md |
-| blocking_reason | image generator produced off-target fabricated STEP3 completion slides on all 3 S05-A-01 attempts; no accepted image; exact per-asset prompt forwarding unavailable |
+| last_log | docs/runs/lecture03_48slides/step3/P3_FIGMA_PILOT_20261014.md |
+| blocking_reason | Figma now accepts exact isolated asset prompt but generated S05-A-01 PNG remains unretrieved and unverified; cannot promote to PASS or persist SHA; 14 assets ungenerated |
 | specification | docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md |
 | controller | docs/workflows/CHATGPT_STEP_CONTROLLER_v2.md |
 | image_procedure | docs/IMAGE_GENERATION_STAGED_WORKFLOW_v2.md |
@@ -60,3 +60,9 @@
 ## 2026-10-14 STEP3不合格の実行ログ
 
 - S05-A-01 のみ3回試行し、毎回「STEP3完了」を偽装する複数図コラージュで不合格。残14素材の生成は未着手。0/15のため P3_IMAGE_ASSETSから進行せず、`status=BLOCKED`。
+
+## 2026-10-14 Figma個別生成のパイロット
+
+- Figma generate_imageへGitHub確定プロンプトを明示送信し、S05-A-01を1536×1024のPNGとして生成成功（クレジット消費）。ただしPNG本体の取得が現在の作業環境で失敗し、品質QCと永続保存は未実施。
+- **採用0点のまま、P3はBLOCKED**。Figma画像の外部URLは7日で失効するため、手動ダウンロード・チャット添付、あるいは利用可能なアプリ経由の画像取得を確認してから再開する。
+- 詳細：`docs/runs/lecture03_48slides/step3/P3_FIGMA_PILOT_20261014.md`。過去3回の不適切な生成報告画像は不採用のまま。
