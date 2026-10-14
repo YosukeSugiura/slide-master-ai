@@ -84,10 +84,10 @@
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
       "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
       "status": "BLOCKED",
-      "attempts_current_version": 3,
+      "attempts_current_version": 4,
       "accepted_image_sha256": null,
       "accepted_storage": null,
-      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json"
     },
     {
       "order": 4,
@@ -246,15 +246,16 @@
       "accepted_storage": null
     }
   ],
-  "blocked_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged.",
+  "blocked_reason": "v2 manual extra attempt4 (explicit user request beyond max3) failed: wrong subject, zero true transparent pixels, 3D and text; prompt unchanged. Create a substantively revised and frozen prompt v3 before resuming.",
   "last_transition": {
-    "event": "S06_B02_ATTEMPT3_QC_FAIL",
+    "event": "S06_B02_USER_REQUESTED_EXTRA_ATTEMPT4_QC_FAIL",
     "date": "2026-10-14",
     "result": "BLOCKED_NOT_ADVANCED",
     "next_asset_id": "S06-B-02",
     "accepted_count": 2,
-    "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
+    "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json",
+    "manual_override": true
   },
-  "blocking_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged.",
+  "blocking_reason": "v2 manual extra attempt4 (explicit user request beyond max3) failed: wrong subject, zero true transparent pixels, 3D and text; prompt unchanged. Create a substantively revised and frozen prompt v3 before resuming.",
   "active_transaction": null
 }
