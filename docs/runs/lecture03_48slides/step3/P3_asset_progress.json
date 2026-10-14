@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "RUNNING",
+  "status": "BLOCKED",
   "required_assets": 15,
   "accepted_assets": 2,
   "blocked_assets": 1,
@@ -81,7 +81,7 @@
     {
       "asset_id": "S06-B-02",
       "slide_id": "S06",
-      "status": "RUNNING",
+      "status": "BLOCKED",
       "attempts": 0,
       "accepted_image": null,
       "sha256": null,
@@ -90,9 +90,9 @@
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
       "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
       "prompt_version": "v2",
-      "attempts_current_version": 2,
+      "attempts_current_version": 3,
       "max_attempts_current_version": 3,
-      "last_outcome": "TWO_OFF_TARGET_SCRUM_IMAGES; FAIL; GENERATOR_PROMPT_ROUTING_UNRELIABLE",
+      "last_outcome": "FAIL_SCENE_STYLE_MARGIN",
       "failed_attempts_current_version": [
         {
           "attempt": 1,
@@ -107,9 +107,43 @@
           "sha256": "e4b21e3e02503fae2d68a8ea37188eea47dd5b40d75d5d29af8db93561c5e331",
           "library_file_id": "libfile_cd6f2e734de881919ddcb9477e23b483",
           "library_path": "/SlideProjects/lecture03_48slides/step3/rejected/S06-B-02_v2_attempt2_FAIL_WRONG_SCRUM.png"
+        },
+        {
+          "asset_id": "S06-B-02",
+          "version": "v2",
+          "attempt": 3,
+          "result": "FAIL",
+          "generated_count": 1,
+          "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
+          "prompt_transport": "EXPLICIT_PROMPT_ARGUMENT_UNMODIFIED_FILE_BODY",
+          "generator": "ChatGPT built-in image generator",
+          "width": 1920,
+          "height": 819,
+          "mode": "RGBA",
+          "alpha_zero_fraction": 0.6246178011803012,
+          "sha256": "a27e1c82ab78eed26b451b3117b92165e0cacb47d2801c1e1cbdb9463fc7b0cc",
+          "library_file_id": "libfile_c57eaf7118dc8191a54df3e3fa8ba254",
+          "storage": "/SlideProjects/lecture03_48slides/step3/rejected/S06-B-02_prompt_v2_attempt3_FAIL.png",
+          "gates": {
+            "G01": "FAIL: three repeated developer stages rather than one continuous action scene",
+            "G02": "PASS: prototype evolves through added features; no discard depicted; arrows left to right",
+            "G03": "PASS: PNG RGBA; 62.46% alpha=0",
+            "G04": "FAIL: gradients in faces, clothing, arrows and label backgrounds; subject alpha bbox reaches left image boundary with no margin",
+            "G05": "PASS: labels 試作/改良/完成 correct and readable at 508x215; action and progression clear",
+            "G06": "PASS: rejected PNG saved durably with SHA256"
+          },
+          "visual_axes": {
+            "subject": "PASS",
+            "meaning": "PASS",
+            "contrast": "PASS",
+            "visual_flow": "PASS",
+            "density": "PASS",
+            "style": "FAIL"
+          },
+          "next_action": "BLOCKED: v2 maximum 3 attempts exhausted; no additional image generated; fixed prompt not modified"
         }
       ],
-      "qc_file": "docs/runs/lecture03_48slides/step3/P3_S06_B02_GENERATION_BLOCKED_20261014.md"
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
     },
     {
       "asset_id": "S10-A-01",
@@ -314,7 +348,7 @@
     "ready": 0,
     "todo": 12,
     "blocked": 1,
-    "generated_this_turn": 2
+    "generated_this_turn": 1
   },
   "history": [
     {
@@ -374,15 +408,15 @@
       "accepted": 0,
       "status": "BLOCKED",
       "detail": "docs/runs/lecture03_48slides/step3/P3_S06_B02_GENERATION_BLOCKED_20261014.md"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "S06_B02_EXPLICIT_FIXED_PROMPT_ATTEMPT3",
+      "result": "FAIL",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
     }
   ],
-  "active_transaction": {
-    "asset_id": "S06-B-02",
-    "attempt": 3,
-    "prompt_version": "v2",
-    "prompt_transport": "EXPLICIT_PROMPT_ARGUMENT",
-    "resumption": "user requested; built-in tool now exposes prompt argument"
-  },
+  "active_transaction": null,
   "label_policy": {
     "allow_short_readable_japanese_labels": true,
     "allow_stage_diagrams_with_integrated_labels": true,
@@ -393,11 +427,11 @@
     "generation_scope": "one independent image per 次"
   },
   "current_attempts": {
-    "asset_id": "S05-A-01",
-    "prompt_version": "v3",
-    "attempts": 0,
+    "asset_id": "S06-B-02",
+    "prompt_version": "v2",
+    "attempts": 3,
     "max": 3
   },
-  "blocking_reason": null,
-  "blocked_reason": null
+  "blocking_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged.",
+  "blocked_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged."
 }
