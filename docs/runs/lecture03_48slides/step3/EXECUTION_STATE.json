@@ -7,7 +7,7 @@
   "status": "READY",
   "command": "次",
   "command_mode": "ONE_ASSET_PER_TURN",
-  "next_action": "WAIT_FOR_MANUAL_BINARY_UPLOAD",
+  "next_action": "GENERATE_ONE_ASSET",
   "next_asset_id": "S10-A-01",
   "next_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S10-A-01_prompt_v2.txt",
   "next_prompt_blob_sha": "3e5893ee34792b7c3b7e8e8a86fc2e6b8cf1244d",
@@ -271,7 +271,8 @@
     "accepted_count": 3,
     "sha256": "15a4757817f11bfd5b401f55222fac952b817caf480eb84d778e966054716b06",
     "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v3_attempt1_user_approved_20261014.json",
-    "next_asset_id": "S10-A-01"
+    "next_asset_id": "S10-A-01",
+    "consistency_repair": "2026-10-14 next_action corrected after GitHub verification of accepted S06-B-02, old=WAIT_FOR_MANUAL_BINARY_UPLOAD"
   },
   "blocking_reason": null,
   "active_transaction": null,
