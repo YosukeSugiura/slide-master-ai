@@ -1,0 +1,62 @@
+name: Slide P3 image assets
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "single=one API image call; batch=continue through remaining items"
+        type: choice
+        required: true
+        default: single
+        options:
+          - single
+          - batch
+      max_calls:
+        description: "Paid image API call cap in this run (single=1; batch=1..30)"
+        type: number
+        required: true
+        default: 1
+      dry_run:
+        description: "Validate prompts and state only (no image API charges)"
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: slide-master-p3-minor
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: minor
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install supported SDKs
+        run: python -m pip install 'openai>=2.0,<3' 'Pillow>=11,<13'
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Execute P3
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          P3_MODE: ${{ inputs.mode }}
+          P3_MAX_CALLS: ${{ inputs.max_calls }}
+          P3_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          args=(--mode "$P3_MODE" --max-calls "$P3_MAX_CALLS")
+          if [[ "$P3_DRY_RUN" == "true" ]]; then
+            args+=(--dry-run)
+          fi
+          python scripts/generate_slide_assets.py "${args[@]}"
