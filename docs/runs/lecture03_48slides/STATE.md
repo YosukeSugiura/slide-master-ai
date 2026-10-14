@@ -1,6 +1,6 @@
 # 情報システム論 第3回「ソフトウェア開発」48枚版 — 標準4段階の進捗正本
 
-> **本番48枚の正本。** 試作3枚の `docs/runs/lecture03_three_slides/STATE.md` は履歴として維持。**P1/P2は完了、P3は2026-10-14のGitHub駆動・画像ID単位の「次」方式へ移行**。48枚のPPTX骨組みと15点の画像生成指示は保存済み。現在2点採用、次はS06-B-02。
+> **本番48枚の正本。** 試作3枚の `docs/runs/lecture03_three_slides/STATE.md` は履歴として維持。**P1/P2は完了、P3は2026-10-14のGitHub駆動・画像ID単位の「次」方式へ移行**。48枚のPPTX骨組みと15点の画像生成指示は保存済み。現在2点採用、S06-B-02でBLOCKED（生成が別題材のスクラムへ逸脱）。
 
 | key | value |
 |---|---|
@@ -9,12 +9,12 @@
 | run_id | lecture03_48slides |
 | target | 情報システム論 第3回「ソフトウェア開発」元48枚版（53枚版は対象外） |
 | mode | four_phase_standard |
-| status | READY |
+| status | BLOCKED |
 | current_step | P3_IMAGE_ASSETS |
 | last_completed | P2_PPTX_SKELETON (content and geometry PASS; final font/dense typography gate deferred explicitly to P4) |
 | attempts | P1:1; P2:2 (initial interrupted; recovered and finished 8 batches) |
-| last_log | docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json |
-| blocking_reason | none for revised S05-A-01 v3; two v2 generations preserved as candidate + rejected; no image PASS yet |
+| last_log | docs/runs/lecture03_48slides/step3/P3_S06_B02_GENERATION_BLOCKED_20261014.md |
+| blocking_reason | S06-B-02 v2 image generator made two unrelated Scrum role diagrams; effective GitHub prompt transmission is not verifiable; 2/15 accepted preserved |
 | specification | docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md |
 | controller | docs/workflows/CHATGPT_STEP_CONTROLLER_v2.md |
 | image_procedure | docs/IMAGE_GENERATION_STAGED_WORKFLOW_v2.md |
@@ -101,3 +101,11 @@ S05 v2の生成画像2件の実績：**1件目は4段階ラベルが分かりや
 - **S06-B-01: PASS**。画角調整のため透明余白のみトリミングし、内容の修正はしていない。1448×613px、透明画素53.6%、SHA256 `3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27`、Library `/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png`。
 - **2/15画像PASS、次の画像はS06-B-02 v2**（進展型の試作品）。本STEP3のルールは1回の「次」1画像を維持。スライドに埋め込んだ場合の最終縮小可読性はP4で再確認。実効プロンプトのバイト一致はモデルAPIから確認できず`CONTEXT_ONLY_UNVERIFIED`。
 - 詳細監査：`docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json`。機械状態 `docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json` を最新の正本とする。**これより上に記載された「0/15、S05次」は当時の履歴であり最新ではない。**
+
+## 2026-10-14 最新：S06-B-02 で早期BLOCKED（画像2/15点PASS）
+
+- 前回までのS05-A-01 v3とS06-B-01 v2の画像は実PNGを回収・RGBA透明・意味/形状QC・永続アップロードを確認して**2/15 PASS**に修正済み。過去のGitHub未更新を回復した。
+- 今回の「次」は正しくS06-B-02 v2を指したが、ChatGPT画像生成器が2回とも**対象外のスクラムチーム/マスター/バックログ**を描いたため、**2試行ともFAIL**。実際のプロンプト伝達が観測不能で混線が解消していない。3回目は実行せず早期停止。
+- 不適合2画像はLibraryの `step3/rejected/` に隔離。GitHub監査：`docs/runs/lecture03_48slides/step3/P3_S06_B02_GENERATION_BLOCKED_20261014.md`。
+- キューの次IDは**S06-B-02のまま**。未着手12点を飛ばさず、P4へ進まない。次の単純な「次」ではBLOCKEDの根本問題を解消したと偽って再生成しない。
+- 推奨再開条件：GitHubの個別promptを画像生成器へ明示的に渡せる経路、または対象プロンプト以外を含まない専用チャットへの切替を確認する。ユーザーの許可なくFigma等の外部課金ツールへ切り替えない。
