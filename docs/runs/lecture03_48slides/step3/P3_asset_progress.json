@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "READY",
+  "status": "RUNNING",
   "required_assets": 15,
   "accepted_assets": 2,
   "blocked_assets": 0,
@@ -81,7 +81,7 @@
     {
       "asset_id": "S06-B-02",
       "slide_id": "S06",
-      "status": "READY",
+      "status": "RUNNING",
       "attempts": 0,
       "accepted_image": null,
       "sha256": null,
@@ -349,7 +349,16 @@
       "note": "Produced in two prior 次 turns; both lacked GitHub state changes. Preserved originals and verified current binaries."
     }
   ],
-  "active_transaction": null,
+  "active_transaction": {
+    "id": "S06-B-02_v2_attempt_01_20261014",
+    "asset_id": "S06-B-02",
+    "prompt_version": "v2",
+    "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
+    "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
+    "attempt_number": 1,
+    "generation_complete": false,
+    "transport_verification": "CONTEXT_ONLY_UNVERIFIED"
+  },
   "label_policy": {
     "allow_short_readable_japanese_labels": true,
     "allow_stage_diagrams_with_integrated_labels": true,
