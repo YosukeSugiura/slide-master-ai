@@ -32,7 +32,7 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,7 +43,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install supported SDKs
-        run: python -m pip install 'openai>=2.0,<3' 'Pillow>=11,<13'
+        run: python -m pip install 'openai>=2.0,<3' 'Pillow>=11,<13' 'python-pptx>=1.0,<2' 'pytest>=8,<10'
+      - name: Validate original 48-slide PPTX, all 15 image boxes and QC functions (no API calls)
+        run: python -m pytest -q tests/
       - name: Configure git author
         run: |
           git config user.name "github-actions[bot]"
