@@ -1,34 +1,22 @@
-# マルチメディア論 第3回 — 制作入口
+# マルチメディア論 第3回 — 講義制作の入口
 
-## 講義条件
-- テーマ：画像解析 — 画像特徴量、画像エンコーダと応用
-- 100分、講義のみ。学生のColab演習は実施しない。
-- 全61枚の構成案を基準とする（制作過程で内容・時間配分を検証）。
-- 教員側でPythonを実行した画像処理・CNN・Autoencoderの結果をスライドへ掲載する。
-- 次の音声講義後に画像・音声の演習をまとめて実施する予定。
+## 現行の内容指定（P1 v3：2026-10-15）
+- **現行正本：[docs/p1_v3/README.md](docs/p1_v3/README.md)**
+- 全49枚・100分・学生Colab実習なし。49枚の各スライドにタイトル、Intro、表示用要点、図の意味・計算条件、Takeaway、方式A/B/Cを定義。
+- 各章の詳細：docs/p1_v3/01_foundations_S01-S10.md、02_filtering_S11-S22.md、03_encoding_S23-S31.md、04_cnn_S32-S39.md、05_autoencoder_S40-S49.md。
+- 実験の再現条件：docs/p1_v3/06_experiment_contracts.md。
+- 中心の問い：「画像から何を取り出し、何を残せば、目的の処理ができるのか？」
+- シラバス対応：第3回「画像解析：画像特徴量，画像エンコーダと応用」。第2回は機械学習・深層学習、第4回は音声、第6回は画像・音声解析演習。
 
-## 適用する共通規則
-- 正本：major/design_system_general_final.md
-- 視覚表現：major/content_visual_policy_final.md
-- 制作工程：major/docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md
-- 画像生成補助：major/CHATGPT_IMAGE_NEXT.md（生成AI画像が必要な場合のみ）
-- ブランチ運用：major/GITHUB_BRANCH_POLICY.md
-- 4:3、源真ゴシックP、編集可能なPPTXを基本とする。
-- 定量結果・画像処理出力・学習済みモデルの中間特徴は実コードの出力を使用し、生成AIで偽装しない。
+## 共通制作条件（majorの正本）
+- major/design_system_general_final.md：4:3、源真ゴシックP、文字階層・配色・Takeaway・編集性。
+- major/content_visual_policy_final.md：意味契約と分類A/B/C、制作工程P1→P2→P3→P4、画像生成指示・独立検証。
+- major/CHATGPT_IMAGE_NEXT.md：画像生成が必要な場合の簡易運用。
+- major/GITHUB_BRANCH_POLICY.md：講義ごとのブランチに制作物を保存する。
 
-## 制作段階
-1. P1：61枚の内容、意味契約、図の分類と実験仕様を確定
-2. P2：編集可能なPPTX骨組み、実レンダリング、素材枠を確定
-3. P3：必要な独立AI画像のみ生成・検証。Python実験は別途再現可能なコードと出力を保存
-4. P4：素材統合、全ページレンダリング、内容・フォント・品質検査
-
-## 保存先（予定）
-- docs/slide_plan.md — スライドごとの詳細設計
-- experiments/ — 実験コード、環境定義、再現手順
-- results/ — 実験結果、評価値、可視化画像
-- materials/ — PPTX、スライド参照画像
-- assets/accepted/ — 採用済みの生成AI素材（必要な場合）
-- docs/runs/ — 制作記録・検証結果
-
-## 注意
-現時点でブランチとこの入口文書のみ作成済み。実験結果、PPTX、PNGは未作成。
+## 旧設計と現在の状態
+- docs/slide_plan.md：旧61枚構成（履歴）。
+- docs/slide_plan_v2.md と docs/p1_v2/：旧49枚の章別再構成案（履歴）。
+- 過去のPPTX・実験画像・Python成果物はv3の正本ではなく、品質確認を経ない限り流用しない。
+- **v3は現在P1の内容設計段階。PPTX/PDF・実験結果・独立画像は新たには制作していない。**
+- P2は全ページ編集可能なPPTX骨組みと実レンダリング、P3は必要なA/B画像素材、P4は合格素材の統合と最終QC。数値・実験図は正確なプログラム描画を使用する。
