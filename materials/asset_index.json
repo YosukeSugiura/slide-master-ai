@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lecture03_48slides",
+  "course_name": "情報システム論 第3回：ソフトウェア開発",
+  "course_branch": "情報システム論第3回",
+  "common_rules_branch": "major",
+  "pptx_status": "P2 skeleton only: 48 slides, 15 image placeholders, fonts require final inspection",
+  "reference_rendering": "STEP2 PDF render with substituted fonts; exact native-font rendering unverified",
+  "files": {
+    "materials/lecture03_48slides.pptx": {
+      "sha256": "989a2a25a9469c8d3777289430ab415bd2d5f9636dbf0d969c10c7c1f0406506",
+      "bytes": 136943,
+      "present_in_github": true
+    },
+    "materials/slide_references/S05.jpg": {
+      "sha256": "fd1749ad577ec4904a40f36c89730bde7facc5fd03866ba57ec786bd9211d38d",
+      "bytes": 83544,
+      "present_in_github": true
+    },
+    "materials/slide_references/S06.jpg": {
+      "sha256": "89f067232879207e2af83430c95d33e9be6862ead61da5aabf2523eb50e2254d",
+      "bytes": 80735,
+      "present_in_github": true
+    },
+    "materials/slide_references/S10.jpg": {
+      "sha256": "001079b3f67f7b0e74f4c3c20c0a4de524c51c4b2611e6ba552254bd080fc166",
+      "bytes": 85387,
+      "present_in_github": true
+    },
+    "materials/slide_references/S11.jpg": {
+      "sha256": "5f2744f8250b6e60c46fcedcb7dae21f46dbea73784246369aaa2c7f808f37fa",
+      "bytes": 98275,
+      "present_in_github": true
+    },
+    "materials/slide_references/S15.jpg": {
+      "sha256": "84c5273aa308bdc252361da4ebfdf25747b003349bf1430926c62866f17eb0f0",
+      "bytes": 91525,
+      "present_in_github": true
+    },
+    "materials/slide_references/S17.jpg": {
+      "sha256": "e56032810d228221de1dccdbe30f6303e451450b255c2266f39680ec7234bdc0",
+      "bytes": 85098,
+      "present_in_github": true
+    },
+    "materials/slide_references/S18.jpg": {
+      "sha256": "3175cf90c29ea95a91242540b0027fb7691adf53cb33e2bc39b8670e72e7f2b8",
+      "bytes": 92870,
+      "present_in_github": true
+    },
+    "materials/slide_references/S26.jpg": {
+      "sha256": "b0a2e196da6473053215d7f691c871cb734dee220541a64371d00e196c5d5901",
+      "bytes": 84304,
+      "present_in_github": true
+    },
+    "materials/style_references/S05-A-01.webp": {
+      "sha256": "c45fd9808d375dc8ea7a43db32fee0dbf81f029799a504fefea289e92e0dc9fd",
+      "bytes": 96036,
+      "present_in_github": true
+    },
+    "materials/style_references/S06-B-01.webp": {
+      "sha256": "6a5698277c90b130bb5a35b2063cbbbc59bd543c0e44dba1b4b0950127f0a3f7",
+      "bytes": 76562,
+      "present_in_github": true
+    },
+    "assets/accepted/S05-A-01.png": {
+      "sha256": "3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380",
+      "bytes": 932349,
+      "present_in_github": true
+    },
+    "assets/accepted/S06-B-01.png": {
+      "sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
+      "bytes": 592116,
+      "present_in_github": true
+    }
+  }
+}
