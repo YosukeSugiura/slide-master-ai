@@ -8,12 +8,12 @@
   "command": "次",
   "command_mode": "ONE_ASSET_PER_TURN",
   "next_action": "GENERATE_ONE_ASSET",
-  "next_asset_id": "S05-A-01",
-  "next_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt",
-  "next_prompt_blob_sha": "8f97747560cb0fd8c8495850728d355b7f42c7d4",
-  "next_prompt_version": "v3",
-  "last_completed_asset_id": null,
-  "completed_count": 0,
+  "next_asset_id": "S06-B-02",
+  "next_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
+  "next_prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
+  "next_prompt_version": "v2",
+  "last_completed_asset_id": "S06-B-01",
+  "completed_count": 2,
   "total_assets": 15,
   "authority": {
     "controller": "docs/workflows/NEXT_COMMAND_CONTROLLER_v1.md",
@@ -57,10 +57,10 @@
       "prompt_version": "v3",
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt",
       "prompt_blob_sha": "8f97747560cb0fd8c8495850728d355b7f42c7d4",
-      "status": "READY",
-      "attempts_current_version": 0,
-      "accepted_image_sha256": null,
-      "accepted_storage": null
+      "status": "PASS",
+      "attempts_current_version": 1,
+      "accepted_image_sha256": "3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380",
+      "accepted_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png"
     },
     {
       "order": 2,
@@ -70,10 +70,10 @@
       "prompt_version": "v2",
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-01_prompt_v2.txt",
       "prompt_blob_sha": "fd50b1c94b55c01a5419a4bb271f8f83827e2bf8",
-      "status": "TODO",
-      "attempts_current_version": 0,
-      "accepted_image_sha256": null,
-      "accepted_storage": null
+      "status": "PASS",
+      "attempts_current_version": 1,
+      "accepted_image_sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
+      "accepted_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png"
     },
     {
       "order": 3,
@@ -83,7 +83,7 @@
       "prompt_version": "v2",
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
       "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
-      "status": "TODO",
+      "status": "READY",
       "attempts_current_version": 0,
       "accepted_image_sha256": null,
       "accepted_storage": null
@@ -247,13 +247,12 @@
   ],
   "blocked_reason": null,
   "last_transition": {
-    "event": "USER_APPROVED_SHORT_JAPANESE_LABELS",
+    "event": "RECOVER_AND_VERIFY_TWO_PRIOR_IMAGES",
     "date": "2026-10-14",
-    "result": "READY_NOT_EXECUTED",
-    "next_asset_id": "S05-A-01",
-    "next_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt",
-    "prompt_version": "v3",
-    "verified_blob_sha": "8f97747560cb0fd8c8495850728d355b7f42c7d4",
-    "generation_since_policy_change": 0
+    "result": "READY_FOR_ONE_NEW_IMAGE",
+    "from": "S05-A-01",
+    "to": "S06-B-02",
+    "verified_pass_count": 2,
+    "detail": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json"
   }
 }
