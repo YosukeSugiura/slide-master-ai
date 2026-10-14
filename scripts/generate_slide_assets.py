@@ -28,6 +28,7 @@ STAGE = RUN / "step3"
 STATE = STAGE / "EXECUTION_STATE.json"
 PROGRESS = STAGE / "P3_asset_progress.json"
 MANIFEST = RUN / "asset_manifest.json"
+HUMAN_STATE = RUN / "STATE.md"
 IMAGE_MODEL = "gpt-image-2.5-sunburst"
 QC_MODEL = "gpt-6-sol"
 MAX_ATTEMPTS = 3
@@ -241,6 +242,7 @@ def main() -> int:
     from openai import OpenAI
     client = OpenAI(timeout=240.0, max_retries=0)
     image_calls = 0
+    last_passed = None
     while image_calls < args.max_calls:
         state, progress, manifest = read_json(STATE), read_json(PROGRESS), read_json(MANIFEST)
         if state["status"] == "DONE":
@@ -292,6 +294,7 @@ def main() -> int:
             failure = f"API/QC error: {type(exc).__name__}"
 
         passed = data is not None and qc_pass(geom, semantic) and not failure
+        last_passed = passed
         folder = "accepted" if passed else "rejected"
         paths = [STATE, PROGRESS]
         storage = STAGE / folder / f"{name}.png"
@@ -354,6 +357,12 @@ def main() -> int:
                              next_prompt_blob_sha=None, next_prompt_version=None,
                              next_action="P3_COMPLETE_AWAIT_P4")
                 progress.update(status="DONE", next_image=None, current_unit=None)
+                with HUMAN_STATE.open("a", encoding="utf-8") as fp:
+                    fp.write("\n## APIによるP3完了（自動追記）\n"
+                             "画像素材15/15点のPNG保存・機械検査・AI意味QCを記録。"
+                             "P4のPPTX制作は別工程であり未実行。"
+                             "最終採用画像は人間の確認も推奨する。\n")
+                paths.append(HUMAN_STATE)
         else:
             row["failed_attempts_current_version"].append({
                 "attempt": attempt, "result": "FAIL_API_QC", "sha256": sha,
@@ -397,7 +406,7 @@ def main() -> int:
               f"next={state.get('next_asset_id')} status={state['status']}")
         if state["status"] in ("BLOCKED", "DONE") or args.mode == "single":
             break
-    return 0 if state["status"] != "BLOCKED" else 2
+    return 0 if state["status"] != "BLOCKED" and last_passed else 2
 
 
 if __name__ == "__main__":
