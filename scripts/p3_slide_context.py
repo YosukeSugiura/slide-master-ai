@@ -91,12 +91,20 @@ class SlideContext:
     def style_png(self, asset: dict) -> bytes:
         # Keep style consistent within the same slide; otherwise use the accepted
         # S05 main illustration as global lecture baseline.
-        refs = self.manifest['style_references']
-        sibling = next((k for k in refs if k.startswith(asset['slide_id'] + '-') and k != asset['asset_id']), None)
-        key = sibling or 'S05-A-01'
-        if key not in refs:
-            raise ValueError('Accepted illustration style reference missing')
-        raw = self._read(refs[key])
+        # Later cards on the same slide reuse earlier *accepted* PNGs from
+        # this Actions checkout. For the first card, use the frozen baseline.
+        accepted_dir = ROOT / 'docs/runs/lecture03_48slides/step3/accepted'
+        candidates = sorted(accepted_dir.glob(f"{asset['slide_id']}-*_prompt_v*_attempt*.png"))
+        candidates = [p for p in candidates if not p.name.startswith(asset['asset_id'] + '_')]
+        if candidates:
+            raw = candidates[0].read_bytes()
+        else:
+            refs = self.manifest['style_references']
+            sibling = next((k for k in refs if k.startswith(asset['slide_id'] + '-') and k != asset['asset_id']), None)
+            key = sibling or 'S05-A-01'
+            if key not in refs:
+                raise ValueError('Accepted illustration style reference missing')
+            raw = self._read(refs[key])
         with Image.open(BytesIO(raw)) as im:
             out = BytesIO()
             im.convert('RGBA').save(out, format='PNG')
