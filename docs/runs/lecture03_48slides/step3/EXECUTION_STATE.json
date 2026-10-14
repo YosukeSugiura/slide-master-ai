@@ -4,7 +4,7 @@
   "repository": "YosukeSugiura/slide-master-ai",
   "branch": "minor",
   "phase": "P3_IMAGE_ASSETS",
-  "status": "RUNNING",
+  "status": "BLOCKED",
   "command": "次",
   "command_mode": "ONE_ASSET_PER_TURN",
   "next_action": "GENERATE_ONE_ASSET",
@@ -83,10 +83,11 @@
       "prompt_version": "v2",
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
       "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
-      "status": "RUNNING",
-      "attempts_current_version": 2,
+      "status": "BLOCKED",
+      "attempts_current_version": 3,
       "accepted_image_sha256": null,
-      "accepted_storage": null
+      "accepted_storage": null,
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
     },
     {
       "order": 4,
@@ -245,22 +246,15 @@
       "accepted_storage": null
     }
   ],
-  "blocked_reason": null,
+  "blocked_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged.",
   "last_transition": {
-    "event": "S06_B02_ABORT_AFTER_TWO_OFF_TARGET_IMAGES",
+    "event": "S06_B02_ATTEMPT3_QC_FAIL",
     "date": "2026-10-14",
     "result": "BLOCKED_NOT_ADVANCED",
     "next_asset_id": "S06-B-02",
     "accepted_count": 2,
-    "rejected_count_current_version": 2,
-    "report": "docs/runs/lecture03_48slides/step3/P3_S06_B02_GENERATION_BLOCKED_20261014.md"
+    "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
   },
-  "blocking_reason": null,
-  "active_transaction": {
-    "asset_id": "S06-B-02",
-    "attempt": 3,
-    "prompt_version": "v2",
-    "prompt_transport": "EXPLICIT_PROMPT_ARGUMENT",
-    "resumption": "user requested; built-in tool now exposes prompt argument"
-  }
+  "blocking_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged.",
+  "active_transaction": null
 }
