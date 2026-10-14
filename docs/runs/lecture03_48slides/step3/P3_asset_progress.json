@@ -90,9 +90,9 @@
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
       "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
       "prompt_version": "v2",
-      "attempts_current_version": 3,
+      "attempts_current_version": 4,
       "max_attempts_current_version": 3,
-      "last_outcome": "FAIL_SCENE_STYLE_MARGIN",
+      "last_outcome": "FAIL_OFF_TARGET_FAKE_ALPHA_AND_SLIDE_TEXT_MANUAL_ATTEMPT4",
       "failed_attempts_current_version": [
         {
           "attempt": 1,
@@ -141,9 +141,18 @@
             "style": "FAIL"
           },
           "next_action": "BLOCKED: v2 maximum 3 attempts exhausted; no additional image generated; fixed prompt not modified"
+        },
+        {
+          "attempt": 4,
+          "result": "FAIL_OFF_TARGET_NONTRANSPARENT",
+          "sha256": "5b9e60b87d2cbcfadcc0858724f4205e82a01118acf3697c6f0f0d8051614e64",
+          "library_file_id": "libfile_e2461c723a04819197bca0927d0c56b4",
+          "library_path": "/SlideProjects/lecture03_48slides/step3/rejected/S06-B-02_prompt_v2_attempt4_FAIL_WRONG_SUBJECT.png",
+          "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json",
+          "policy_exception": "EXPLICIT_USER_REQUEST_AFTER_3_OF_3_NOT_A_RESET"
         }
       ],
-      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json"
     },
     {
       "asset_id": "S10-A-01",
@@ -414,6 +423,13 @@
       "event": "S06_B02_EXPLICIT_FIXED_PROMPT_ATTEMPT3",
       "result": "FAIL",
       "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt3_20261014.json"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "S06_B02_USER_DIRECTED_EXTRA_ATTEMPT4",
+      "result": "FAIL",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json",
+      "reason": "wrong subject; zero fully transparent pixels; 3D and slide text"
     }
   ],
   "active_transaction": null,
@@ -429,9 +445,10 @@
   "current_attempts": {
     "asset_id": "S06-B-02",
     "prompt_version": "v2",
-    "attempts": 3,
-    "max": 3
+    "attempts": 4,
+    "max": 3,
+    "manual_override_attempts": 1
   },
-  "blocking_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged.",
-  "blocked_reason": "v2 attempt 3 failed scene/style/margin requirements; max 3 attempts exhausted; prompt unchanged."
+  "blocking_reason": "User-directed extra attempt4 of v2 also failed: unrelated learning presentation, no fully transparent pixels, photorealistic style; v2 remains BLOCKED; new validated prompt version required.",
+  "blocked_reason": "User-directed extra attempt4 of v2 also failed: unrelated learning presentation, no fully transparent pixels, photorealistic style; v2 remains BLOCKED; new validated prompt version required."
 }
