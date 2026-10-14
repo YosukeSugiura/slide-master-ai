@@ -113,3 +113,7 @@ S05 v2の生成画像2件の実績：**1件目は4段階ラベルが分かりや
 
 ## S06-B-02 再開結果（2026-10-14・v2試行3）
 固定プロンプト本文をChatGPT画像生成ツールの明示prompt引数にそのまま渡し、画像1点のみ生成。意味・日本語ラベル・RGBA透過はPASS。ただし3段階の人物反復構図、グラデーション、左端余白不足でFAIL。不採用PNGは永続保存済み（libfile_c57eaf7118dc8191a54df3e3fa8ba254）。QC: `step3/qc/S06-B-02_v2_attempt3_20261014.json`。v2最大3試行に達したためBLOCKED、次IDはS06-B-02のまま、合格2/15点を維持。PPTX変更なし。
+
+## 2026-10-14 追加依頼：S06-B-02 v2 試行4（不採用）
+
+ユーザーからS06-B-02の画像1点の再開・検査・保存が明示指示されたため、v2既定上限3回を超える例外的な1試行を実施。ChatGPT画像生成で得られたのは「学びを行動に変える」と記載した3D・人物オフィス図であり、進展型試作品の図ではなかった。PNG 1672×941 RGBAだが完全透明画素0%、スライド風テキストと管理ID混入、目標比率2.363に不適合のためFAIL。実画像をLibrary `/SlideProjects/lecture03_48slides/step3/rejected/S06-B-02_prompt_v2_attempt4_FAIL_WRONG_SUBJECT.png` に不採用保存して読み戻し確認。SHA256 `5b9e60b87d2cbcfadcc0858724f4205e82a01118acf3697c6f0f0d8051614e64`。QC詳細：`docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json`。S06-B-02のままBLOCKED、採用2/15、PPTXは変更なし。
