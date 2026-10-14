@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "repository": "YosukeSugiura/slide-master-ai",
-  "branch": "minor",
+  "branch": "情報システム論第3回",
   "phase": "P3_IMAGE_ASSETS",
   "status": "READY",
   "command": "次",
@@ -60,7 +60,9 @@
       "status": "PASS",
       "attempts_current_version": 1,
       "accepted_image_sha256": "3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380",
-      "accepted_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png"
+      "accepted_storage": "assets/accepted/S05-A-01.png",
+      "legacy_accepted_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "storage_branch": "情報システム論第3回"
     },
     {
       "order": 2,
@@ -73,7 +75,9 @@
       "status": "PASS",
       "attempts_current_version": 1,
       "accepted_image_sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
-      "accepted_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png"
+      "accepted_storage": "assets/accepted/S06-B-01.png",
+      "legacy_accepted_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "storage_branch": "情報システム論第3回"
     },
     {
       "order": 3,
@@ -258,5 +262,9 @@
     "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8"
   },
   "blocking_reason": null,
-  "active_transaction": null
+  "active_transaction": null,
+  "common_rules_ref": "major/CHATGPT_IMAGE_NEXT.md",
+  "material_index": "materials/asset_index.json",
+  "manual_chat_image_workflow": true,
+  "execution_provider": "ChatGPT image generation (manual one item per 次), not GitHub Actions"
 }

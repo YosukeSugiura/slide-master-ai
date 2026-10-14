@@ -62,7 +62,7 @@
       "p3_attempt_count": 3,
       "p3_qc": "PASS_AFTER_RGBA_ALPHA_SEMANTIC_QC_AND_DURABLE_UPLOAD",
       "p3_rejected_images_library": "/SlideProjects/lecture03_48slides/step3/rejected/",
-      "p3_accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "p3_accepted_image": "assets/accepted/S05-A-01.png",
       "p3_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt",
       "p3_prompt_blob_sha": "8f97747560cb0fd8c8495850728d355b7f42c7d4",
       "p3_prompt_version": "v3",
@@ -72,7 +72,10 @@
       "p3_v2_attempt_count": 2,
       "p3_v2_candidate_storage": "/SlideProjects/lecture03_48slides/step3/candidates/S05-A-01_v2_attempt1_REVIEW.png",
       "p3_v2_rejected_storage": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_v2_attempt2_REJECTED.png",
-      "library_file_id": "libfile_ce56f211c41081918310f9d2d2a8528a"
+      "library_file_id": "libfile_ce56f211c41081918310f9d2d2a8528a",
+      "legacy_p3_accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "p3_github_branch": "情報システム論第3回",
+      "p3_github_blob_sha": "b4bead7473ffa15f87e3aecbc8c7255956433ca1"
     },
     {
       "status": "PASS",
@@ -130,8 +133,11 @@
       "p3_attempts_current_version": 1,
       "p3_max_attempts_current_version": 3,
       "p3_qc": "PASS_AFTER_RGBA_ALPHA_SEMANTIC_QC_AND_DURABLE_UPLOAD",
-      "p3_accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
-      "library_file_id": "libfile_4f61a9ac4414819197b013960e7d29d6"
+      "p3_accepted_image": "assets/accepted/S06-B-01.png",
+      "library_file_id": "libfile_4f61a9ac4414819197b013960e7d29d6",
+      "legacy_p3_accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "p3_github_branch": "情報システム論第3回",
+      "p3_github_blob_sha": "ce6f2c310e012fb2a4ffe4c909540698c951ec0a"
     },
     {
       "status": "BLOCKED",
@@ -873,5 +879,8 @@
   "p3_label_policy": "ALLOW_SHORT_READABLE_JAPANESE_LABELS; FORBID_TYPO_GIBBERISH_AND_UNREADABLY_SMALL_TEXT",
   "p3_latest_policy_report": "docs/runs/lecture03_48slides/step3/P3_LABEL_POLICY_CHANGE_20261014.md",
   "p3_next_asset_id": "S06-B-02",
-  "p3_recovery_qc": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json"
+  "p3_recovery_qc": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json",
+  "p3_active_branch": "情報システム論第3回",
+  "p3_common_rules": "major/CHATGPT_IMAGE_NEXT.md",
+  "p3_material_index": "materials/asset_index.json"
 }

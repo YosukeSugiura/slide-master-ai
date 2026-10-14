@@ -17,9 +17,9 @@
       "slide_id": "S05",
       "status": "PASS",
       "attempts": 3,
-      "accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "accepted_image": "assets/accepted/S05-A-01.png",
       "sha256": "3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380",
-      "storage": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "storage": "assets/accepted/S05-A-01.png",
       "rejected_attempts": [
         "9eb6d72f3aba0c005cff307dd55922cca65a60bdcf9f4b61714debf585ea186d",
         "d8126d144a05703499dd6ef75306e872623a3d39305d55c92d971c5c6a86cd44",
@@ -54,16 +54,20 @@
       "height_px": 1034,
       "alpha_zero_fraction": 0.5681287252482016,
       "transport_verification": "CONTEXT_ONLY_UNVERIFIED",
-      "qc_file": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json"
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json",
+      "legacy_library_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "github_storage": "assets/accepted/S05-A-01.png",
+      "github_branch": "情報システム論第3回",
+      "github_blob_sha": "b4bead7473ffa15f87e3aecbc8c7255956433ca1"
     },
     {
       "asset_id": "S06-B-01",
       "slide_id": "S06",
       "status": "PASS",
       "attempts": 0,
-      "accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "accepted_image": "assets/accepted/S06-B-01.png",
       "sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
-      "storage": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "storage": "assets/accepted/S06-B-01.png",
       "rejected_attempts": [],
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-01_prompt_v2.txt",
       "prompt_blob_sha": "fd50b1c94b55c01a5419a4bb271f8f83827e2bf8",
@@ -76,7 +80,11 @@
       "height_px": 613,
       "alpha_zero_fraction": 0.5355454561841501,
       "transport_verification": "CONTEXT_ONLY_UNVERIFIED",
-      "qc_file": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json"
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json",
+      "legacy_library_storage": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "github_storage": "assets/accepted/S06-B-01.png",
+      "github_branch": "情報システム論第3回",
+      "github_blob_sha": "ce6f2c310e012fb2a4ffe4c909540698c951ec0a"
     },
     {
       "asset_id": "S06-B-02",
@@ -458,5 +466,9 @@
     "max": 3
   },
   "blocking_reason": null,
-  "blocked_reason": null
+  "blocked_reason": null,
+  "branch": "情報システム論第3回",
+  "common_rules_ref": "major/CHATGPT_IMAGE_NEXT.md",
+  "material_index": "materials/asset_index.json",
+  "manual_chat_image_workflow": true
 }
