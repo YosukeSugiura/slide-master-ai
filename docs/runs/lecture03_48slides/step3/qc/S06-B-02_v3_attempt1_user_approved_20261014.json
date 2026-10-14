@@ -10,8 +10,8 @@
   "generator": "ChatGPT built-in image generator",
   "prompt_transport": "GENERATOR_INPUT_DIVERGED_FROM_FIXED_PROMPT_V3",
   "actual_generation_description": "Four horizontally repeated developers and evolving UI, blue arrows, curved teal progress arrow; not the single-developer single-monitor composition specified in v3",
-  "qc_result": "FAIL_SPECIFICATION",
-  "user_review": "EXPLICITLY_APPROVED_AS_IS",
+  "qc_result": "PASS_EDITORIAL_AND_TECHNICAL_REFLOW",
+  "user_review": "EXPLICITLY_APPROVED_EDUCATIONALLY",
   "user_approval_quote": "いえ，これでいいです．",
   "user_approval_scope": "Accept visual output with recorded QC exceptions; does not assert specifications are met or that GitHub binary is stored",
   "binary": {
@@ -36,8 +36,58 @@
     "G05": "FAIL: repeated characters and UI, foreground subject touches lower edge",
     "G06": "PENDING: generated image exists as a downloadable chat artifact; no confirmed GitHub binary"
   },
-  "github_binary_storage": "PENDING_MANUAL_UPLOAD",
+  "github_binary_storage": "COMMITTED_VERIFIED_EXPECTED",
   "expected_github_storage": "assets/accepted/S06-B-02.png",
   "prompt_attempts_current_version": 1,
-  "next_step": "User uploads the original S06-B-02.png file to the target branch, then assistant verifies SHA-256 and updates state to PASS before moving to the next asset"
+  "next_step": "Generate S10-A-01 on next 次 after verifying latest state",
+  "qc_policy": "major/CHATGPT_IMAGE_NEXT.md (2026-10-14 teaching-value-first amendment)",
+  "previous_strict_qc_result": "FAIL_SPECIFICATION",
+  "source_file_this_review": "S06-B-02_prompt_v3_attempt1_FAIL(1).png",
+  "source_binary_sha256": "fba859ac15ef926814e653309255fe21bf37838c3505d6cc7e13900f4ff0a1bb",
+  "source_binary_bytes": 1008805,
+  "previous_review_candidate_sha256": "441cee9f8195460e17bd81dd19c035a3881e2faa9b19a013239b29e6a6b4570b",
+  "source_sha_differs_from_previous_candidate": true,
+  "source_differentiation_note": "User supplied another bytewise-distinct PNG with the same depicted progression; the current attached source is the only PNG used for adjusted deliverable. Do not equate its hash with prior candidate.",
+  "original_storage": "assets/source/S06-B-02_v3_attempt1_original.png",
+  "original_github_blob_sha": "b2e60bbaf83ff102f602aec1e0e5ecf854eb6d6b",
+  "transformed_png": {
+    "storage": "assets/accepted/S06-B-02.png",
+    "sha256": "15a4757817f11bfd5b401f55222fac952b817caf480eb84d778e966054716b06",
+    "github_blob_sha": "db426624d40fff9f784fca3d3a09fcb67cdfcf2c",
+    "width_px": 1725,
+    "height_px": 730,
+    "mode": "RGBA",
+    "alpha_zero_fraction": 0.5675822910462577,
+    "transformation": "Crop transparent top/bottom at y=[150,880), then pad 94px left and 95px right with true transparent pixels; no subject/artwork pixels with alpha>1 removed and no image stretching.",
+    "target_aspect_ratio": 2.363128491620112,
+    "actual_aspect_ratio": 2.363013698630137,
+    "size_bytes": 690354
+  },
+  "slide_preview": {
+    "path": "assets/previews/S06-B-02_slide_preview.png",
+    "sha256": "04a5d0b1b6863d2b38c0ec9b7b1931ea0b9af4e6494ac5ba133428f3fd64ea8f",
+    "blob_sha": "cca7fe9ef1b87bd711be223028c41867c0e5c8bb",
+    "pixels": [
+      960,
+      720
+    ],
+    "source_slide": "materials/slide_references/S06.jpg",
+    "placement_bbox_inches": {
+      "x": 5.2,
+      "y": 2.65,
+      "width": 4.23,
+      "height": 1.79
+    },
+    "notes": "Original STEP2 placeholder overlay text remains in JPEG and is not generated artwork; clear placeholder in P4 PPTX insertion."
+  },
+  "gates_reassessed": {
+    "meaning": "PASS: consistent progressive enrichment of a single app concept, left to right, no disposal",
+    "arrows": "PASS: progression direction legible",
+    "real_alpha": "PASS",
+    "slide_fit": "PASS after transparent crop-and-pad; aspect ratio matches within 0.01%",
+    "legibility": "PASS for slide usage, with user editorial approval",
+    "style": "ACCEPTABLE: moderate cartoon shading and four temporal instances are nonblocking",
+    "strict_v3_single_person_monitor": "WAIVED BY EXPLICIT USER APPROVAL; preserved in audit"
+  },
+  "user_approval_quote_current": "S06-B-02です．不合格になりましたが，見た感じ合格です．条件厳しすぎです．"
 }

@@ -12,15 +12,15 @@
 
 1. **共通ルールを先に読む**：`major/CHATGPT_IMAGE_NEXT.md`。古い `minor/CHATGPT_NEXT.md` とGitHub Actionsは優先しない。
 2. **この講義の最新状態**：`docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json` と`P3_asset_progress.json`、`asset_manifest.json`。
-3. **次の固定生成指示書**：`EXECUTION_STATE.json.next_prompt_file`。現時点は`S06-B-02_prompt_v3.txt`。毎回Git blob SHAと照合し、古いv2を実行しない。
+3. **次の固定生成指示書**：`EXECUTION_STATE.json.next_prompt_file`。最新の対象と版は必ずstateから取得し、毎回Git blob SHAと照合する。現在は`S10-A-01_prompt_v2.txt`。
 4. **画像でスライドの文脈を確認**：`materials/slide_references/Sxx.jpg`（8ファイル）。画風参照 `materials/style_references/` と承認済み `assets/accepted/`。
 5. **生成するのは独立素材PNG1点のみ**。生成前後の検査・GitHubへ保存と実SHA照合・状態更新は `major` の手順を厳守する。スライド全体を生成しない。
 6. チャットの初回読み込みでは画像を生成せず、ユーザーの「次」を待つ。
 
 ## 現時点の引継ぎ（数字は初期状態の説明のみ）
 
-- 全15点：**S05-A-01とS06-B-01の2点がPASS**。PNGは`assets/accepted/`へ保存済み。
-- 次のID：**S06-B-02（v3／READY／0試行）**。元のv2の失敗4試行を消してはいけない。
+- 全15点：**S05-A-01、S06-B-01、S06-B-02の3点がPASS**。PNGは`assets/accepted/`へ保存済み。
+- 次のID：**S10-A-01（v2／READY／0試行）**。S06-B-02のv3はユーザーによる教材採用を受け、透明余白の修正だけでPASSとした。旧不合格履歴は保存。
 - GitHub素材：`materials/lecture03_48slides.pptx`（STEP2骨組み48枚）、`materials/slide_references/`（8 JPG）、`materials/style_references/`（2 WEBP）、`assets/accepted/`（2 PNG）。
 - `materials/asset_index.json`に個々のファイルのSHA256とバイト数。元PPTXの正式フォント描画は未検証。
 - 画像15点完成後のPPTX挿入は別工程。**このチャットではPPTXを改変しない**。

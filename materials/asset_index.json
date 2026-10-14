@@ -71,6 +71,21 @@
       "sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
       "bytes": 592116,
       "present_in_github": true
+    },
+    "assets/accepted/S06-B-02.png": {
+      "sha256": "15a4757817f11bfd5b401f55222fac952b817caf480eb84d778e966054716b06",
+      "bytes": 690354,
+      "present_in_github": true
+    },
+    "assets/previews/S06-B-02_slide_preview.png": {
+      "sha256": "04a5d0b1b6863d2b38c0ec9b7b1931ea0b9af4e6494ac5ba133428f3fd64ea8f",
+      "bytes": 363990,
+      "present_in_github": true
+    },
+    "assets/source/S06-B-02_v3_attempt1_original.png": {
+      "sha256": "fba859ac15ef926814e653309255fe21bf37838c3505d6cc7e13900f4ff0a1bb",
+      "bytes": 1008805,
+      "present_in_github": true
     }
   }
 }

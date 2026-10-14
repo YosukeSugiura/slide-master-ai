@@ -134,3 +134,7 @@ S05 v2の生成画像2件の実績：**1件目は4段階ラベルが分かりや
 - `main:.github/workflows/slide-image-assets.yml` に `python-pptx` とpytestを入れ、API課金前に15素材のPPTX実体とスロットを検査するステップを追加。
 - 参照バンドルの生成・PPTX照合・仮配置のオフライン単体テストはローカルで3件PASS。**新しいGitHub Actions実行、実OpenAI API試験、画像採用はまだ実施していない**。安全な起動方法は `docs/workflows/P3_GITHUB_ACTIONS_OPENAI_API_v1.md` を参照。
 - P3採用済み2/15、S06-B-02 v3（未生成・0試行）、状態READY、PPTX本文の改変なし。
+
+## 2026-10-14：S06-B-02 v3 教材採用・透明キャンバス補正によるPASS（3/15）
+
+ユーザーがS06-B-02の図を教材として明確に採用し、過度に厳格な画風・単一場面の判定条件の見直しを指示した。画像の意味（同じ試作品の段階的な継続改善）は正確で、4回の人物反復は**時間経過を伝える表現**として採用。元PNG 1536×1024 RGBA透明（SHA256 `fba859ac15ef926814e653309255fe21bf37838c3505d6cc7e13900f4ff0a1bb`）から透明帯だけを切り出し、左右透明余白を加えて1725×730（約2.363:1）の独立素材へ補正。結果SHA256 `15a4757817f11bfd5b401f55222fac952b817caf480eb84d778e966054716b06`。元画像は `assets/source/S06-B-02_v3_attempt1_original.png`、採用画像は `assets/accepted/S06-B-02.png`、実スライド仮配置は `assets/previews/S06-B-02_slide_preview.png`、QCは `docs/runs/lecture03_48slides/step3/qc/S06-B-02_v3_attempt1_user_approved_20261014.json`。採用済み **3/15**、次は **S10-A-01 v2**。旧v2/v3の厳格判定履歴を消していない。PPTX原本は変更していない。
