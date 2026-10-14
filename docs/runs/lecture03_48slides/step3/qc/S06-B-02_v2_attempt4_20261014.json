@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lecture03_48slides",
+  "asset_id": "S06-B-02",
+  "prompt_version": "v2",
+  "attempt": 4,
+  "status": "FAIL",
+  "generated_count": 1,
+  "provenance": "One extra image generated in response to explicit 2026-10-14 user request to resume S06-B-02; this is beyond automated max_attempts_per_prompt_version=3 and is recorded as a manual exception, not a reset.",
+  "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
+  "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
+  "generator": "ChatGPT built-in image generator",
+  "prompt_transport": "CONTEXT_ONLY_UNVERIFIED",
+  "image": {
+    "filename": "S06-B-02_prompt_v2_attempt4_FAIL_WRONG_SUBJECT.png",
+    "width": 1672,
+    "height": 941,
+    "format": "PNG",
+    "mode": "RGBA",
+    "aspect_ratio": 1.7768331562167907,
+    "required_aspect_ratio": 2.363128491620112,
+    "alpha_zero_fraction": 0,
+    "alpha_min": 164,
+    "alpha_max": 251,
+    "sha256": "5b9e60b87d2cbcfadcc0858724f4205e82a01118acf3697c6f0f0d8051614e64",
+    "library_file_id": "libfile_e2461c723a04819197bca0927d0c56b4",
+    "library_path": "/SlideProjects/lecture03_48slides/step3/rejected/S06-B-02_prompt_v2_attempt4_FAIL_WRONG_SUBJECT.png",
+    "library_readback": "VERIFIED_VIA_LIBRARY_LIST"
+  },
+  "quality_gates": {
+    "G01": "FAIL: unrelated office-learning presentation, not a standalone evolutionary prototype action scene",
+    "G02": "FAIL: no single prototype being iteratively enhanced into final system; unrelated 学ぶ→計画する→行動する process",
+    "G03": "FAIL: RGBA container but no fully transparent pixels; 0.0 alpha-zero fraction below 0.10 threshold",
+    "G04": "FAIL: photorealistic/3D, gradients, slide-like text, 1.777 aspect versus required 2.363",
+    "G05": "FAIL: visible management ID S06-B-02 and unrelated headline 学びを行動に変える; unrelated labels",
+    "G06": "PASS: rejected original binary saved to persistent Library, SHA256 computed; Library list readback verified"
+  },
+  "visual_axes": {
+    "subject": "FAIL",
+    "meaning": "FAIL",
+    "contrast": "FAIL",
+    "visual_flow": "FAIL",
+    "density": "FAIL",
+    "style": "FAIL"
+  },
+  "accepted": false,
+  "overall": "FAIL",
+  "next_asset_id": "S06-B-02",
+  "overall_progress": "2/15",
+  "final_phase": "P3_IMAGE_ASSETS",
+  "pptx_modified": false,
+  "next_action": "BLOCKED. v2 remains exhausted; no second image generated."
+}
