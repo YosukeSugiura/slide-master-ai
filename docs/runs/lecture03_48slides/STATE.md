@@ -125,3 +125,12 @@ S05 v2の生成画像2件の実績：**1件目は4段階ラベルが分かりや
 - `S06-B-02_prompt_v3.txt` を意味・構図・余白を明確化した新版として追加し、v2の失敗4件を履歴に保管したままv3 0試行で`READY`へ移行。現状2/15件採用。v3の実画像はまだ生成していない。新しい状態JSONを唯一のポインタとする。
 - ワークフローは手動起動のみで、初期値`mode=single`、`max_calls=1`、`dry_run=true`。まず無課金の事前検査を実行し、成功後に`dry_run=false`で実生成へ進める。
 - 操作手順：`docs/workflows/P3_GITHUB_ACTIONS_OPENAI_API_v1.md`。自動採用の意味QCはAI判定であり、人間による初回実画像確認が必要。PPTX変更なし。
+
+## 2026-10-14 最新：P3を実PPTX参照型へ移行（API未呼出）
+
+- ユーザー確認により、プロンプト・スロット座標だけの生成では不十分なため修正。
+- `step3/reference/lecture03_p3_context.zip` にSTEP2の編集可能48枚PPTX（SHA256 `989a2a25a9469c8d3777289430ab415bd2d5f9636dbf0d969c10c7c1f0406506`）、図がある8スライドのレンダリング画像（フォント代替表示）、過去に合格した画像2点の画風参照を保存。ZIP SHA256は `c1052bfc246f321b3e28e7bf21312ecf40eb44bfd9cbdba17a2ce7c4b9a4b98f`。
+- `scripts/p3_slide_context.py` で15素材すべての実PPTX画像枠・管理IDを検査する。画像生成は固定プロンプトとスライド/画風の2参照画像を `images.edit` に送信。生成画像を実スライドに仮配置して、4画像を用いた独立意味・デザイン・スライド周辺文字のQCを行い、プレビューPNGを保存。
+- `main:.github/workflows/slide-image-assets.yml` に `python-pptx` とpytestを入れ、API課金前に15素材のPPTX実体とスロットを検査するステップを追加。
+- 参照バンドルの生成・PPTX照合・仮配置のオフライン単体テストはローカルで3件PASS。**新しいGitHub Actions実行、実OpenAI API試験、画像採用はまだ実施していない**。安全な起動方法は `docs/workflows/P3_GITHUB_ACTIONS_OPENAI_API_v1.md` を参照。
+- P3採用済み2/15、S06-B-02 v3（未生成・0試行）、状態READY、PPTX本文の改変なし。
