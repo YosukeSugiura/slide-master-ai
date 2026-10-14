@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lecture03_48slides",
+  "branch": "情報システム論第3回",
+  "asset_id": "S10-A-01",
+  "date": "2026-10-14",
+  "prompt_version": "v2",
+  "prompt_blob_sha": "3e5893ee34792b7c3b7e8e8a86fc2e6b8cf1244d",
+  "common_rules_sha": "6a19d5a3e33e63ed095cf3e6b85466b9706d88b8",
+  "generator": "ChatGPT built-in image generator",
+  "prompt_transport": "AUTO_INFERRED_NOT_EXPLICIT_TEXT_VERIFIABLE",
+  "attempts": [
+    {
+      "attempt": 1,
+      "result": "FAIL_WRONG_SUBJECT",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1672,
+      "height": 941,
+      "alpha_zero_fraction": 0.5591310781058529,
+      "bytes": 1021478,
+      "sha256": "991e6cd7d0ff9bb86817f98aaa5c00482abfa29f64cd63981e291426665f6079",
+      "chat_artifact": "S10-A-01_v2_attempt1_FAIL.png",
+      "github_binary_verified": false
+    },
+    {
+      "attempt": 2,
+      "result": "FAIL_WRONG_SUBJECT",
+      "format": "PNG",
+      "mode": "RGBA",
+      "width": 1536,
+      "height": 1024,
+      "alpha_zero_fraction": 0.6116975148518881,
+      "bytes": 1461049,
+      "sha256": "e2c177a4b2eb088cc9f72c08e5a7db8532947f1eeccd7efdff335594c1c5d22e",
+      "chat_artifact": "S10-A-01_v2_attempt2_FAIL.png",
+      "github_binary_verified": false
+    }
+  ],
+  "semantic_contract": "Product backlog -> short sprint -> usable increment -> feedback -> updated backlog; correct directional return to backlog",
+  "qc_result": "FAIL_MAJOR_SEMANTIC_MISMATCH",
+  "semantic_gate": "FAIL: no backlog or sprint, no distinct increment/feedback, no return arrow from feedback into backlog",
+  "visual_gate": "Technical transparency PASS; target 5.49 in x 3.73 in placement not assessed after semantic FAIL",
+  "root_cause_status": "UNRESOLVED: apparent stale image generation context; do not claim actual model instructions were observed",
+  "reason": "Both ChatGPT generator invocations for S10-A-01 v2 produced off-target evolution-of-one-web-app scenes, instead of Scrum product backlog -> sprint -> usable increment -> feedback -> backlog cycle. The tool's automatic prompt selection cannot be verified against the GitHub fixed prompt; no third call was attempted.",
+  "generated_count": 2,
+  "gh_save": "QC text can be committed; rejected PNG binaries available as conversation artifacts but GitHub binary storage not verified",
+  "status": "BLOCKED_UNTIL_IMAGE_INSTRUCTION_ROUTING_RESOLVED",
+  "next_action": "Do not advance to S11 or falsely mark S10 PASS. Fix image instruction routing or use a new chat with explicit S10-A-01 fixed prompt then resume from this state."
+}
