@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lecture03_48slides",
+  "recovery_date": "2026-10-14",
+  "reason": "Two previous 次 turns created image assets but did not persist GitHub progress; recovered existing actual file images, verified alpha/geometry and semantic visual, uploaded to persistent Library.",
+  "accepted": 2,
+  "items": [
+    {
+      "asset_id": "S05-A-01",
+      "prompt_version": "v3",
+      "attempt": 1,
+      "file_name": "S05-A-01_prompt_v3_attempt1.png",
+      "sha256": "3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380",
+      "width": 1521,
+      "height": 1034,
+      "alpha_zero_fraction": 0.5681287252482016,
+      "aspect_ratio": 1.4709864603481624,
+      "target_aspect_ratio": 1.47185,
+      "library_file_id": "libfile_ce56f211c41081918310f9d2d2a8528a",
+      "library_path": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "semantic_qc": {
+        "standalone_image": "PASS",
+        "exact_short_japanese_labels": "PASS (試作,評価,改善,再試作)",
+        "arrow_direction": "PASS (試作→評価→改善→再試作→試作)",
+        "app_subject": "PASS (simplified classroom reservation UI)",
+        "background": "PASS (PNG true RGBA alpha)",
+        "art_consistency": "PASS",
+        "slide_text_not_included": "PASS",
+        "legibility": "PASS in candidate image; final slide-sized preview must recheck in P4"
+      },
+      "notes": "Imagegen context transport not byte-verifiable. Independent visual QC PASS."
+    },
+    {
+      "asset_id": "S06-B-01",
+      "prompt_version": "v2",
+      "attempt": 1,
+      "file_name": "S06-B-01_prompt_v2_attempt1.png",
+      "sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
+      "width": 1448,
+      "height": 613,
+      "alpha_zero_fraction": 0.5355454561841501,
+      "aspect_ratio": 2.362153344208809,
+      "target_aspect_ratio": 2.363128,
+      "library_file_id": "libfile_4f61a9ac4414819197b013960e7d29d6",
+      "library_path": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "semantic_qc": {
+        "standalone_image": "PASS",
+        "exact_short_japanese_labels": "PASS (試作品,評価,廃棄,本開発)",
+        "arrow_direction": "PASS (chronological process; not a reused prototype)",
+        "app_subject": "PASS",
+        "background": "PASS (PNG true RGBA alpha)",
+        "art_consistency": "PASS",
+        "slide_text_not_included": "PASS",
+        "legibility": "PASS in illustration; compare image scale in P4"
+      },
+      "postprocess": "CROPPED_TRANSPARENT_MARGIN_ONLY_no_subject_modification",
+      "notes": "Discarded prototype represented by trash bin; new development begins thereafter. Does not depict upgrading discarded artifact. Context transport not byte-verifiable."
+    }
+  ],
+  "pptx_modified": false
+}
