@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "READY",
+  "status": "BLOCKED",
   "required_assets": 15,
   "accepted_assets": 3,
-  "blocked_assets": 0,
+  "blocked_assets": 1,
   "remaining_todo": 11,
   "tool_issue": "S06-B-02 v3 attempt1 has semantic/style/aspect QC failures but is explicitly approved by user; GitHub PNG upload pending, so PASS not granted.",
   "generator_invocation_policy": "New one-asset-per-next GitHub controller; do not allow all-15 generation within one next.",
@@ -187,18 +187,34 @@
     {
       "asset_id": "S10-A-01",
       "slide_id": "S10",
-      "status": "READY",
-      "attempts": 0,
+      "status": "BLOCKED",
+      "attempts": 2,
       "accepted_image": null,
       "sha256": null,
       "storage": null,
-      "rejected_attempts": [],
+      "rejected_attempts": [
+        {
+          "attempt": 1,
+          "result": "FAIL_WRONG_SUBJECT",
+          "sha256": "991e6cd7d0ff9bb86817f98aaa5c00482abfa29f64cd63981e291426665f6079",
+          "chat_artifact": "S10-A-01_v2_attempt1_FAIL.png",
+          "github_binary_verified": false
+        },
+        {
+          "attempt": 2,
+          "result": "FAIL_WRONG_SUBJECT",
+          "sha256": "e2c177a4b2eb088cc9f72c08e5a7db8532947f1eeccd7efdff335594c1c5d22e",
+          "chat_artifact": "S10-A-01_v2_attempt2_FAIL.png",
+          "github_binary_verified": false
+        }
+      ],
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S10-A-01_prompt_v2.txt",
       "prompt_blob_sha": "3e5893ee34792b7c3b7e8e8a86fc2e6b8cf1244d",
       "prompt_version": "v2",
-      "attempts_current_version": 0,
+      "attempts_current_version": 2,
       "max_attempts_current_version": 3,
-      "last_outcome": "NEW_PROMPT_VERSION_READY_WHEN_QUEUED"
+      "last_outcome": "BLOCKED_PROMPT_ROUTING_WRONG_SUBJECT",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempts1-2_20261014.json"
     },
     {
       "asset_id": "S11-B-01",
@@ -384,10 +400,10 @@
   "queue_file": "docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json",
   "progress_summary": {
     "accepted": 3,
-    "ready": 1,
+    "ready": 0,
     "todo": 11,
-    "blocked": 0,
-    "generated_this_turn": 0,
+    "blocked": 1,
+    "generated_this_turn": 2,
     "editorially_approved_this_turn": 1
   },
   "history": [
@@ -490,6 +506,15 @@
       "output_sha256": "15a4757817f11bfd5b401f55222fac952b817caf480eb84d778e966054716b06",
       "storage": "assets/accepted/S06-B-02.png",
       "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v3_attempt1_user_approved_20261014.json"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "S10_A01_TWO_OFF_TARGET_ATTEMPTS_BLOCKED",
+      "asset_id": "S10-A-01",
+      "result": "BLOCKED_PROMPT_TRANSPORT",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempts1-2_20261014.json",
+      "attempts": 2,
+      "accepted": 0
     }
   ],
   "active_transaction": null,
@@ -505,11 +530,11 @@
   "current_attempts": {
     "asset_id": "S10-A-01",
     "prompt_version": "v2",
-    "attempts": 0,
+    "attempts": 2,
     "max": 3
   },
-  "blocking_reason": null,
-  "blocked_reason": null,
+  "blocking_reason": "Both ChatGPT generator invocations for S10-A-01 v2 produced off-target evolution-of-one-web-app scenes, instead of Scrum product backlog -> sprint -> usable increment -> feedback -> backlog cycle. The tool's automatic prompt selection cannot be verified against the GitHub fixed prompt; no third call was attempted.",
+  "blocked_reason": "Both ChatGPT generator invocations for S10-A-01 v2 produced off-target evolution-of-one-web-app scenes, instead of Scrum product backlog -> sprint -> usable increment -> feedback -> backlog cycle. The tool's automatic prompt selection cannot be verified against the GitHub fixed prompt; no third call was attempted.",
   "branch": "情報システム論第3回",
   "common_rules_ref": "major/CHATGPT_IMAGE_NEXT.md",
   "material_index": "materials/asset_index.json",
