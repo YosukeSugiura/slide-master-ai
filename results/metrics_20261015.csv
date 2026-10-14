@@ -1,0 +1,12 @@
+experiment,condition,metric,value
+D03,A,distance_from_Q,0
+D03,B,distance_from_Q,0.3333333333333333
+D03,C,distance_from_Q,0.4714045207910317
+D03,D,distance_from_Q,1.2018504251546631
+D04,encode16_to_recon32,mse,0.015047097530855374
+D04,encode8_to_recon32,mse,0.029191627089128928
+D04,encode4_to_recon32,mse,0.042910091451086305
+D05,CNN_30epochs_test360,accuracy,0.9722222089767456
+D06,AE_z2_45epochs_test360,mse,0.04486963897943497
+D06,AE_z8_45epochs_test360,mse,0.01960223726928234
+D06,AE_z32_45epochs_test360,mse,0.0138950664550066
