@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "BLOCKED",
+  "status": "WAIT_CONFIRMATION",
   "required_assets": 15,
   "accepted_assets": 3,
-  "blocked_assets": 1,
+  "blocked_assets": 0,
   "remaining_todo": 11,
   "tool_issue": "S06-B-02 v3 attempt1 has semantic/style/aspect QC failures but is explicitly approved by user; GitHub PNG upload pending, so PASS not granted.",
   "generator_invocation_policy": "New one-asset-per-next GitHub controller; do not allow all-15 generation within one next.",
@@ -187,8 +187,8 @@
     {
       "asset_id": "S10-A-01",
       "slide_id": "S10",
-      "status": "BLOCKED",
-      "attempts": 2,
+      "status": "WAIT_CONFIRMATION",
+      "attempts": 3,
       "accepted_image": null,
       "sha256": null,
       "storage": null,
@@ -211,10 +211,13 @@
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S10-A-01_prompt_v2.txt",
       "prompt_blob_sha": "3e5893ee34792b7c3b7e8e8a86fc2e6b8cf1244d",
       "prompt_version": "v2",
-      "attempts_current_version": 2,
+      "attempts_current_version": 3,
       "max_attempts_current_version": 3,
-      "last_outcome": "BLOCKED_PROMPT_ROUTING_WRONG_SUBJECT",
-      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempts1-2_20261014.json"
+      "last_outcome": "S10_V2_ATTEMPT3_SEMANTIC_REVIEW_PENDING",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempt3_20261014.json",
+      "review_candidate_sha256": "2c194ceda9894a439f064dcb042cf8dc6e7706ed6bcbc50d635db8fae5d2a4d1",
+      "review_candidate_file": "S10-A-01_prompt_v2_attempt3.png",
+      "github_binary_verified": false
     },
     {
       "asset_id": "S11-B-01",
@@ -402,9 +405,10 @@
     "accepted": 3,
     "ready": 0,
     "todo": 11,
-    "blocked": 1,
-    "generated_this_turn": 2,
-    "editorially_approved_this_turn": 1
+    "blocked": 0,
+    "generated_this_turn": 1,
+    "editorially_approved_this_turn": 1,
+    "waiting_review": 1
   },
   "history": [
     {
@@ -515,6 +519,16 @@
       "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempts1-2_20261014.json",
       "attempts": 2,
       "accepted": 0
+    },
+    {
+      "date": "2026-10-14",
+      "event": "S10_A01_V2_ATTEMPT3_REVIEW_PENDING",
+      "asset_id": "S10-A-01",
+      "attempts_current_version": 3,
+      "result": "WAIT_CONFIRMATION",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempt3_20261014.json",
+      "sha256": "2c194ceda9894a439f064dcb042cf8dc6e7706ed6bcbc50d635db8fae5d2a4d1",
+      "github_binary_verified": false
     }
   ],
   "active_transaction": null,
@@ -530,13 +544,15 @@
   "current_attempts": {
     "asset_id": "S10-A-01",
     "prompt_version": "v2",
-    "attempts": 2,
+    "attempts": 3,
     "max": 3
   },
-  "blocking_reason": "Both ChatGPT generator invocations for S10-A-01 v2 produced off-target evolution-of-one-web-app scenes, instead of Scrum product backlog -> sprint -> usable increment -> feedback -> backlog cycle. The tool's automatic prompt selection cannot be verified against the GitHub fixed prompt; no third call was attempted.",
-  "blocked_reason": "Both ChatGPT generator invocations for S10-A-01 v2 produced off-target evolution-of-one-web-app scenes, instead of Scrum product backlog -> sprint -> usable increment -> feedback -> backlog cycle. The tool's automatic prompt selection cannot be verified against the GitHub fixed prompt; no third call was attempted.",
+  "blocking_reason": null,
+  "blocked_reason": null,
   "branch": "情報システム論第3回",
   "common_rules_ref": "major/CHATGPT_IMAGE_NEXT.md",
   "material_index": "materials/asset_index.json",
-  "manual_chat_image_workflow": true
+  "manual_chat_image_workflow": true,
+  "waiting_review_assets": 1,
+  "review_reason": "Scrum activity depicted, but product backlog is represented indirectly by a 'スプリント計画' board; explicit feedback→product backlog return is ambiguous and the increment appears as a terminal box. User review required before accepting."
 }
