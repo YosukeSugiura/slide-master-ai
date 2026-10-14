@@ -4,10 +4,10 @@
   "repository": "YosukeSugiura/slide-master-ai",
   "branch": "情報システム論第3回",
   "phase": "P3_IMAGE_ASSETS",
-  "status": "READY",
+  "status": "BLOCKED",
   "command": "次",
   "command_mode": "ONE_ASSET_PER_TURN",
-  "next_action": "GENERATE_ONE_ASSET",
+  "next_action": "STOP_PROMPT_ROUTING_MISMATCH",
   "next_asset_id": "S10-A-01",
   "next_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S10-A-01_prompt_v2.txt",
   "next_prompt_blob_sha": "3e5893ee34792b7c3b7e8e8a86fc2e6b8cf1244d",
@@ -113,10 +113,11 @@
       "prompt_version": "v2",
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S10-A-01_prompt_v2.txt",
       "prompt_blob_sha": "3e5893ee34792b7c3b7e8e8a86fc2e6b8cf1244d",
-      "status": "READY",
-      "attempts_current_version": 0,
+      "status": "BLOCKED",
+      "attempts_current_version": 2,
       "accepted_image_sha256": null,
-      "accepted_storage": null
+      "accepted_storage": null,
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempts1-2_20261014.json"
     },
     {
       "order": 5,
@@ -262,19 +263,18 @@
       "accepted_storage": null
     }
   ],
-  "blocked_reason": null,
+  "blocked_reason": "Both ChatGPT generator invocations for S10-A-01 v2 produced off-target evolution-of-one-web-app scenes, instead of Scrum product backlog -> sprint -> usable increment -> feedback -> backlog cycle. The tool's automatic prompt selection cannot be verified against the GitHub fixed prompt; no third call was attempted.",
   "last_transition": {
-    "event": "S06_B02_V3_USER_APPROVED_AND_REFLOWED_PASS",
+    "event": "S10_A01_V2_WRONG_SUBJECT_TWICE",
     "date": "2026-10-14",
-    "result": "PASS",
-    "asset_id": "S06-B-02",
-    "accepted_count": 3,
-    "sha256": "15a4757817f11bfd5b401f55222fac952b817caf480eb84d778e966054716b06",
-    "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v3_attempt1_user_approved_20261014.json",
+    "result": "BLOCKED_NO_PASS",
     "next_asset_id": "S10-A-01",
-    "consistency_repair": "2026-10-14 next_action corrected after GitHub verification of accepted S06-B-02, old=WAIT_FOR_MANUAL_BINARY_UPLOAD"
+    "accepted_count": 3,
+    "prompt_blob_sha": "3e5893ee34792b7c3b7e8e8a86fc2e6b8cf1244d",
+    "attempts_current_version": 2,
+    "qc_file": "docs/runs/lecture03_48slides/step3/qc/S10-A-01_v2_attempts1-2_20261014.json"
   },
-  "blocking_reason": null,
+  "blocking_reason": "Both ChatGPT generator invocations for S10-A-01 v2 produced off-target evolution-of-one-web-app scenes, instead of Scrum product backlog -> sprint -> usable increment -> feedback -> backlog cycle. The tool's automatic prompt selection cannot be verified against the GitHub fixed prompt; no third call was attempted.",
   "active_transaction": null,
   "common_rules_ref": "major/CHATGPT_IMAGE_NEXT.md",
   "material_index": "materials/asset_index.json",
