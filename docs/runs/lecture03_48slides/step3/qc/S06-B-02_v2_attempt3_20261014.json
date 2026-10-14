@@ -1,0 +1,34 @@
+{
+  "asset_id": "S06-B-02",
+  "version": "v2",
+  "attempt": 3,
+  "result": "FAIL",
+  "generated_count": 1,
+  "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
+  "prompt_transport": "EXPLICIT_PROMPT_ARGUMENT_UNMODIFIED_FILE_BODY",
+  "generator": "ChatGPT built-in image generator",
+  "width": 1920,
+  "height": 819,
+  "mode": "RGBA",
+  "alpha_zero_fraction": 0.6246178011803012,
+  "sha256": "a27e1c82ab78eed26b451b3117b92165e0cacb47d2801c1e1cbdb9463fc7b0cc",
+  "library_file_id": "libfile_c57eaf7118dc8191a54df3e3fa8ba254",
+  "storage": "/SlideProjects/lecture03_48slides/step3/rejected/S06-B-02_prompt_v2_attempt3_FAIL.png",
+  "gates": {
+    "G01": "FAIL: three repeated developer stages rather than one continuous action scene",
+    "G02": "PASS: prototype evolves through added features; no discard depicted; arrows left to right",
+    "G03": "PASS: PNG RGBA; 62.46% alpha=0",
+    "G04": "FAIL: gradients in faces, clothing, arrows and label backgrounds; subject alpha bbox reaches left image boundary with no margin",
+    "G05": "PASS: labels 試作/改良/完成 correct and readable at 508x215; action and progression clear",
+    "G06": "PASS: rejected PNG saved durably with SHA256"
+  },
+  "visual_axes": {
+    "subject": "PASS",
+    "meaning": "PASS",
+    "contrast": "PASS",
+    "visual_flow": "PASS",
+    "density": "PASS",
+    "style": "FAIL"
+  },
+  "next_action": "BLOCKED: v2 maximum 3 attempts exhausted; no additional image generated; fixed prompt not modified"
+}
