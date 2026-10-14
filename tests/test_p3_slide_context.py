@@ -5,10 +5,10 @@ import unittest
 from PIL import Image
 
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from p3_slide_context import SlideContext
+from scripts.p3_slide_context import SlideContext, BUNDLE, CHECKSUM
 
-bundle=Path(__file__).resolve().parent / 'lecture03_p3_context.zip'
-sha=Path(__file__).resolve().parent / 'lecture03_p3_context.sha256'
+bundle=BUNDLE
+sha=CHECKSUM
 
 class ContextTests(unittest.TestCase):
     @classmethod
