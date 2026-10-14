@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "READY",
+  "status": "BLOCKED",
   "required_assets": 15,
   "accepted_assets": 2,
-  "blocked_assets": 0,
+  "blocked_assets": 1,
   "remaining_todo": 12,
-  "tool_issue": "Two v2 generations: candidate with clear four-step labels but small text QC pending; second FAIL due to garbled words, title/ID and duplication; no image accepted. Short accurate labels now explicitly allowed.",
+  "tool_issue": "S06-B-02 v3 attempt1 has semantic/style/aspect QC failures but is explicitly approved by user; GitHub PNG upload pending, so PASS not granted.",
   "generator_invocation_policy": "New one-asset-per-next GitHub controller; do not allow all-15 generation within one next.",
   "pptx_edited": false,
   "next_image": "S06-B-02",
@@ -89,8 +89,8 @@
     {
       "asset_id": "S06-B-02",
       "slide_id": "S06",
-      "status": "READY",
-      "attempts": 0,
+      "status": "BLOCKED",
+      "attempts": 1,
       "accepted_image": null,
       "sha256": null,
       "storage": null,
@@ -98,10 +98,10 @@
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v3.txt",
       "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8",
       "prompt_version": "v3",
-      "attempts_current_version": 0,
+      "attempts_current_version": 1,
       "max_attempts_current_version": 3,
-      "last_outcome": "V3_READY_NOT_GENERATED",
-      "qc_file": null,
+      "last_outcome": "USER_APPROVED_AS_IS_PENDING_GITHUB_BINARY",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v3_attempt1_user_approved_20261014.json",
       "v2_failed_attempts_count": 4,
       "v2_failed_attempts": [
         {
@@ -162,7 +162,17 @@
           "policy_exception": "EXPLICIT_USER_REQUEST_AFTER_3_OF_3_NOT_A_RESET"
         }
       ],
-      "legacy_v2_last_qc": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json"
+      "legacy_v2_last_qc": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json",
+      "user_approved_as_is": true,
+      "user_approved_on": "2026-10-14",
+      "qc_result": "FAIL_SPECIFICATION_USER_OVERRIDE",
+      "candidate_sha256": "441cee9f8195460e17bd81dd19c035a3881e2faa9b19a013239b29e6a6b4570b",
+      "candidate_bytes": 1410823,
+      "candidate_width_px": 1536,
+      "candidate_height_px": 1024,
+      "candidate_alpha_zero_fraction": 0.653228759765625,
+      "pending_github_storage": "assets/accepted/S06-B-02.png",
+      "github_upload_verified": false
     },
     {
       "asset_id": "S10-A-01",
@@ -364,10 +374,10 @@
   "queue_file": "docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json",
   "progress_summary": {
     "accepted": 2,
-    "ready": 1,
+    "ready": 0,
     "todo": 12,
-    "blocked": 0,
-    "generated_this_turn": 0
+    "blocked": 1,
+    "generated_this_turn": 1
   },
   "history": [
     {
@@ -447,6 +457,15 @@
       "result": "READY_NOT_GENERATED",
       "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8",
       "previous_v2_attempts": 4
+    },
+    {
+      "date": "2026-10-14",
+      "event": "S06_B02_V3_ATTEMPT1_USER_APPROVAL",
+      "asset_id": "S06-B-02",
+      "result": "USER_APPROVED_AS_IS_QC_EXCEPTIONS_PENDING_GITHUB_UPLOAD",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v3_attempt1_user_approved_20261014.json",
+      "sha256": "441cee9f8195460e17bd81dd19c035a3881e2faa9b19a013239b29e6a6b4570b",
+      "github_upload_verified": false
     }
   ],
   "active_transaction": null,
@@ -462,11 +481,11 @@
   "current_attempts": {
     "asset_id": "S06-B-02",
     "prompt_version": "v3",
-    "attempts": 0,
+    "attempts": 1,
     "max": 3
   },
-  "blocking_reason": null,
-  "blocked_reason": null,
+  "blocking_reason": "Approved image binary missing from GitHub. Upload assets/accepted/S06-B-02.png and verify SHA-256 441cee9f8195460e17bd81dd19c035a3881e2faa9b19a013239b29e6a6b4570b.",
+  "blocked_reason": "Approved image binary missing from GitHub. Upload assets/accepted/S06-B-02.png and verify SHA-256 441cee9f8195460e17bd81dd19c035a3881e2faa9b19a013239b29e6a6b4570b.",
   "branch": "情報システム論第3回",
   "common_rules_ref": "major/CHATGPT_IMAGE_NEXT.md",
   "material_index": "materials/asset_index.json",
