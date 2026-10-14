@@ -4,14 +4,14 @@
   "repository": "YosukeSugiura/slide-master-ai",
   "branch": "minor",
   "phase": "P3_IMAGE_ASSETS",
-  "status": "BLOCKED",
+  "status": "READY",
   "command": "次",
   "command_mode": "ONE_ASSET_PER_TURN",
   "next_action": "GENERATE_ONE_ASSET",
   "next_asset_id": "S06-B-02",
-  "next_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
-  "next_prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
-  "next_prompt_version": "v2",
+  "next_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v3.txt",
+  "next_prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8",
+  "next_prompt_version": "v3",
   "last_completed_asset_id": "S06-B-01",
   "completed_count": 2,
   "total_assets": 15,
@@ -80,14 +80,16 @@
       "asset_id": "S06-B-02",
       "slide_id": "S06",
       "class": "B",
-      "prompt_version": "v2",
-      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
-      "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
-      "status": "BLOCKED",
-      "attempts_current_version": 4,
+      "prompt_version": "v3",
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v3.txt",
+      "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8",
+      "status": "READY",
+      "attempts_current_version": 0,
       "accepted_image_sha256": null,
       "accepted_storage": null,
-      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json"
+      "qc_file": null,
+      "legacy_v2_attempts": 4,
+      "legacy_v2_last_qc": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json"
     },
     {
       "order": 4,
@@ -246,16 +248,15 @@
       "accepted_storage": null
     }
   ],
-  "blocked_reason": "v2 manual extra attempt4 (explicit user request beyond max3) failed: wrong subject, zero true transparent pixels, 3D and text; prompt unchanged. Create a substantively revised and frozen prompt v3 before resuming.",
+  "blocked_reason": null,
   "last_transition": {
-    "event": "S06_B02_USER_REQUESTED_EXTRA_ATTEMPT4_QC_FAIL",
+    "event": "S06_B02_PROMPT_V3_PREPARED_API_TEST",
     "date": "2026-10-14",
-    "result": "BLOCKED_NOT_ADVANCED",
+    "result": "READY_NOT_GENERATED",
     "next_asset_id": "S06-B-02",
     "accepted_count": 2,
-    "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json",
-    "manual_override": true
+    "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8"
   },
-  "blocking_reason": "v2 manual extra attempt4 (explicit user request beyond max3) failed: wrong subject, zero true transparent pixels, 3D and text; prompt unchanged. Create a substantively revised and frozen prompt v3 before resuming.",
+  "blocking_reason": null,
   "active_transaction": null
 }
