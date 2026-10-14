@@ -1,6 +1,8 @@
 from io import BytesIO
 import importlib.util
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1] / 'scripts'))
 from PIL import Image, ImageDraw
 
 spec = importlib.util.spec_from_file_location('gen', Path(__file__).resolve().parents[1] / 'scripts' / 'generate_slide_assets.py')
