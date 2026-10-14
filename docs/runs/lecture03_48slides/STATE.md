@@ -1,6 +1,6 @@
 # 情報システム論 第3回「ソフトウェア開発」48枚版 — 標準4段階の進捗正本
 
-> **本番48枚の正本。** 試作3枚の `docs/runs/lecture03_three_slides/STATE.md` は履歴として維持。**P1/P2は完了、P3は2026-10-14のGitHub駆動・画像ID単位の「次」方式へ移行**。48枚のPPTX骨組みと15点の画像生成指示は保存済み。独立画像は0点採用。
+> **本番48枚の正本。** 試作3枚の `docs/runs/lecture03_three_slides/STATE.md` は履歴として維持。**P1/P2は完了、P3は2026-10-14のGitHub駆動・画像ID単位の「次」方式へ移行**。48枚のPPTX骨組みと15点の画像生成指示は保存済み。現在2点採用、次はS06-B-02。
 
 | key | value |
 |---|---|
@@ -13,7 +13,7 @@
 | current_step | P3_IMAGE_ASSETS |
 | last_completed | P2_PPTX_SKELETON (content and geometry PASS; final font/dense typography gate deferred explicitly to P4) |
 | attempts | P1:1; P2:2 (initial interrupted; recovered and finished 8 batches) |
-| last_log | docs/runs/lecture03_48slides/step3/P3_LABEL_POLICY_CHANGE_20261014.md |
+| last_log | docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json |
 | blocking_reason | none for revised S05-A-01 v3; two v2 generations preserved as candidate + rejected; no image PASS yet |
 | specification | docs/workflows/LECTURE_SLIDE_PRODUCTION_4PHASE_v1.md |
 | controller | docs/workflows/CHATGPT_STEP_CONTROLLER_v2.md |
@@ -93,3 +93,11 @@ S05 v2の生成画像2件の実績：**1件目は4段階ラベルが分かりや
 - 実際に生成されたv2画像2点は原本を保存し、候補1／不合格1と判定。新たに画像を生成せず、生成指示とQC基準だけを修正した。
 - `S05-A-01_prompt_v3.txt` および残り14点の `prompt_v2.txt` を現在の正本とした。
 - `EXECUTION_STATE.json` による次のIDはS05-A-01を維持。画像採用数0/15。
+
+## 2026-10-14 直前の2画像の保存・検査回復記録（最新）
+
+- 以前の2回の「次」で実際に生成されたS05-A-01 v3とS06-B-01 v2は、前回までGitHubの状態記録が欠落していた。今回、画像原本を回収し、PNGシグネチャ/RGBA/alpha透明率、図の意味・日本語短ラベル・矢印、画角を検査した。
+- **S05-A-01: PASS**。1521×1034px、透明画素56.8%、SHA256 `3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380`、Library `/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png`。
+- **S06-B-01: PASS**。画角調整のため透明余白のみトリミングし、内容の修正はしていない。1448×613px、透明画素53.6%、SHA256 `3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27`、Library `/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png`。
+- **2/15画像PASS、次の画像はS06-B-02 v2**（進展型の試作品）。本STEP3のルールは1回の「次」1画像を維持。スライドに埋め込んだ場合の最終縮小可読性はP4で再確認。実効プロンプトのバイト一致はモデルAPIから確認できず`CONTEXT_ONLY_UNVERIFIED`。
+- 詳細監査：`docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json`。機械状態 `docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json` を最新の正本とする。**これより上に記載された「0/15、S05次」は当時の履歴であり最新ではない。**
