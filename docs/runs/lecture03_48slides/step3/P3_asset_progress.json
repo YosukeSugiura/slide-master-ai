@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "run_id": "lecture03_48slides",
   "step": "P3_IMAGE_ASSETS",
-  "status": "BLOCKED",
+  "status": "READY",
   "required_assets": 15,
   "accepted_assets": 2,
-  "blocked_assets": 1,
+  "blocked_assets": 0,
   "remaining_todo": 12,
   "tool_issue": "Two v2 generations: candidate with clear four-step labels but small text QC pending; second FAIL due to garbled words, title/ID and duplication; no image accepted. Short accurate labels now explicitly allowed.",
   "generator_invocation_policy": "New one-asset-per-next GitHub controller; do not allow all-15 generation within one next.",
@@ -81,19 +81,21 @@
     {
       "asset_id": "S06-B-02",
       "slide_id": "S06",
-      "status": "BLOCKED",
+      "status": "READY",
       "attempts": 0,
       "accepted_image": null,
       "sha256": null,
       "storage": null,
       "rejected_attempts": [],
-      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
-      "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
-      "prompt_version": "v2",
-      "attempts_current_version": 4,
+      "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v3.txt",
+      "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8",
+      "prompt_version": "v3",
+      "attempts_current_version": 0,
       "max_attempts_current_version": 3,
-      "last_outcome": "FAIL_OFF_TARGET_FAKE_ALPHA_AND_SLIDE_TEXT_MANUAL_ATTEMPT4",
-      "failed_attempts_current_version": [
+      "last_outcome": "V3_READY_NOT_GENERATED",
+      "qc_file": null,
+      "v2_failed_attempts_count": 4,
+      "v2_failed_attempts": [
         {
           "attempt": 1,
           "result": "FAIL_OFF_TARGET",
@@ -152,7 +154,7 @@
           "policy_exception": "EXPLICIT_USER_REQUEST_AFTER_3_OF_3_NOT_A_RESET"
         }
       ],
-      "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json"
+      "legacy_v2_last_qc": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json"
     },
     {
       "asset_id": "S10-A-01",
@@ -354,10 +356,10 @@
   "queue_file": "docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json",
   "progress_summary": {
     "accepted": 2,
-    "ready": 0,
+    "ready": 1,
     "todo": 12,
-    "blocked": 1,
-    "generated_this_turn": 1
+    "blocked": 0,
+    "generated_this_turn": 0
   },
   "history": [
     {
@@ -430,6 +432,13 @@
       "result": "FAIL",
       "qc_file": "docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json",
       "reason": "wrong subject; zero fully transparent pixels; 3D and slide text"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "S06_B02_V3_API_PREPARED",
+      "result": "READY_NOT_GENERATED",
+      "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8",
+      "previous_v2_attempts": 4
     }
   ],
   "active_transaction": null,
@@ -444,11 +453,10 @@
   },
   "current_attempts": {
     "asset_id": "S06-B-02",
-    "prompt_version": "v2",
-    "attempts": 4,
-    "max": 3,
-    "manual_override_attempts": 1
+    "prompt_version": "v3",
+    "attempts": 0,
+    "max": 3
   },
-  "blocking_reason": "User-directed extra attempt4 of v2 also failed: unrelated learning presentation, no fully transparent pixels, photorealistic style; v2 remains BLOCKED; new validated prompt version required.",
-  "blocked_reason": "User-directed extra attempt4 of v2 also failed: unrelated learning presentation, no fully transparent pixels, photorealistic style; v2 remains BLOCKED; new validated prompt version required."
+  "blocking_reason": null,
+  "blocked_reason": null
 }
