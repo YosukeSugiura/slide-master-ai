@@ -4,22 +4,22 @@
   "step": "P3_IMAGE_ASSETS",
   "status": "READY",
   "required_assets": 15,
-  "accepted_assets": 0,
-  "blocked_assets": 1,
-  "remaining_todo": 14,
+  "accepted_assets": 2,
+  "blocked_assets": 0,
+  "remaining_todo": 12,
   "tool_issue": "Two v2 generations: candidate with clear four-step labels but small text QC pending; second FAIL due to garbled words, title/ID and duplication; no image accepted. Short accurate labels now explicitly allowed.",
   "generator_invocation_policy": "New one-asset-per-next GitHub controller; do not allow all-15 generation within one next.",
   "pptx_edited": false,
-  "next_image": "S05-A-01",
+  "next_image": "S06-B-02",
   "assets": [
     {
       "asset_id": "S05-A-01",
       "slide_id": "S05",
-      "status": "READY",
+      "status": "PASS",
       "attempts": 3,
-      "accepted_image": null,
-      "sha256": null,
-      "storage": null,
+      "accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
+      "sha256": "3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380",
+      "storage": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
       "rejected_attempts": [
         "9eb6d72f3aba0c005cff307dd55922cca65a60bdcf9f4b61714debf585ea186d",
         "d8126d144a05703499dd6ef75306e872623a3d39305d55c92d971c5c6a86cd44",
@@ -28,9 +28,9 @@
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt",
       "prompt_blob_sha": "8f97747560cb0fd8c8495850728d355b7f42c7d4",
       "prompt_version": "v3",
-      "attempts_current_version": 0,
+      "attempts_current_version": 1,
       "max_attempts_current_version": 3,
-      "last_outcome": "V2_CANDIDATE_PRESERVED; V3_NOT_GENERATED",
+      "last_outcome": "PASS_AFTER_RETROACTIVE_BINARY_QC",
       "legacy_chatgpt_v1_attempts": 3,
       "legacy_figma_v1_attempts": 1,
       "legacy_figma_rejected_library": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_Figma_REJECTED_uploaded_JPEG.jpg",
@@ -48,28 +48,40 @@
           "sha256": "74ab30871d77b54925c107a86414e13d93178a25371c88824b440e69f94ebea2",
           "storage": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_v2_attempt2_REJECTED.png"
         }
-      ]
+      ],
+      "library_file_id": "libfile_ce56f211c41081918310f9d2d2a8528a",
+      "width_px": 1521,
+      "height_px": 1034,
+      "alpha_zero_fraction": 0.5681287252482016,
+      "transport_verification": "CONTEXT_ONLY_UNVERIFIED",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json"
     },
     {
       "asset_id": "S06-B-01",
       "slide_id": "S06",
-      "status": "TODO",
+      "status": "PASS",
       "attempts": 0,
-      "accepted_image": null,
-      "sha256": null,
-      "storage": null,
+      "accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
+      "storage": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
       "rejected_attempts": [],
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-01_prompt_v2.txt",
       "prompt_blob_sha": "fd50b1c94b55c01a5419a4bb271f8f83827e2bf8",
       "prompt_version": "v2",
-      "attempts_current_version": 0,
+      "attempts_current_version": 1,
       "max_attempts_current_version": 3,
-      "last_outcome": "NEW_PROMPT_VERSION_READY_WHEN_QUEUED"
+      "last_outcome": "PASS_AFTER_RETROACTIVE_BINARY_QC",
+      "library_file_id": "libfile_4f61a9ac4414819197b013960e7d29d6",
+      "width_px": 1448,
+      "height_px": 613,
+      "alpha_zero_fraction": 0.5355454561841501,
+      "transport_verification": "CONTEXT_ONLY_UNVERIFIED",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json"
     },
     {
       "asset_id": "S06-B-02",
       "slide_id": "S06",
-      "status": "TODO",
+      "status": "READY",
       "attempts": 0,
       "accepted_image": null,
       "sha256": null,
@@ -275,17 +287,17 @@
       "last_outcome": "NEW_PROMPT_VERSION_READY_WHEN_QUEUED"
     }
   ],
-  "current_unit": "S05-A-01",
+  "current_unit": "S06-B-02",
   "generator": "ChatGPT image generation",
-  "last_completed_asset": null,
+  "last_completed_asset": "S06-B-01",
   "prompt_version_migration": "S05-A-01 v1 rejected (3 ChatGPT + 1 Figma historical) -> v2 generated two attempts (1 candidate pending, 2 FAIL) -> v3 READY; remaining 14 assets v1 -> v2 (short-label policy).",
   "queue_file": "docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json",
   "progress_summary": {
-    "accepted": 0,
+    "accepted": 2,
     "ready": 1,
-    "todo": 14,
+    "todo": 12,
     "blocked": 0,
-    "generated_this_policy_migration": 0
+    "generated_this_recovery": 0
   },
   "history": [
     {
@@ -324,6 +336,17 @@
       "event": "SHORT_JAPANESE_LABELS_ALLOWED",
       "result": "NEW_PROMPTS_PREPARED_NO_NEW_GENERATION",
       "reason": "user prioritizes understanding over blanket no-text rule"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "RECOVER_PREVIOUS_GENERATED_IMAGES",
+      "assets": [
+        "S05-A-01",
+        "S06-B-01"
+      ],
+      "result": "PASS_AFTER_PNG_RGBA_ALPHA_SEMANTIC_ASPECT_AND_LIBRARY_CHECK",
+      "qc_file": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json",
+      "note": "Produced in two prior 次 turns; both lacked GitHub state changes. Preserved originals and verified current binaries."
     }
   ],
   "active_transaction": null,
