@@ -11,7 +11,7 @@
   "asset_count": 15,
   "assets": [
     {
-      "status": "READY",
+      "status": "PASS",
       "prompt_status": "P2_FIXED",
       "prompt_text": "【生成する完成品｜最優先】\n背景透過を基本とする**独立した2Dフラットイラスト画像1点**を生成する。対象は「プロトタイピングの反復」。制作範囲は **統合された一つの説明場面だけ**。スライド全体、講義ポスター、複数コマのコラージュを生成しない。\n\n【何を意味的に表すべきか】\n試作品を具体的に作り、ユーザーが触って評価して改善点を開発者に返し、改良版を再度試作する因果的な循環。必須の反復は試作→評価→改善→再試作へ戻る。教室予約UIの試作品は実在の製品スクリーンショットではなく抽象化した画面イメージにする。\n\n【厳密な意味関係・禁止される誤解】\n評価から改善を経て次の試作へ戻る方向を正確に示す。試作と完成品を混同しない。\n\n【構図と画角】\n最終的な挿入枠は横5.490インチ×縦3.730インチ（縦横比1.4718:1）。図を横長画面の内側に十分な余白を取って配置し、被写体を切り落とさない。推奨する評価解像度は約2048×1392px。人物や道具など、当該テーマに必要な具体物を用い、単なるアイコンの横並びにしない。矢印は因果や循環を伝えるために必要な場合のみ、必須の向き・戻り先を正確に示す。情報量は投影サイズでも理解できる密度に抑える。\n\n【デザイン言語】\n白／透明背景、インディゴ#41419Eを基調にした低彩度の教育用フラット図。濃い輪郭と明確なシルエット、均整の取れた線幅、さりげない補助色を採用する。グラデーション、3D、過剰な影、飾り枠、丸いUIカードの羅列は避ける。同一講義の他画像と統一した画風を保つ。\n\n【画像の制作範囲から完全に除外】\nスライド全体、スライドタイトル、イントロ、Takeaway、説明本文、表、ページ番号、大学ロゴ、写真、注釈ポスター、読み取らせるための大量の日本語、架空の固有名詞、関係のない他の役割・手法。正確な語句は別途PowerPointの編集可能テキストとして配置する。画像内では文字を原則描かない。原文の数値・専門用語・ロゴを捏造しない。\n\n【採用前の必須評価】\n意味契約の全条件が満たされること。禁止例が存在しないこと。矢印・循環の方向が正しいこと。主役・対比・視線誘導・情報量・画風をそれぞれ独立評価すること。全体をスライド画像にしないこと。横長枠への等比配置で切り落としや極端な余白が生じないこと。いずれかに不合格があれば素材として採用しない。",
       "prompt_version": "v1",
@@ -28,8 +28,8 @@
         "width": 2048,
         "height": 1392
       },
-      "sha256": null,
-      "storage_location": "Not generated; image will be created in P3",
+      "sha256": "3b371566c54b92504b4640386b6b8a5a45cbb2e56f12156f0db43b45d9ece380",
+      "storage_location": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
       "asset_id": "S05-A-01",
       "slide_id": "S05",
       "classification": "A",
@@ -60,21 +60,22 @@
       },
       "preflight_result": "PASS",
       "p3_attempt_count": 3,
-      "p3_qc": "V1_REJECTED; V2_ATTEMPT1_CANDIDATE_TEXT_PERMITTED_PENDING_SLIDE_SIZE_QC; V2_ATTEMPT2_FAIL_GARBLED_AND_TITLE; V3_PROMPT_READY_NOT_GENERATED",
+      "p3_qc": "PASS_AFTER_RGBA_ALPHA_SEMANTIC_QC_AND_DURABLE_UPLOAD",
       "p3_rejected_images_library": "/SlideProjects/lecture03_48slides/step3/rejected/",
-      "p3_accepted_image": null,
+      "p3_accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S05-A-01_prompt_v3_attempt1.png",
       "p3_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S05-A-01_prompt_v3.txt",
       "p3_prompt_blob_sha": "8f97747560cb0fd8c8495850728d355b7f42c7d4",
       "p3_prompt_version": "v3",
-      "p3_attempts_current_version": 0,
+      "p3_attempts_current_version": 1,
       "p3_max_attempts_current_version": 3,
       "p3_retry_version_reason": "rework after off-target completion reports and Figma checkerboard/non-alpha/weak semantics; original v1 retained",
       "p3_v2_attempt_count": 2,
       "p3_v2_candidate_storage": "/SlideProjects/lecture03_48slides/step3/candidates/S05-A-01_v2_attempt1_REVIEW.png",
-      "p3_v2_rejected_storage": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_v2_attempt2_REJECTED.png"
+      "p3_v2_rejected_storage": "/SlideProjects/lecture03_48slides/step3/rejected/S05-A-01_v2_attempt2_REJECTED.png",
+      "library_file_id": "libfile_ce56f211c41081918310f9d2d2a8528a"
     },
     {
-      "status": "PLANNED",
+      "status": "PASS",
       "prompt_status": "P2_FIXED",
       "prompt_text": "【生成する完成品｜最優先】\n背景透過を基本とする**独立した2Dフラットイラスト画像1点**を生成する。対象は「使い捨て型の試作品」。制作範囲は **独立した一つの比較対象の行動場面だけ**。スライド全体、講義ポスター、複数コマのコラージュを生成しない。\n\n【何を意味的に表すべきか】\n開発者が要件確認のため試作品を作り、利用者が確認した後にその試作品を廃棄し、得た知識を新規の本開発に引き継ぐ。\n\n【厳密な意味関係・禁止される誤解】\n試作品自体を完成品へ継続改良する場面は描かない。試作品が本開発へ物理的に変身する描写は禁止。\n\n【構図と画角】\n最終的な挿入枠は横4.230インチ×縦1.790インチ（縦横比2.3631:1）。図を横長画面の内側に十分な余白を取って配置し、被写体を切り落とさない。推奨する評価解像度は約2400×1016px。人物や道具など、当該テーマに必要な具体物を用い、単なるアイコンの横並びにしない。矢印は因果や循環を伝えるために必要な場合のみ、必須の向き・戻り先を正確に示す。情報量は投影サイズでも理解できる密度に抑える。\n\n【デザイン言語】\n白／透明背景、インディゴ#41419Eを基調にした低彩度の教育用フラット図。濃い輪郭と明確なシルエット、均整の取れた線幅、さりげない補助色を採用する。グラデーション、3D、過剰な影、飾り枠、丸いUIカードの羅列は避ける。同一講義の他画像と統一した画風を保つ。\n\n【画像の制作範囲から完全に除外】\nスライド全体、スライドタイトル、イントロ、Takeaway、説明本文、表、ページ番号、大学ロゴ、写真、注釈ポスター、読み取らせるための大量の日本語、架空の固有名詞、関係のない他の役割・手法。正確な語句は別途PowerPointの編集可能テキストとして配置する。画像内では文字を原則描かない。原文の数値・専門用語・ロゴを捏造しない。\n\n【採用前の必須評価】\n意味契約の全条件が満たされること。禁止例が存在しないこと。矢印・循環の方向が正しいこと。主役・対比・視線誘導・情報量・画風をそれぞれ独立評価すること。全体をスライド画像にしないこと。横長枠への等比配置で切り落としや極端な余白が生じないこと。いずれかに不合格があれば素材として採用しない。",
       "prompt_version": "v1",
@@ -91,8 +92,8 @@
         "width": 2400,
         "height": 1016
       },
-      "sha256": null,
-      "storage_location": "Not generated; image will be created in P3",
+      "sha256": "3864b3f7a1948bb6999e54c57d9134dcb80abadbb39786060681022ebff0ce27",
+      "storage_location": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
       "asset_id": "S06-B-01",
       "slide_id": "S06",
       "classification": "B",
@@ -126,11 +127,14 @@
       "p3_prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-01_prompt_v2.txt",
       "p3_prompt_blob_sha": "fd50b1c94b55c01a5419a4bb271f8f83827e2bf8",
       "p3_prompt_version": "v2",
-      "p3_attempts_current_version": 0,
-      "p3_max_attempts_current_version": 3
+      "p3_attempts_current_version": 1,
+      "p3_max_attempts_current_version": 3,
+      "p3_qc": "PASS_AFTER_RGBA_ALPHA_SEMANTIC_QC_AND_DURABLE_UPLOAD",
+      "p3_accepted_image": "/SlideProjects/lecture03_48slides/step3/accepted/S06-B-01_prompt_v2_attempt1.png",
+      "library_file_id": "libfile_4f61a9ac4414819197b013960e7d29d6"
     },
     {
-      "status": "PLANNED",
+      "status": "READY",
       "prompt_status": "P2_FIXED",
       "prompt_text": "【生成する完成品｜最優先】\n背景透過を基本とする**独立した2Dフラットイラスト画像1点**を生成する。対象は「進展型の試作品」。制作範囲は **独立した一つの比較対象の行動場面だけ**。スライド全体、講義ポスター、複数コマのコラージュを生成しない。\n\n【何を意味的に表すべきか】\n開発者が同じ試作品を繰り返し改良・機能追加し、完成可能な実システムへ育てていく。\n\n【厳密な意味関係・禁止される誤解】\n試作品を廃棄したあと作り直す描写をしない。使い捨て型とは明確に異なる。\n\n【構図と画角】\n最終的な挿入枠は横4.230インチ×縦1.790インチ（縦横比2.3631:1）。図を横長画面の内側に十分な余白を取って配置し、被写体を切り落とさない。推奨する評価解像度は約2400×1016px。人物や道具など、当該テーマに必要な具体物を用い、単なるアイコンの横並びにしない。矢印は因果や循環を伝えるために必要な場合のみ、必須の向き・戻り先を正確に示す。情報量は投影サイズでも理解できる密度に抑える。\n\n【デザイン言語】\n白／透明背景、インディゴ#41419Eを基調にした低彩度の教育用フラット図。濃い輪郭と明確なシルエット、均整の取れた線幅、さりげない補助色を採用する。グラデーション、3D、過剰な影、飾り枠、丸いUIカードの羅列は避ける。同一講義の他画像と統一した画風を保つ。\n\n【画像の制作範囲から完全に除外】\nスライド全体、スライドタイトル、イントロ、Takeaway、説明本文、表、ページ番号、大学ロゴ、写真、注釈ポスター、読み取らせるための大量の日本語、架空の固有名詞、関係のない他の役割・手法。正確な語句は別途PowerPointの編集可能テキストとして配置する。画像内では文字を原則描かない。原文の数値・専門用語・ロゴを捏造しない。\n\n【採用前の必須評価】\n意味契約の全条件が満たされること。禁止例が存在しないこと。矢印・循環の方向が正しいこと。主役・対比・視線誘導・情報量・画風をそれぞれ独立評価すること。全体をスライド画像にしないこと。横長枠への等比配置で切り落としや極端な余白が生じないこと。いずれかに不合格があれば素材として採用しない。",
       "prompt_version": "v1",
@@ -858,11 +862,13 @@
   "p2_status": "PLACEMENT_AND_PROMPT_COMPLETE_IMAGES_NOT_GENERATED",
   "p2_prompt_manifest": "docs/runs/lecture03_48slides/step2/image_prompts/P2_image_prompts_manifest.json",
   "p3_status": "READY",
-  "p3_accepted_count": 0,
-  "p3_unattempted_count": 15,
+  "p3_accepted_count": 2,
+  "p3_unattempted_count": 13,
   "p3_failure_report": "docs/runs/lecture03_48slides/step3/P3_GENERATION_FAILURE_20261014.md",
   "p3_completed_count": 0,
   "p3_queue_state_path": "docs/runs/lecture03_48slides/step3/EXECUTION_STATE.json",
   "p3_label_policy": "ALLOW_SHORT_READABLE_JAPANESE_LABELS; FORBID_TYPO_GIBBERISH_AND_UNREADABLY_SMALL_TEXT",
-  "p3_latest_policy_report": "docs/runs/lecture03_48slides/step3/P3_LABEL_POLICY_CHANGE_20261014.md"
+  "p3_latest_policy_report": "docs/runs/lecture03_48slides/step3/P3_LABEL_POLICY_CHANGE_20261014.md",
+  "p3_next_asset_id": "S06-B-02",
+  "p3_recovery_qc": "docs/runs/lecture03_48slides/step3/qc/P3_RECOVERY_S05_S06_20261014.json"
 }
