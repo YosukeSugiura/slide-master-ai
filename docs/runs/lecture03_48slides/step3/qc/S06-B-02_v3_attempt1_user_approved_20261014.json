@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "run_id": "lecture03_48slides",
+  "asset_id": "S06-B-02",
+  "branch": "情報システム論第3回",
+  "prompt_version": "v3",
+  "attempt": 1,
+  "prompt_blob_sha": "dfd31e9a3ce0a0ecac9f951806d0a3c38fc451a8",
+  "date": "2026-10-14",
+  "generator": "ChatGPT built-in image generator",
+  "prompt_transport": "GENERATOR_INPUT_DIVERGED_FROM_FIXED_PROMPT_V3",
+  "actual_generation_description": "Four horizontally repeated developers and evolving UI, blue arrows, curved teal progress arrow; not the single-developer single-monitor composition specified in v3",
+  "qc_result": "FAIL_SPECIFICATION",
+  "user_review": "EXPLICITLY_APPROVED_AS_IS",
+  "user_approval_quote": "いえ，これでいいです．",
+  "user_approval_scope": "Accept visual output with recorded QC exceptions; does not assert specifications are met or that GitHub binary is stored",
+  "binary": {
+    "sha256": "441cee9f8195460e17bd81dd19c035a3881e2faa9b19a013239b29e6a6b4570b",
+    "bytes": 1410823,
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "format": "PNG",
+    "alpha_zero_fraction": 0.653228759765625,
+    "local_chat_artifact": "S06-B-02.png"
+  },
+  "geometry": {
+    "actual_aspect_ratio": 1.5,
+    "target_aspect_ratio": 2.363128
+  },
+  "gates": {
+    "G01": "FAIL: repeated 4 developer-and-display scenes instead of single action scene",
+    "G02": "PARTIAL: incremental UI growth is conveyed, but same one application under one developer is not",
+    "G03": "PASS: PNG, RGBA, 65.32% fully transparent pixels",
+    "G04": "FAIL: prominent gradients, glow, presentation size/aspect deviation",
+    "G05": "FAIL: repeated characters and UI, foreground subject touches lower edge",
+    "G06": "PENDING: generated image exists as a downloadable chat artifact; no confirmed GitHub binary"
+  },
+  "github_binary_storage": "PENDING_MANUAL_UPLOAD",
+  "expected_github_storage": "assets/accepted/S06-B-02.png",
+  "prompt_attempts_current_version": 1,
+  "next_step": "User uploads the original S06-B-02.png file to the target branch, then assistant verifies SHA-256 and updates state to PASS before moving to the next asset"
+}
