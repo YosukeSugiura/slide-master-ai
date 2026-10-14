@@ -4,7 +4,7 @@
   "repository": "YosukeSugiura/slide-master-ai",
   "branch": "minor",
   "phase": "P3_IMAGE_ASSETS",
-  "status": "BLOCKED",
+  "status": "RUNNING",
   "command": "次",
   "command_mode": "ONE_ASSET_PER_TURN",
   "next_action": "GENERATE_ONE_ASSET",
@@ -83,7 +83,7 @@
       "prompt_version": "v2",
       "prompt_file": "docs/runs/lecture03_48slides/step3/prompts/S06-B-02_prompt_v2.txt",
       "prompt_blob_sha": "7097be31d3d2936f26595e04c6a2be27fc7d76b6",
-      "status": "BLOCKED",
+      "status": "RUNNING",
       "attempts_current_version": 2,
       "accepted_image_sha256": null,
       "accepted_storage": null
@@ -245,7 +245,7 @@
       "accepted_storage": null
     }
   ],
-  "blocked_reason": "S06-B-02 v2 two attempts produced off-target Scrum images; image generator effective prompt cannot be verified. Prompt-routing fix required before retry.",
+  "blocked_reason": null,
   "last_transition": {
     "event": "S06_B02_ABORT_AFTER_TWO_OFF_TARGET_IMAGES",
     "date": "2026-10-14",
@@ -254,5 +254,13 @@
     "accepted_count": 2,
     "rejected_count_current_version": 2,
     "report": "docs/runs/lecture03_48slides/step3/P3_S06_B02_GENERATION_BLOCKED_20261014.md"
+  },
+  "blocking_reason": null,
+  "active_transaction": {
+    "asset_id": "S06-B-02",
+    "attempt": 3,
+    "prompt_version": "v2",
+    "prompt_transport": "EXPLICIT_PROMPT_ARGUMENT",
+    "resumption": "user requested; built-in tool now exposes prompt argument"
   }
 }
