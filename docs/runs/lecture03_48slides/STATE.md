@@ -117,3 +117,11 @@ S05 v2の生成画像2件の実績：**1件目は4段階ラベルが分かりや
 ## 2026-10-14 追加依頼：S06-B-02 v2 試行4（不採用）
 
 ユーザーからS06-B-02の画像1点の再開・検査・保存が明示指示されたため、v2既定上限3回を超える例外的な1試行を実施。ChatGPT画像生成で得られたのは「学びを行動に変える」と記載した3D・人物オフィス図であり、進展型試作品の図ではなかった。PNG 1672×941 RGBAだが完全透明画素0%、スライド風テキストと管理ID混入、目標比率2.363に不適合のためFAIL。実画像をLibrary `/SlideProjects/lecture03_48slides/step3/rejected/S06-B-02_prompt_v2_attempt4_FAIL_WRONG_SUBJECT.png` に不採用保存して読み戻し確認。SHA256 `5b9e60b87d2cbcfadcc0858724f4205e82a01118acf3697c6f0f0d8051614e64`。QC詳細：`docs/runs/lecture03_48slides/step3/qc/S06-B-02_v2_attempt4_20261014.json`。S06-B-02のままBLOCKED、採用2/15、PPTXは変更なし。
+
+## 2026-10-14 最新：GitHub Actions / OpenAI API導入準備（実画像未生成）
+
+- ユーザーがRepository secret `OPENAI_API_KEY` を登録。ChatGPT内の画像生成ではなく、GitHub ActionsからOpenAI Images APIで固定プロンプト本文を明示送信する方式へ移行する。
+- 実行ワークフロー：デフォルトブランチ `main:.github/workflows/slide-image-assets.yml`。実行コード：`minor:scripts/generate_slide_assets.py`。テスト：`minor:tests/test_generate_slide_assets.py`（ローカルで5件PASS、実クラウド実行は未検証）。
+- `S06-B-02_prompt_v3.txt` を意味・構図・余白を明確化した新版として追加し、v2の失敗4件を履歴に保管したままv3 0試行で`READY`へ移行。現状2/15件採用。v3の実画像はまだ生成していない。新しい状態JSONを唯一のポインタとする。
+- ワークフローは手動起動のみで、初期値`mode=single`、`max_calls=1`、`dry_run=true`。まず無課金の事前検査を実行し、成功後に`dry_run=false`で実生成へ進める。
+- 操作手順：`docs/workflows/P3_GITHUB_ACTIONS_OPENAI_API_v1.md`。自動採用の意味QCはAI判定であり、人間による初回実画像確認が必要。PPTX変更なし。
