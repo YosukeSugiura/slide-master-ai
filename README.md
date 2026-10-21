@@ -1,5 +1,7 @@
 # slide-master-ai — 共通ルール（major）
 
+> **2026-10-21：共通定義の正本は `main` に移行しました．** このブランチの定義（v2.2・ChatGPT向け）は旧版として残しています．新しい講義の制作では `main` の `design_system_general_final.md`・`content_visual_policy_final.md`・`prompts/` を使ってください．
+
 このブランチは講義スライド画像の**共通作業規約**を管理します。講義ごとの素材・進捗は専用ブランチに保存します。
 
 - [画像制作の共通入口](CHATGPT_IMAGE_NEXT.md)

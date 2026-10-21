@@ -1,5 +1,7 @@
 # GitHubブランチ設計 — 共通指示書と講義データの分離
 
+> **2026-10-21：共通定義の正本は `main` に移行しました．** このブランチの定義（v2.2・ChatGPT向け）は旧版として残しています．新しい講義の制作では `main` の `design_system_general_final.md`・`content_visual_policy_final.md`・`prompts/` を使ってください．
+
 - `major`：**共通指示の正本**。`CHATGPT_IMAGE_NEXT.md`・共通デザイン文書・ブランチ方針。講義のPPTX/JPG/PNG/進捗は置かない。
 - `情報システム論第3回`など**各講義名のブランチ**：当該講義の実ファイル、素材スロット、15件等の固定プロンプト、画像、QC、状態JSONを管理。
 - `main`：既存のリポジトリ既定ブランチ。今回変更しない。
