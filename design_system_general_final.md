@@ -1,8 +1,10 @@
 ﻿# 講義スライド共通デザイン定義 v3.0
 
-> 対象：明治大学の講義スライド（Claude for PowerPoint 等で生成する編集可能PPTX）．
+> 対象：明治大学の講義スライド（Claude for PowerPoint のみで生成・編集するPPTX）．
 > この文書は**全講義で変えない骨格**（比率・書体・色・見出し・ページ番号・Takeaway）を定める．図解の選び方と制作手順は [`content_visual_policy_final.md`](content_visual_policy_final.md) にある．
 > 改訂の根拠：[`docs/audit_2026-10-21.md`](docs/audit_2026-10-21.md)
+
+> **制作担当（必須）**：本定義に基づくスライドの生成・編集・レイアウト・作図・PPTX出力・レンダリング検査は，すべて **Claude for PowerPoint** が実施する．ChatGPTは講義内容の検討，ページ設計表・ブリーフ・制作依頼文の作成や内容レビューのみを担当し，スライドやPPTXを自ら作成しない．
 
 ## 0. 原則：枠は固定，中身は自由
 
