@@ -1,6 +1,13 @@
-# slide-master-ai — 講義スライド生成の共通定義
+# slide-master-ai — Claude for PowerPoint 専用の講義スライド制作定義
 
-明治大学の講義スライドを Claude for PowerPoint 等で生成するための，共通デザイン定義と依頼プロンプトです．
+明治大学の講義スライドを **Claude for PowerPoint のみで制作**するための，共通デザイン定義と依頼プロンプトです．
+
+## 制作担当の分担（必須）
+
+- **Claude for PowerPoint（唯一の制作担当）**：スライドの作図・レイアウト・編集可能なPPTX生成・既存PPTX編集・図や画像の配置・全ページのレンダリング検査・完成版の納品を行う．
+- **ChatGPT（制作前の支援のみ）**：講義内容の整理，学習目標・章構成・各章の概要案，ページ設計表，Claude for PowerPointに渡す制作依頼文やブリーフの作成，技術的な内容のレビューを行う．**スライド本体・PPTX・完成スライド画像を生成，編集，納品しない**．
+- ChatGPTにスライド制作を依頼された場合でも，PPTXの制作を開始せず，Claude for PowerPointに渡す内容資料・制作指示書を用意する．
+- 過去ブランチに残るChatGPT向けのPPTX制作コード・画像生成フロー・制作ログは**履歴・参考資料**であり，現行のスライド制作手順ではない．
 
 ## ファイル
 
@@ -24,7 +31,7 @@
 
 ## 毎回の依頼（最短）
 
-[prompts/lecture_slides_quick_prompt.md](prompts/lecture_slides_quick_prompt.md) のコードブロックをコピーし，4項目を書き換えて送ります．
+[prompts/lecture_slides_quick_prompt.md](prompts/lecture_slides_quick_prompt.md) のコードブロックをコピーし，4項目を書き換えて**Claude for PowerPointへ送ります**．
 
 ## ブランチ
 
@@ -33,6 +40,8 @@
 - `major`・`minor`：ChatGPT向けの旧定義と画像生成の履歴（参照用）．
 
 ## 版
+
+- 運用更新（2026-11-04）：スライド制作・PPTX生成・編集・レンダリング・納品をClaude for PowerPointの専任とし，ChatGPTは内容検討と制作指示書に限定．
 
 - v3.0（2026-10-21）：監査に基づき全面改訂．Takeawayを情報システム論第4回の書式に戻し，文章基準を追加．タイトルは1行に収め，主題・問いを基本とした．ページ設計表の工程を追加．ChatGPT向けの試作手順と重複規則を削除．
 - 旧版：`e3ae7ac`（v2.1，2026-10-21改訂前），`d47cfa9`（v2.0，2026-10-14）．Git履歴から参照できます．
