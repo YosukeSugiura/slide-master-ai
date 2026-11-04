@@ -1,4 +1,6 @@
-# 講義スライド依頼プロンプト（毎回コピーして使う）
+# Claude for PowerPoint 専用：講義スライド依頼プロンプト
+
+**このプロンプトはClaude for PowerPointに渡す専用依頼文です．** ChatGPTにはスライドやPPTXを作らせず，必要なら事前に講義構成・ページ設計表・依頼文だけを準備させます．
 
 ［ ］の4項目だけを書き換えてください．任意項目は不要なら行ごと削除してかまいません．
 
@@ -7,7 +9,8 @@
 ```text
 GitHub `YosukeSugiura/slide-master-ai`（main）の
 design_system_general_final.md と content_visual_policy_final.md を読み，
-それに従って次の講義の編集可能なPowerPointを作成してください．
+それに従って次の講義の編集可能なPowerPointを**Claude for PowerPointで**作成してください．
+スライドの制作・PPTX生成・編集・レンダリング・品質検査・納品はClaude for PowerPointが一貫して担当してください．
 
 講義名：［例：マルチメディア論］
 回：第［N］回（［100］分）
@@ -32,6 +35,8 @@ design_system_general_final.md と content_visual_policy_final.md を読み，
 ```
 
 ---
+
+**運用上の注意**：この依頼文をChatGPTに入力した場合，ChatGPTは講義内容・制作指示の作成とレビューのみ実施し，PPTXや完成スライドを生成しません．
 
 ## 書き方のヒント
 
